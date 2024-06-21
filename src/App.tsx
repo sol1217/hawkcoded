@@ -1,4 +1,3 @@
-import React from 'react';
 import "./App.css";
 import { Home } from "./pages/Home/Home.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -11,7 +10,7 @@ function App() {
       <Home />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Services/>} />
       </Routes>
     </BrowserRouter>
   );
