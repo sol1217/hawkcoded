@@ -6,8 +6,13 @@ export const HeaderContainer = styled.div`
   margin: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  position: fixed;
+  width: 96%;
+  top: 0;
+  z-index: 99;
+  /*background: linear-gradient(#086c90, #ff7500);*/
 `;
 
 export const LogoImage = styled.img`
@@ -46,6 +51,10 @@ export const SearchInput = styled.input.attrs<SearchInputProps>((props) => ({
   border: none;
   border-radius: 15px;
   color: black;
+  z-index: 99;
+
+  &:focus {
+  }
 `;
 
 export const SearchButton = styled.div`

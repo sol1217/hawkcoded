@@ -7,7 +7,7 @@ import {
   SearchInput,
   ShowButton,
 } from "./Header.elements.ts";
-import logotype from "../../../assets/logotype.png";
+import logotype from "../../../assets/logo-type.png";
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
 
@@ -24,13 +24,13 @@ export function Header() {
         <NavMenu />
         {!isShowInput && (
           <ShowButton onClick={handleShowInput}>
-            <IoSearch fontSize={30} color="black" />
+            <IoSearch fontSize={30} color="white" />
           </ShowButton>
         )}
         <SearchInput isShowInput={isShowInput} placeholder="Write and search" />
         {isShowInput && (
           <SearchButton>
-            <IoSearch fontSize={30} color="black" />
+            <IoSearch fontSize={30} color="white" />
           </SearchButton>
         )}
       </SearchContainer>

@@ -11,7 +11,7 @@ export const NavMenuLinks = styled.ol`
 `;
 
 export const LinkContainer = styled.a`
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
