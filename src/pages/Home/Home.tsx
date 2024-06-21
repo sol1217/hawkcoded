@@ -1,4 +1,4 @@
-import img from "../../assets/3.jpg";
+import hawkcoded from "../../assets/hawkcoded.jpg";
 import mainLogo from "../../assets/main-logo.png";
 import {
   ButtonContact,
@@ -38,7 +38,7 @@ export function Home() {
         </InfoContainer>
       </InformationBox>
 
-      <Imagen src={img} />
+      <Imagen src={hawkcoded} />
     </main>
   );
 }
