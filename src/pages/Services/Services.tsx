@@ -1,6 +1,7 @@
 import React from "react";
-import { ServicesContainer, PServices, ServiceItem, STitle } from "./Services.elements.ts";
+import { ServicesContainer, PServices, ServiceItem, STitle, STitleContainer } from "./Services.elements.ts";
 import ServiceContact from "./ServiceContact/ServiceContact.tsx";
+import TestimonialContainer from "./../../components/layout/Testimonials/TestimonialContainer.tsx";
 
 const servicesData = [
   { id: 1, title: "Web Development", description: "Creating websites and web applications", icon: './src/assets/icons/globe-solid.svg' },
@@ -12,19 +13,24 @@ const servicesData = [
 export default function Services() {
   return (
     <>
-      <STitle>Our Services</STitle>
+      <STitleContainer>
+        <STitle>Services</STitle>
+      </STitleContainer>
 
       <ServicesContainer>
         {servicesData.map((service) => (
           <ServiceItem key={service.id}>
             <PServices>{service.title}</PServices>
             <p style={{color: '#000'}}>{service.description}</p>
-            <img style={{width: '2rem'}} src={service.icon} alt="icon"/>
+            <img style={{width: '2rem'}} loading="lazy" src={service.icon} alt="icon"/>
           </ServiceItem>
         ))}
       </ServicesContainer>
 
       <ServiceContact/>
+
+
+      <TestimonialContainer/>
     </>
   );
 }

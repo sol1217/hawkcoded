@@ -10,23 +10,70 @@ const rotateYAnimation = keyframes`
   }
 `;
 
+
+
+
+export const STitleContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 18rem;
+  background-image: url("./src/assets/stock-image-services.jpg");
+  background-color: rgba(226, 226, 226, 0.9); 
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px 0px #ee7814;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+  }
+`;
+
+export const STitle = styled.h2`
+  position: relative;
+  color: white; 
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  z-index: 2; 
+
+  @media screen and (min-width: 768px) {
+    font-size: 45px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+`;
+
 export const ServicesContainer = styled.div`
   overflow: hidden;
   display: grid;
   max-width: 1200px;
   margin: 0 auto;
-  grid-template-columns: 1fr; /* Por defecto, una columna para pantallas pequeñas */
+  grid-template-columns: 1fr; 
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas grandes */
-    padding-inline: 34px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 34px;
   }
 `;
 
 export const ServiceItem = styled.div`
   border-bottom: 1px solid #000;
   padding: 20px;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones para transform y background-color */
+  transition: transform 0.3s ease, background-color 0.3s ease; 
   position: relative;
 
   &:last-of-type {
@@ -35,11 +82,10 @@ export const ServiceItem = styled.div`
 
   &:hover {
     transform: scale(1.05);
-    background-color: #f3f3f4; /* Cambio de color de fondo al hacer hover */
+    background-color: #f3f3f4; 
 
-    /* Aplicar la animación a los ServiceIcon dentro de ServiceItem */
     & > img {
-      animation: ${rotateYAnimation} 1s linear infinite; /* Animación de rotación */
+      animation: ${rotateYAnimation} 1s linear infinite; 
     }
   }
 
@@ -48,22 +94,7 @@ export const ServiceItem = styled.div`
   }
 `;
 
-export const STitle = styled.h2`
-  color: black;
-  font-size: 30px;
-  text-align: left;
-  font-weight: 400;
-  padding-left: 30px;
-  background-image: url("./src/assets/map-min.png");
-  background-color: #e2e2e2;
-  background-size: cover; 
-  background-position: left;
 
-  @media screen and (min-width: 768px) {
-    font-size: 50px;
-    text-align: center;
-  }
-`;
 
 export const PServices = styled.p`
   color: black;
@@ -116,23 +147,23 @@ export const SeeMoreContainer = styled.a`
   align-items: center;
   gap: 7px;
   color: #000;
-  transition: color 0.3s ease; /* Transición para el color del texto */
+  transition: color 0.3s ease; 
 
   & > img {
     width: 15px;
     background-color: #ee7814;
     padding: 5px;
     border-radius: 50%;
-    transition: transform 0.3s ease, background-color 0.3s ease, margin-left 0.3s ease; /* Transiciones para transform, background-color y margin-left */
+    transition: transform 0.3s ease, background-color 0.3s ease, margin-left 0.3s ease; 
   }
 
   &:hover {
-    color: #f57c00; /* Cambia el color del texto a naranja en hover */
+    color: #f57c00; 
 
     & > img {
-      transform: scale(1.2); /* Escala el tamaño del icono en hover */
-      background-color: #f57c00; /* Cambia el color de fondo del icono en hover */
-      margin-left: 10px; /* Desplaza la imagen 10px a la derecha en hover */
+      transform: scale(1.2);
+      background-color: #f57c00; 
+      margin-left: 10px; 
     }
   }
 `;

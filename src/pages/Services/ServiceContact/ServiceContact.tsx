@@ -7,7 +7,7 @@ export default function ServiceContact() {
         <ServiceButtonContact>Tell us about yout project</ServiceButtonContact>
         <SeeMoreContainer href="#">
             See More
-            <img src="./src/assets/icons/arrow-right-solid.svg" alt="see_more" />
+            <img src="./src/assets/icons/arrow-right-solid.svg" loading="lazy" alt="see_more" />
         </SeeMoreContainer>
     </ServiceContactContainer>
   )
