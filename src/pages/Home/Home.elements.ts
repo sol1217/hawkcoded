@@ -24,6 +24,10 @@ export const ContentWrapper = styled.div`
   background: rgba(44, 43, 43, 0.8);
   width: 100%;
   height: 100%;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
 `;
 
 export const OverviewContainer = styled.div`

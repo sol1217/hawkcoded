@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
-export const NavMenuLinks = styled.ol`
+interface NavMenuLinksProps {
+  $flexDirection: string;
+  $color: string;
+}
+
+export const NavMenuLinks = styled.ol<NavMenuLinksProps>`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({ $flexDirection }) => $flexDirection || "row"};
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -10,8 +15,8 @@ export const NavMenuLinks = styled.ol`
   padding: 10px;
 `;
 
-export const LinkContainer = styled.a`
-  color: white;
+export const LinkContainer = styled.a<NavMenuLinksProps>`
+  color: ${({ $color }) => $color || "white"};
   font-weight: bold;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;

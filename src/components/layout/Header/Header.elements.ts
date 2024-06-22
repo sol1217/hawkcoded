@@ -18,6 +18,11 @@ export const HeaderContainer = styled.div`
 export const LogoImage = styled.img`
   width: 280px;
   height: 70px;
+
+  @media (max-width: 550px) {
+    width: 200px;
+    height: 50px;
+  }
 `;
 
 export const SearchContainer = styled.div`
@@ -26,6 +31,10 @@ export const SearchContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 1080px) {
+    display: none;
+  }
 `;
 
 export const ShowButton = styled.button`
@@ -63,5 +72,31 @@ export const SearchButton = styled.div`
 
   &:active {
     transform: scale(0.9);
+  }
+`;
+
+export const MobilMenuButton = styled.button`
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: 1080px) {
+    display: none;
+  }
+`;
+
+export const MobilMenuSection = styled.div`
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  background-color: white;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  @media (max-width: 450px) {
+    right: 50px;
   }
 `;
