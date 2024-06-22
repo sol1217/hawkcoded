@@ -1,33 +1,32 @@
 import styled from "styled-components";
+import hawkcoded from "../../assets/jpg/hawkcoded.jpg";
 
-export const HomeContainer = styled.div`
-  width: 100%;
-`;
-
-export const Imagen = styled.img`
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-  filter: grayscale(100%);
-`;
+export const HomeContainer = styled.main``;
 
 export const InformationBox = styled.div`
-  z-index: 98;
-  color: black;
-  position: absolute;
-  background: rgba(16, 15, 15, 0.65);
-  width: 88vw;
-  height: 84vh;
-  padding: 100px 30px 30px 200px;
+  height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  gap: 100px;
+  background-image: url(${hawkcoded});
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 `;
 
-export const ResumeContainer = styled.div`
+export const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 100px 30px 30px 120px;
+  background: rgba(44, 43, 43, 0.8);
+  width: 100%;
+  height: 100%;
+`;
+
+export const OverviewContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -45,17 +44,17 @@ export const EmphasizeText = styled.b`
   color: #ff7500;
   font-family: cursive;
   font-size: 65px;
-  margin-left: 10px;
+  margin-left: 20px;
 `;
 
-export const LogoContainer = styled.div`
+export const BrandContainer = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 `;
 
-export const FirstText = styled.h3`
+export const SloganText = styled.h3`
   color: #ff7500;
 `;
 
@@ -64,11 +63,11 @@ export const LogoImage = styled.img`
   height: 80px;
 `;
 
-export const InfoContainer = styled.div`
+export const TextAndButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
   color: white;
 `;
@@ -88,6 +87,9 @@ export const ButtonContact = styled.button`
   font-family: cursive;
   border: 3px solid #ff7500;
   cursor: pointer;
+  box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
+  -webkit-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
+  -moz-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
 
   &:active {
     transform: scale(0.95);

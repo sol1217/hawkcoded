@@ -7,7 +7,7 @@ import {
   SearchInput,
   ShowButton,
 } from "./Header.elements.ts";
-import logotype from "../../../assets/logo-type.png";
+import logotype from "../../../assets/png/logo-type.png";
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
 
@@ -19,7 +19,10 @@ export function Header() {
   };
   return (
     <HeaderContainer>
-      <LogoImage src={logotype} />
+      <a href="/">
+        <LogoImage src={logotype} />
+      </a>
+
       <SearchContainer>
         <NavMenu />
         {!isShowInput && (

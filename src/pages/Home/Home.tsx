@@ -1,16 +1,15 @@
-import hawkcoded from "../../assets/hawkcoded.jpg";
-import mainLogo from "../../assets/main-logo.png";
+import mainLogo from "../../assets/png/main-logo.png";
 import {
+  BrandContainer,
   ButtonContact,
+  ContentWrapper,
   EmphasizeText,
-  FirstText,
-  Imagen,
-  InfoContainer,
   InformationBox,
-  LogoContainer,
   LogoImage,
   MainText,
-  ResumeContainer,
+  OverviewContainer,
+  SloganText,
+  TextAndButtonContainer,
   TextInformation,
 } from "./Home.elements.ts";
 
@@ -18,27 +17,34 @@ export function Home() {
   return (
     <main>
       <InformationBox>
-        <ResumeContainer>
-          <LogoContainer>
-            <FirstText>Excelencia e invación</FirstText>
-            <LogoImage src={mainLogo} />
-          </LogoContainer>
+        <ContentWrapper>
+          <OverviewContainer>
+            <BrandContainer>
+              <SloganText>Excelencia e invación</SloganText>
+              <LogoImage src={mainLogo} />
+            </BrandContainer>
 
-          <MainText>
-            Transforma tu presencia digital con
-            <EmphasizeText>nosotros</EmphasizeText>
-          </MainText>
-        </ResumeContainer>
-        <InfoContainer>
-          <TextInformation>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </TextInformation>
-          <ButtonContact>Contact Us</ButtonContact>
-        </InfoContainer>
+            <MainText>
+              Transforma tu presencia digital con
+              <EmphasizeText>nosotros</EmphasizeText>
+            </MainText>
+          </OverviewContainer>
+          <TextAndButtonContainer>
+            <TextInformation>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </TextInformation>
+            <ButtonContact>Contact Us</ButtonContact>
+          </TextAndButtonContainer>
+        </ContentWrapper>
       </InformationBox>
 
-      <Imagen src={hawkcoded} />
+      <div>
+        <h2>Nuestra experiencia respalda a las empresas líderes</h2>
+        <div>
+          <img />
+        </div>
+      </div>
     </main>
   );
 }
