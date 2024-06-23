@@ -1,19 +1,29 @@
 import mainLogo from "../../assets/png/main-logo.png";
+import setting from "../../assets/png/settings.png";
 import {
   BrandContainer,
+  BussinesContainer,
   ButtonContact,
   ContentWrapper,
   EmphasizeText,
+  IconsCompanny,
   InformationBox,
+  InformationBussines,
   LogoImage,
   MainText,
   OverviewContainer,
   SloganText,
   TextAndButtonContainer,
   TextInformation,
+  TitleInformation,
 } from "./Home.elements.ts";
 
 export function Home() {
+  const businesses = [
+    { title: "Blockchain", description: "Lorem ipsum dolor sit amet..." },
+    { title: "Sol", description: "Lorem ipsum dolor sit amet..." },
+    { title: "Max", description: "Lorem ipsum dolor sit amet..." },
+  ];
   return (
     <main>
       <InformationBox>
@@ -39,12 +49,20 @@ export function Home() {
         </ContentWrapper>
       </InformationBox>
 
-      <div>
-        <h2>Nuestra experiencia respalda a las empresas líderes</h2>
-        <div>
-          <img />
-        </div>
-      </div>
+      <h2>Nuestra experiencia respalda a las empresas líderes</h2>
+
+      <BussinesContainer>
+        {businesses.map((business, index) => (
+          <InformationBussines key={index}>
+            <IconsCompanny src={setting} />
+
+            <div>
+              <TitleInformation>{business.title}</TitleInformation>
+              <h3>{business.description}</h3>
+            </div>
+          </InformationBussines>
+        ))}
+      </BussinesContainer>
     </main>
   );
 }
