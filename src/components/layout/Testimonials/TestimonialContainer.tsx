@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TestimonialCard from "./TestimonialCard";
-import { TestimonialContainerDiv, TestimonialH2, LoadMoreButton } from "./Testimonials.elements";
+import { TestimonialContainerDiv, TestimonialH2 } from "./Testimonials.elements";
+import { LoadMoreButton } from "../../GlobalStyles/GlobalStyles.elements";
 
 const testimonios = [
   {

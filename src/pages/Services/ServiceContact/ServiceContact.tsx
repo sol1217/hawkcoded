@@ -1,14 +1,16 @@
-import { ServiceContactContainer, ServiceButtonContact, SeeMoreContainer } from "../Services.elements"
+import { ServiceContactContainer, ServiceButtonContact, SeeMoreContainer } from "./ServiceContact.elements"
 
-
-export default function ServiceContact() {
+const ServiceContact: React.FC = () => {
   return ( 
     <ServiceContactContainer>
         <ServiceButtonContact>Tell us about yout project</ServiceButtonContact>
-        <SeeMoreContainer href="#">
+        <SeeMoreContainer href="/services/all">
             See More
             <img src="./src/assets/icons/arrow-right-solid.svg" loading="lazy" alt="see_more" />
         </SeeMoreContainer>
     </ServiceContactContainer>
   )
 }
+
+
+export default ServiceContact;

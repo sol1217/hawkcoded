@@ -124,26 +124,3 @@ export const UserCompany = styled.p`
     color: #4CAF50; /* texto verde */
   }
 `;
-
-
-
-export const LoadMoreButton = styled.button`
-  background-color: #EE7814;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 0 auto;
-  display: block;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: border-color 0.3s, background-color 0.3s, color 0.3s; 
-
-
-  &:hover {
-      border-color: #f57c00; 
-      background-color: #fff;
-      color: #f57c00;
-
-  }
-`;
