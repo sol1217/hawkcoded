@@ -20,8 +20,8 @@ export const CategoryCard = styled.div`
     max-width: 80rem;
     margin: 2rem auto;
     border-radius: 8px;
-    padding: 20px; 
-    align-items: center;
+    padding: 20px;
+    text-align: center;
     margin-bottom: 20px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

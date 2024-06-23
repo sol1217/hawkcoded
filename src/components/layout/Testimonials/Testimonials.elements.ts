@@ -22,6 +22,7 @@ export const TestimonialH2 = styled.h2`
   overflow: hidden;
   padding: 30px 0;
   font-size: 28px;
+  text-align: center;
   position: relative;
 
   @media screen and (min-width: 768px) {

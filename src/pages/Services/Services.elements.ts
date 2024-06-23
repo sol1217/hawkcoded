@@ -35,6 +35,7 @@ export const ServiceItem = styled.div`
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -51,7 +52,6 @@ export const PServices = styled.p`
   color: #333;
   font-size: 1.2rem;
   font-weight: 500;
-
   @media screen and (min-width: 768px) {
     font-size: 1.5rem;
   }
