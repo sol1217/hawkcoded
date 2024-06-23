@@ -1,11 +1,6 @@
 import styled, { keyframes } from 'styled-components';
-import {ServiceItem, PServices, STitle} from '../Services.elements'
-export {
-    ServiceItem,
-    PServices,
-    STitle
-}
-
+import { ServiceItem, PServices, STitle } from '../Services.elements';
+export { ServiceItem, PServices, STitle };
 
 const fadeIn = keyframes`
     from {
@@ -19,32 +14,38 @@ const fadeIn = keyframes`
 `;
 
 export const CategoryCard = styled.div`
-    background-color: #231E1C;
-    color: #DDB99E;
+    background-color: #fff;
+    color: #EE7814;
+    border: 1px solid #ddd;
     max-width: 80rem;
     margin: 2rem auto;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px; 
+    padding: 20px; 
     align-items: center;
     margin-bottom: 20px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
         margin-bottom: 10px;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+    &:hover h2 {
+        color: #EE7814;
     }
 
     @media screen and (min-width: 768px) {
-        padding: 20px; 
+        padding: 30px; 
     }
 `;
-
 
 export const ServicesContainer = styled.div`
     max-width: 1200px;
@@ -66,5 +67,9 @@ export const ServiceDescription = styled.p`
     color: #666;
     font-size: 1rem;
     margin: 0.5rem 0;
-`;
+    transition: color 0.3s ease;
 
+    ${ServiceItem}:hover & {
+        color: #333;
+    }
+`;

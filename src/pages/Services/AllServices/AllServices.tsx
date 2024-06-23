@@ -9,6 +9,8 @@ import {STitle,
         CategoryCard } 
 from './allServices.elements';
 
+import ServiceContact from '../ServiceContact/ServiceContact';
+
 import { servicesData } from '../ServicesData';
 
 
@@ -52,6 +54,13 @@ const AllServices: React.FC = () => {
                     </CategoryCard>
                 ))}
             </div>
+
+            <ServiceContact 
+          firstAText='You have doubts? Contact Us'
+          firstAHref='/contacto'
+          secondAText='Products'
+          secondAHref='/productos'
+      />
         </div>
     );
 };
