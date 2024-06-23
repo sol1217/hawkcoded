@@ -32,7 +32,7 @@ export const SearchContainer = styled.div`
   align-items: center;
   gap: 20px;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -79,7 +79,7 @@ export const MobilMenuButton = styled.button`
   background-color: transparent;
   border: none;
 
-  @media (min-width: 1080px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 `;
