@@ -6,7 +6,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Services from "./pages/Services/Services.tsx";
 import AllServices from "./pages/Services/AllServices/AllServices.tsx";
 
-
 function App() {
   return (
     <div>
