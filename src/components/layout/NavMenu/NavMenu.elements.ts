@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface NavMenuLinksProps {
   $flexDirection: string;
   $color: string;
+  isScrolled: boolean;
 }
 
 export const NavMenuLinks = styled.ol<NavMenuLinksProps>`
@@ -13,6 +14,7 @@ export const NavMenuLinks = styled.ol<NavMenuLinksProps>`
   gap: 30px;
   list-style-type: none;
   padding: 10px;
+  color: ${(props) => (props.isScrolled ? "black" : "white")};
 `;
 
 export const LinkContainer = styled.a<NavMenuLinksProps>`
