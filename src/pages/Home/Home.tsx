@@ -1,16 +1,21 @@
 import mainLogo from "../../assets/png/main-logo.png";
-
+import { FaArrowRight } from "react-icons/fa";
+import productsAvata from "../../assets/jpg/dji-avata.jpg";
+import productsmavic from "../../assets/png/dji-mavic.png";
 import {
   BrandContainer,
   ButtonContact,
   ContentWrapper,
+  DescriptionProduct,
   EmphasizeText,
   HomeContainer,
+  ImgProduct,
   InformationBox,
   LinkProduct,
   LiTag,
   LogoImage,
   MainText,
+  NameProduct,
   OverviewContainer,
   ProductsWrap,
   RouteProduct,
@@ -67,19 +72,40 @@ export function Home() {
           <LiTag>Always The Best</LiTag>
         </ul>
 
-        <TitleProducts>Ready To Take The Next Step?</TitleProducts>
+        <TitleProducts>
+          Productos Sobresalientes en Nuestro Catálogo
+        </TitleProducts>
 
         <ViewProductContainer>
           <ViewProduct>
-            <h2>Get a Live Demo</h2>
-            <p>
+            <NameProduct>Get a Live Demo</NameProduct>
+            <ImgProduct src={productsAvata} />
+
+            <DescriptionProduct>
               Dissuade ecstatic and properly saw entirely sir why laughter
               endeavor. In on my jointure horrible margaret suitable he followed
               speedily. Indeed vanity excuse or mr lovers of on.
-            </p>
+            </DescriptionProduct>
             <RouteProduct>
               <h3>Request a Free Demo</h3>
-              <LinkProduct>ir</LinkProduct>
+              <LinkProduct>
+                <FaArrowRight />
+              </LinkProduct>
+            </RouteProduct>
+          </ViewProduct>
+          <ViewProduct>
+            <NameProduct>Get a Live Demo</NameProduct>
+            <ImgProduct src={productsmavic} />
+            <DescriptionProduct>
+              Dissuade ecstatic and properly saw entirely sir why laughter
+              endeavor. In on my jointure horrible margaret suitable he followed
+              speedily. Indeed vanity excuse or mr lovers of on.
+            </DescriptionProduct>
+            <RouteProduct>
+              <h3>Request a Free Demo</h3>
+              <LinkProduct href="/products">
+                <FaArrowRight />
+              </LinkProduct>
             </RouteProduct>
           </ViewProduct>
         </ViewProductContainer>
