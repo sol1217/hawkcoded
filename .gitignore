@@ -24,5 +24,3 @@ dist-ssr
 *.sw?
 eslintrc.cjs
 tsconfig.node.json
-tsconfig.json
-vite.config.ts
