@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { STitleContainer } from '../../../components/GlobalStyles/GlobalStyles.elements';
-
+import { STitleContainer } from './../../../components/GlobalStyles/GlobalStyles.elements';
 import {STitle, 
         ServicesContainer, 
         ServiceItem, 

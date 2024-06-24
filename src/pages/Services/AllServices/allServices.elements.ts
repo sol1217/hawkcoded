@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { ServiceItem, PServices, STitle } from '../Services.elements';
+import { ServiceItem, PServices, STitle } from '../Services/Services.elements';
 export { ServiceItem, PServices, STitle };
 
 const fadeIn = keyframes`

@@ -1,8 +1,8 @@
 import React from 'react';
-import { STitleContainer } from '../../components/GlobalStyles/GlobalStyles.elements';
+import { STitleContainer } from './../../../components/GlobalStyles/GlobalStyles.elements';
 import { ServicesContainer, PServices, ServiceItem, STitle, ServiceIcon } from './Services.elements';
-import ServiceContact from './ServiceContact/ServiceContact';
-import TestimonialContainer from './../../components/layout/Testimonials/TestimonialContainer';
+import ServiceContact from './../ServiceContact/ServiceContact';
+import TestimonialContainer from './../../../components/layout/Testimonials/TestimonialContainer';
 
 const servicesData = [
   { id: 1, title: 'Web Development', description: 'Creating websites and web applications', icon: './src/assets/icons/globe-solid.svg' },
