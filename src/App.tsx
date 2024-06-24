@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 //services
 import Services from "./pages/Services/Services.tsx";
 import AllServices from "./pages/Services/AllServices/AllServices.tsx";
+import Footer from "../src/components/layout/Footer/Footer.tsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/services/all" element={<AllServices />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

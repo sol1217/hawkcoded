@@ -95,6 +95,7 @@ export const MobilMenuSection = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  box-shadow: 2px 2px 2px 0;
 
   @media (max-width: 450px) {
     right: 50px;
