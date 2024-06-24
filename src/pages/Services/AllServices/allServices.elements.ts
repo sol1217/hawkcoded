@@ -22,6 +22,7 @@ export const CategoryCard = styled.div`
     border-radius: 8px;
     padding: 20px; 
     align-items: center;
+    text-align: center;
     margin-bottom: 20px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
