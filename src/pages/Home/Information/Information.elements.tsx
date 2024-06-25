@@ -5,7 +5,7 @@ const rotate = keyframes`
     transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(360deg);
+    transform: rotateY(150deg);
   }
 `;
 
@@ -58,9 +58,10 @@ export const ImgAndTitleBox = styled.div`
   gap: 10px;
   border-radius: 10px;
   padding: 5px;
+  width: 150px;
 
   &:hover {
-    animation: ${rotate} 1.8s linear;
+    animation: ${rotate} 1s linear;
   }
 
   &:nth-child(odd) {
@@ -83,6 +84,7 @@ export const ImgAndTitleBox = styled.div`
 export const BussinesText = styled.div`
   font-size: 40px;
   text-align: center;
+  font-family: Syne, sans-serif;
 
   @media (max-width: 700px) {
     font-size: 28px;

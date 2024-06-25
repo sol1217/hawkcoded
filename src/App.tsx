@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Services from "./pages/Services/Services.tsx";
 import AllServices from "./pages/Services/AllServices/AllServices.tsx";
 import Footer from "../src/components/layout/Footer/Footer.tsx";
+import Contact from "./pages/Contact/Contact.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/services/all" element={<AllServices />} />
         </Routes>
       </BrowserRouter>

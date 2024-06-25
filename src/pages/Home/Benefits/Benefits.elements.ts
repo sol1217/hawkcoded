@@ -17,14 +17,10 @@ export const BenefitsContainer = styled.div`
 `;
 
 export const IconsCompanny = styled.div`
-  width: 25px;
-  height: 25px;
-
-  &:hover {
-    transform: scale(0.95);
-    background-color: rgba(255, 117, 0, 0.56);
-    border-radius: 60px;
-  }
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 117, 0, 0.69);
+  border-radius: 60px;
 `;
 
 export const InformationBussines = styled.div`

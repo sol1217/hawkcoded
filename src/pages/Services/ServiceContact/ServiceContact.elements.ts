@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const ServiceContactContainer = styled.div`
   padding: 100px 30px;
@@ -27,7 +26,11 @@ export const ServiceButtonContact = styled.a`
   background-color: transparent;
   color: #000;
   font-size: 18px;
-  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+  text-align: center;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s,
+    color 0.3s;
 
   &:hover {
     border-color: transparent;
@@ -49,7 +52,10 @@ export const SeeMoreContainer = styled.a`
     background-color: #ee7814;
     padding: 5px;
     border-radius: 50%;
-    transition: transform 0.3s ease, background-color 0.3s ease, margin-left 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      background-color 0.3s ease,
+      margin-left 0.3s ease;
   }
 
   &:hover {
@@ -62,5 +68,3 @@ export const SeeMoreContainer = styled.a`
     }
   }
 `;
-
-
