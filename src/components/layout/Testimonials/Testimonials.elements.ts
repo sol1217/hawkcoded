@@ -17,41 +17,6 @@ export const TestimonialContainerDiv = styled.section`
 `;
 
 
-export const TestimonialH2 = styled.h2`
-  color: #EE7814;
-  overflow: hidden;
-  padding: 30px 0;
-  font-size: 28px;
-  text-align: center;
-  position: relative;
-
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
-  }
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    border: 1px solid #EE7814;
-  }
-
-  &::before {
-    top: 0;
-    left: 0;
-    right: auto;
-    border-bottom: none;
-  }
-
-  &::after {
-    bottom: 0;
-    right: 0;
-    left: auto;
-    border-top: none;
-  }
-`;
-
 export const Card = styled.div`
   max-width: 300px;
   max-height: 500px;

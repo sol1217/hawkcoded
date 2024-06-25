@@ -9,13 +9,6 @@ const rotateY = keyframes`
   }
 `;
 
-export const STitle = styled.h2`
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-`;
 
 export const ServicesContainer = styled.div`
   max-width: 1200px;
