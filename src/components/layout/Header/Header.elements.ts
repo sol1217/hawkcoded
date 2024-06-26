@@ -3,15 +3,14 @@ import { SearchInputProps } from "./Header.types.ts";
 
 export const HeaderContainer = styled.div`
   padding: 10px;
-  margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  width: 96%;
-  top: 0;
+  width: 100%;
   z-index: 99;
+  background-color: #e8e8ec;
   /*background: linear-gradient(#086c90, #ff7500);*/
 `;
 

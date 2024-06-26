@@ -58,15 +58,6 @@ export function Home() {
       <Information />
 
       <OutstandingProducts />
-
-      <div>
-        <img />
-        <p>Cybersecurity Ventures</p>
-        <h2>
-          The Estimated Global Cost of Cybercrime is $6T and Climbing + 15% a
-          Year.
-        </h2>
-      </div>
     </HomeContainer>
   );
 }

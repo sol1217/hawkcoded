@@ -77,6 +77,10 @@ export const MainText = styled.h1`
   @media (max-width: 530px) {
     font-size: 20px;
   }
+
+  @media (max-width: 380px) {
+    font-size: 18px;
+  }
 `;
 
 export const EmphasizeText = styled.b`

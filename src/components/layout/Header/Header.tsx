@@ -6,23 +6,14 @@ import {
   LogoImage,
   MobilMenuButton,
   MobilMenuSection,
-  SearchButton,
   SearchContainer,
-  SearchInput,
-  ShowButton,
 } from "./Header.elements.ts";
 import logotype from "../../../assets/png/logo-type.png";
-import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
 import MobilMenu from "../MobileMenu/MobilMenu.tsx";
 
 export function Header() {
-  const [isShowInput, setIsShowInput] = useState(false);
   const [isShowMobilMenu, setIsShowMobilMenu] = useState(false);
-
-  const handleShowInput = () => {
-    setIsShowInput(!isShowInput);
-  };
 
   const handleShowMobilMenu = () => {
     setIsShowMobilMenu(!isShowMobilMenu);
@@ -49,18 +40,6 @@ export function Header() {
 
       <SearchContainer>
         <NavMenu flexDirection="row" />
-
-        {!isShowInput && (
-          <ShowButton onClick={handleShowInput}>
-            <IoSearch fontSize={30} color="white" />
-          </ShowButton>
-        )}
-        <SearchInput isShowInput={isShowInput} placeholder="Write and search" />
-        {isShowInput && (
-          <SearchButton>
-            <IoSearch fontSize={30} color="white" />
-          </SearchButton>
-        )}
       </SearchContainer>
     </HeaderContainer>
   );
