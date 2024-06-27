@@ -77,6 +77,10 @@ export const MainText = styled.h1`
   @media (max-width: 530px) {
     font-size: 20px;
   }
+
+  @media (max-width: 380px) {
+    font-size: 18px;
+  }
 `;
 
 export const EmphasizeText = styled.b`
@@ -110,7 +114,7 @@ export const TextAndButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
   color: white;
   text-align: center;
@@ -122,8 +126,9 @@ export const TextAndButtonContainer = styled.div`
 `;
 
 export const TextInformation = styled.div`
-  width: 500px;
+  width: 600px;
   font-size: 26px;
+  font-family: cursive;
 
   @media (max-width: 530px) {
     font-size: 20px;
@@ -157,59 +162,3 @@ export const ButtonContact = styled.a`
 `;
 
 //soll
-
-export const LiTag = styled.li`
-  &::marker {
-    color: orangered;
-    font-size: 30px;
-  }
-`;
-
-export const ProductsWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
-`;
-
-export const TitleProducts = styled.h2`
-  font-size: 40px;
-`;
-
-export const ViewProductContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-`;
-
-export const ViewProduct = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 3px solid rgba(128, 128, 128, 0.65);
-  width: 460px;
-  border-radius: 20px;
-  padding: 10px;
-
-  &:hover {
-    border: 3px solid #ff7500;
-  }
-`;
-
-export const RouteProduct = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px;
-`;
-
-export const LinkProduct = styled.a`
-  padding: 10px;
-  border-radius: 60px;
-  background-color: orangered;
-  cursor: pointer;
-`;

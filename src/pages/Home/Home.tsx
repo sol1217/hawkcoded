@@ -7,23 +7,17 @@ import {
   EmphasizeText,
   HomeContainer,
   InformationBox,
-  LinkProduct,
-  LiTag,
   LogoImage,
   MainText,
   OverviewContainer,
-  ProductsWrap,
-  RouteProduct,
   SloganText,
   TextAndButtonContainer,
   TextInformation,
-  TitleProducts,
-  ViewProduct,
-  ViewProductContainer,
 } from "./Home.elements";
 import ServiceContact from "../Services/ServiceContact/ServiceContact";
 import { BenefitsElement } from "./Benefits/BenefitsElement";
 import { Information } from "./Information/Information.tsx";
+import OutstandingProducts from "./OutstandingProducts/OutstandingProducts.tsx";
 
 export function Home() {
   return (
@@ -43,8 +37,9 @@ export function Home() {
           </OverviewContainer>
           <TextAndButtonContainer>
             <TextInformation>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Somos una empresa de software dedicada a desarrollar soluciones
+              tecnológicas innovadoras para satisfacer las necesidades de
+              nuestros clientes.
             </TextInformation>
             <ButtonContact href="/contact">Contact Us</ButtonContact>
           </TextAndButtonContainer>
@@ -62,28 +57,7 @@ export function Home() {
 
       <Information />
 
-      <ProductsWrap>
-        <ul>
-          <LiTag>Always The Best</LiTag>
-        </ul>
-
-        <TitleProducts>Ready To Take The Next Step?</TitleProducts>
-
-        <ViewProductContainer>
-          <ViewProduct>
-            <h2>Get a Live Demo</h2>
-            <p>
-              Dissuade ecstatic and properly saw entirely sir why laughter
-              endeavor. In on my jointure horrible margaret suitable he followed
-              speedily. Indeed vanity excuse or mr lovers of on.
-            </p>
-            <RouteProduct>
-              <h3>Request a Free Demo</h3>
-              <LinkProduct>ir</LinkProduct>
-            </RouteProduct>
-          </ViewProduct>
-        </ViewProductContainer>
-      </ProductsWrap>
+      <OutstandingProducts />
     </HomeContainer>
   );
 }

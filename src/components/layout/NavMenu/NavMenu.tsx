@@ -10,22 +10,38 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $flexDirection={flexDirection} $color={color} href="/services">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/services"
+          >
             Services
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $flexDirection={flexDirection} $color={color} href="/products">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/products"
+          >
             Products
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $flexDirection={flexDirection} $color={color} href="/about">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/about"
+          >
             About Us
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $flexDirection={flexDirection} $color={color} href="/contact">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/contact"
+          >
             Contact Us
           </LinkContainer>
         </li>

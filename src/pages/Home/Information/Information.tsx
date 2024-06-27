@@ -7,55 +7,22 @@ import {
   LiTag,
   TextColor,
 } from "../Information/Information.elements.tsx";
+import { items } from "./Approaches.ts";
 
 export function Information() {
-  const items = [
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/settings.svg",
-    },
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/cloud.svg",
-    },
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/box-data.svg",
-    },
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/menu.svg",
-    },
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/settings.svg",
-    },
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/cloud.svg",
-    },
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/box-data.svg",
-    },
-    {
-      title: "ERPs Platforms",
-      img: "./src/assets/icons/menu.svg",
-    },
-  ];
-
   return (
     <BusinessWrap>
       <ul>
-        <LiTag>Always The Best</LiTag>
+        <LiTag>Nuestro Enfoque</LiTag>
       </ul>
 
       <BussinesText>
-        Types Of <TextColor>SaaS Applications</TextColor> We Deliver
+        Desarrollo de <TextColor>Software Personalizado</TextColor>
       </BussinesText>
       <InformationWrap>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Ofrecemos asesoramiento estratégico en tecnología para ayudar a las
+        empresas a definir y ejecutar sus proyectos tecnológicos, asegurando la
+        alineación con sus objetivos de negocio.
       </InformationWrap>
       <ItemWrap>
         {items.map((items, index) => (
