@@ -51,7 +51,8 @@ export default function OtherProducts() {
         <section data-aos="fade-left">
           <H2WithBorders>
               Check Out Our Other Products
-              <a href="https://djistore.cr/?utm_source=google&utm_medium=cpc&utm_campaign=A20011_GOOGLE_SEM_GENERAL_Q2_2024&gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYfO-AH1p7p8egygqK3L8MiMbgvEkrRegegdcx1xQgN0FAlEPpJDaNxoCpOAQAvD_BwE">By DJI Store</a>
+              <a href="https://djistore.cr/?utm_source=google&utm_medium=cpc&utm_campaign=A20011_GOOGLE_SEM_GENERAL_Q2_2024&gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYfO-AH1p7p8egygqK3L8MiMbgvEkrRegegdcx1xQgN0FAlEPpJDaNxoCpOAQAvD_BwE"
+              target="_blank">By DJI Store</a>
           </H2WithBorders>
         </section>
       </TitleAndImage>

@@ -106,5 +106,10 @@ export const H2WithBorders = styled.h2`
     position: absolute;
     bottom: 0px;
     right: 0px;
+    transition: color 0.3s ease-in;
   }
+      & > a:hover {
+        color: #000;
+      }
+
 `;
