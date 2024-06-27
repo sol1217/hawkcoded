@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import stockServiceImage from '/src/assets/bg-images/stock-image-services.jpg';
+import stockServiceImage from '/src/assets/bg-images/stock-image-services.webp';
 import stockProductImage_1 from '/src/assets/bg-images/software.webp'
 
 

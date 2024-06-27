@@ -48,7 +48,7 @@ export default function Packs() {
         {packs.map((pack, index) => (
           <CardContainer key={index}>
             <ImageContainer>
-              <img src={pack.img} alt="product_img" />
+              <img src={pack.img} alt="product_img"  loading="lazy"/>
             </ImageContainer>
             <CardTexts data-aos="flip-up">
               <CardTitle>{pack.title}</CardTitle>

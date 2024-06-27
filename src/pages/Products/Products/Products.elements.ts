@@ -19,6 +19,8 @@ export const ProductsContainer = styled.section`
 
 export const ImageContainer = styled.div`
   width: auto;
+  min-width: 240px;
+  min-height: 240px;
   position: relative;
   z-index: 10;
   display: flex;

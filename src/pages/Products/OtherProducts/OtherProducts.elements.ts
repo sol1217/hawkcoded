@@ -18,6 +18,11 @@ export const TitleAndImage = styled.div`
     position: relative;
     height: fit-content;
 
+    & > div {
+        min-width: 448px;
+        min-height: 400px; 
+    }
+
     & > div > img {
         width: 100%;
         max-width: 350px;
@@ -28,6 +33,11 @@ export const TitleAndImage = styled.div`
         flex-direction: column-reverse;
         padding-inline: 6px;
         margin-bottom: 1rem;
+
+        & > div {
+            min-width: 370px;
+            min-height: 350px; 
+        }
     }
 
 `;

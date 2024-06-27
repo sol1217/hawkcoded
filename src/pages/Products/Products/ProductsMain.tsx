@@ -49,7 +49,7 @@ const ProductsMain: React.FC = () => {
         {productos.map((producto, index) => (
           <CardContainer key={index}>
             <ImageContainer>
-              <img src={producto.img} alt="product_img" />
+              <img src={producto.img} alt="product_img" loading="lazy"/>
             </ImageContainer>
             <CardTexts data-aos="flip-up">
               <CardTitle>{producto.title}</CardTitle>

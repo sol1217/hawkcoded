@@ -48,19 +48,19 @@ export default function OtherProducts() {
         <div data-aos="fade-right">
           <img src={droneImageTitle} alt="drone_image" />
         </div>
-        <div data-aos="fade-left">
+        <section data-aos="fade-left">
           <H2WithBorders>
               Check Out Our Other Products
               <a href="https://djistore.cr/?utm_source=google&utm_medium=cpc&utm_campaign=A20011_GOOGLE_SEM_GENERAL_Q2_2024&gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYfO-AH1p7p8egygqK3L8MiMbgvEkrRegegdcx1xQgN0FAlEPpJDaNxoCpOAQAvD_BwE">By DJI Store</a>
           </H2WithBorders>
-        </div>
+        </section>
       </TitleAndImage>
 
       <ProductsContainer>
         {productos.map((producto, index) => (
           <CardContainer key={index}>
             <ImageContainer>
-              <img src={producto.img} alt="product_img" />
+              <img src={producto.img} alt="product_img"  loading="lazy"/>
             </ImageContainer>
             <CardTexts data-aos="flip-up">
               <CardTitle>{producto.title}</CardTitle>
