@@ -9,17 +9,42 @@ import {
   SearchContainer,
 } from "./Header.elements.ts";
 import logotype from "../../../assets/png/logo-type.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobilMenu from "../MobileMenu/MobilMenu.tsx";
 
 export function Header() {
   const [isShowMobilMenu, setIsShowMobilMenu] = useState(false);
+  const [isBackgroundWhite, setIsBackgroundWhite] = useState(false);
 
   const handleShowMobilMenu = () => {
     setIsShowMobilMenu(!isShowMobilMenu);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        // Cambia el número 100 por la cantidad de píxeles que desees
+        setIsBackgroundWhite(true);
+      } else {
+        setIsBackgroundWhite(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer
+      style={{
+        backgroundColor: isBackgroundWhite
+          ? "rgba(255, 255, 255, 0.91)"
+          : "transparent",
+        boxShadow: isBackgroundWhite ? " 10px 10px 10px 0" : "none",
+      }}
+    >
       <a href="/">
         <LogoImage src={logotype} />
       </a>
@@ -39,7 +64,7 @@ export function Header() {
       )}
 
       <SearchContainer>
-        <NavMenu flexDirection="row" />
+        <NavMenu flexDirection="row" color="black" />
       </SearchContainer>
     </HeaderContainer>
   );

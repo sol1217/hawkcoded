@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SearchInputProps } from "./Header.types.ts";
 
 export const HeaderContainer = styled.div`
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
   position: fixed;
   width: 100%;
   z-index: 99;
-  background-color: #e8e8ec;
+
   /*background: linear-gradient(#086c90, #ff7500);*/
 `;
 
@@ -87,7 +87,7 @@ export const MobilMenuSection = styled.div`
   position: absolute;
   top: 100px;
   right: 30px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.91);
   padding: 10px;
   width: 200px;
   display: flex;
