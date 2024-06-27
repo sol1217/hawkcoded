@@ -1,17 +1,7 @@
-import styled, { keyframes } from 'styled-components';
-import { ServiceItem, PServices, STitle } from '../Services.elements';
-export { ServiceItem, PServices, STitle };
+import styled from 'styled-components';
+import { ServiceItem, PServices } from '../Services/Services.elements';
+export { ServiceItem, PServices };
 
-const fadeIn = keyframes`
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-`;
 
 export const CategoryCard = styled.div`
     background-color: #fff;
@@ -55,9 +45,6 @@ export const ServicesContainer = styled.div`
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
-
-    /* Aplicamos la animación de fade */
-    animation: ${fadeIn} 0.5s ease;
 
     @media screen and (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);

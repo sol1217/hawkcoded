@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TestimonialCard from "./TestimonialCard";
-import { TestimonialContainerDiv, TestimonialH2 } from "./Testimonials.elements";
-import { LoadMoreButton } from "../../GlobalStyles/GlobalStyles.elements";
+import { TestimonialContainerDiv } from "./Testimonials.elements";
+import { H2WithBorders, LoadMoreButton } from "../../GlobalStyles/GlobalStyles.elements";
 
 const testimonios = [
   {
@@ -61,7 +61,7 @@ const TestimonialContainer: React.FC = () => {
 
   return (
     <>
-      <TestimonialH2>What Our Clients Say:</TestimonialH2>
+      <H2WithBorders>What Our Clients Say:</H2WithBorders>
 
       <TestimonialContainerDiv>
         {testimonios.slice(0, visibleTestimonios).map((testimonial, index) => (

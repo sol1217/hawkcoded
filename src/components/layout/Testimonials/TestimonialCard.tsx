@@ -9,7 +9,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ img, name, company = '', testimonial }) => {
   return (
-    <Card>
+    <Card data-aos="fade-up">
       <ProfileImage src={img} loading="lazy" alt={`${name} profile`} />
         <TestimonialTexts>
             <Testimonial>"{testimonial}"</Testimonial>

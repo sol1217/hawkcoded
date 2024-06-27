@@ -1,8 +1,8 @@
 import React from 'react';
-import { STitleContainer } from '../../components/GlobalStyles/GlobalStyles.elements';
-import { ServicesContainer, PServices, ServiceItem, STitle, ServiceIcon } from './Services.elements';
-import ServiceContact from './ServiceContact/ServiceContact';
-import TestimonialContainer from './../../components/layout/Testimonials/TestimonialContainer';
+import { STitleContainer, H2Title } from '/src/components/GlobalStyles/GlobalStyles.elements';
+import { ServicesContainer, PServices, ServiceItem, ServiceIcon } from './Services.elements';
+import ServiceContact from './../ServiceContact/ServiceContact';
+import TestimonialContainer from '/src/components/layout/Testimonials/TestimonialContainer';
 
 const servicesData = [
   { id: 1, title: 'Web Development', description: 'Creating websites and web applications', icon: './src/assets/icons/globe-solid.svg' },
@@ -15,12 +15,12 @@ const Services: React.FC = () => {
   return (
     <>
       <STitleContainer>
-        <STitle>These Are Our Services</STitle>
+        <H2Title>These Are Our Services</H2Title>
       </STitleContainer>
 
       <ServicesContainer>
         {servicesData.map((service) => (
-          <ServiceItem key={service.id}>
+          <ServiceItem data-aos="flip-up" key={service.id}>
             <PServices>{service.title}</PServices>
             <p style={{color: '#000'}}>{service.description}</p>
             <ServiceIcon src={service.icon} alt="icon" />

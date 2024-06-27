@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { STitleContainer } from '../../../components/GlobalStyles/GlobalStyles.elements';
-
-import {STitle, 
-        ServicesContainer, 
+import { STitleContainer, H2Title } from '/src/components/GlobalStyles/GlobalStyles.elements';
+import {ServicesContainer, 
         ServiceItem, 
         PServices, 
         ServiceDescription, 
@@ -12,7 +10,6 @@ from './allServices.elements';
 import ServiceContact from '../ServiceContact/ServiceContact';
 
 import { servicesData } from '../ServicesData';
-
 
 
 const AllServices: React.FC = () => {
@@ -29,7 +26,7 @@ const AllServices: React.FC = () => {
     return (
         <div>
             <STitleContainer>
-                <STitle>All Our Services</STitle>
+                <H2Title>All Our Services</H2Title>
             </STitleContainer>
             <div>
                 {/* Mapear cada categoría */}
@@ -42,7 +39,7 @@ const AllServices: React.FC = () => {
                                 {/* Mostrar servicios de la categoría seleccionada */}
                                 {servicesData[category].map((service) => (
 
-                                    <ServiceItem key={service.id} onClick={(e) => e.stopPropagation()}>
+                                    <ServiceItem data-aos="flip-down" data-aos-duration="500" key={service.id} onClick={(e) => e.stopPropagation()}>
                                         <PServices>{service.title}</PServices>
                                         <ServiceDescription>{service.description}</ServiceDescription>
                                     </ServiceItem>
@@ -59,7 +56,7 @@ const AllServices: React.FC = () => {
           firstAText='You have doubts? Contact Us'
           firstAHref='/contacto'
           secondAText='Products'
-          secondAHref='/productos'
+          secondAHref='/products'
       />
         </div>
     );
