@@ -11,6 +11,8 @@ import 'aos/dist/aos.css';
 //services
 import Services from "./pages/Services/Services/ServicesMain.tsx";
 import AllServices from "./pages/Services/AllServices/AllServices.tsx";
+import Footer from "../src/components/layout/Footer/Footer.tsx";
+import Contact from "./pages/Contact/Contact.tsx";
 
 //products
 import ProductsMain from "./pages/Products/Products/ProductsMain.tsx";
@@ -31,12 +33,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/services/all" element={<AllServices />} />
 
           <Route path="/products" element={<ProductsMain />} />
 
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

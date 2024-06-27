@@ -13,6 +13,7 @@ export const NavMenuLinks = styled.ol<NavMenuLinksProps>`
   gap: 30px;
   list-style-type: none;
   padding: 10px;
+  color: ${({ $color }) => $color || "white"};
 `;
 
 export const LinkContainer = styled.a<NavMenuLinksProps>`

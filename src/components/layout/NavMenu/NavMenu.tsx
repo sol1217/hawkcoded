@@ -3,29 +3,45 @@ import { LinkContainer, NavMenuLinks } from "./NavMenu.elements.ts";
 const NavMenu = ({ flexDirection = "", color = "" }) => {
   return (
     <nav>
-      <NavMenuLinks $flexDirection={flexDirection}>
+      <NavMenuLinks $flexDirection={flexDirection} $color={color}>
         <li>
-          <LinkContainer $color={color} href="/">
+          <LinkContainer $flexDirection={flexDirection} $color={color} href="/">
             Home
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $color={color} href="/services">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/services"
+          >
             Services
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $color={color} href="/products">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/products"
+          >
             Products
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $color={color} href="/about">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/about"
+          >
             About Us
           </LinkContainer>
         </li>
         <li>
-          <LinkContainer $color={color} href="/contact">
+          <LinkContainer
+            $flexDirection={flexDirection}
+            $color={color}
+            href="/contact"
+          >
             Contact Us
           </LinkContainer>
         </li>

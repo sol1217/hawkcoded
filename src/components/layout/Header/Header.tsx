@@ -6,29 +6,45 @@ import {
   LogoImage,
   MobilMenuButton,
   MobilMenuSection,
-  SearchButton,
   SearchContainer,
-  SearchInput,
-  ShowButton,
 } from "./Header.elements.ts";
 import logotype from "../../../assets/png/logo-type.png";
-import { IoSearch } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobilMenu from "../MobileMenu/MobilMenu.tsx";
 
 export function Header() {
-  const [isShowInput, setIsShowInput] = useState(false);
   const [isShowMobilMenu, setIsShowMobilMenu] = useState(false);
-
-  const handleShowInput = () => {
-    setIsShowInput(!isShowInput);
-  };
+  const [isBackgroundWhite, setIsBackgroundWhite] = useState(false);
 
   const handleShowMobilMenu = () => {
     setIsShowMobilMenu(!isShowMobilMenu);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        // Cambia el número 100 por la cantidad de píxeles que desees
+        setIsBackgroundWhite(true);
+      } else {
+        setIsBackgroundWhite(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer
+      style={{
+        backgroundColor: isBackgroundWhite
+          ? "rgba(255, 255, 255, 0.91)"
+          : "transparent",
+        boxShadow: isBackgroundWhite ? " 10px 10px 10px 0" : "none",
+      }}
+    >
       <a href="/">
         <LogoImage src={logotype} />
       </a>
@@ -48,19 +64,7 @@ export function Header() {
       )}
 
       <SearchContainer>
-        <NavMenu flexDirection="row" />
-
-        {!isShowInput && (
-          <ShowButton onClick={handleShowInput}>
-            <IoSearch fontSize={30} color="white" />
-          </ShowButton>
-        )}
-        <SearchInput isShowInput={isShowInput} placeholder="Write and search" />
-        {isShowInput && (
-          <SearchButton>
-            <IoSearch fontSize={30} color="white" />
-          </SearchButton>
-        )}
+        <NavMenu flexDirection="row" color="black" />
       </SearchContainer>
     </HeaderContainer>
   );
