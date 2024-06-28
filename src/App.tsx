@@ -7,6 +7,7 @@ import Services from "./pages/Services/Services.tsx";
 import AllServices from "./pages/Services/AllServices/AllServices.tsx";
 import Footer from "../src/components/layout/Footer/Footer.tsx";
 import Contact from "./pages/Contact/Contact.tsx";
+import About from "../src/pages/About/About.tsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           <Route path="/services/all" element={<AllServices />} />
         </Routes>
       </BrowserRouter>

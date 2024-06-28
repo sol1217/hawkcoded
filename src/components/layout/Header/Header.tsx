@@ -39,10 +39,8 @@ export function Header() {
   return (
     <HeaderContainer
       style={{
-        backgroundColor: isBackgroundWhite
-          ? "rgba(255, 255, 255, 0.91)"
-          : "transparent",
-        boxShadow: isBackgroundWhite ? " 10px 10px 10px 0" : "none",
+        backgroundColor: isBackgroundWhite ? "#171d25" : "transparent",
+        boxShadow: isBackgroundWhite ? " 5px 5px 5px 0" : "none",
       }}
     >
       <a href="/">
@@ -64,7 +62,7 @@ export function Header() {
       )}
 
       <SearchContainer>
-        <NavMenu flexDirection="row" color="black" />
+        <NavMenu flexDirection="row" color="white" />
       </SearchContainer>
     </HeaderContainer>
   );
