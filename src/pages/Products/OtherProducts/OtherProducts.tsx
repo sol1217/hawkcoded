@@ -1,6 +1,6 @@
 import { H2WithBorders } from "/src/components/GlobalStyles/GlobalStyles.elements";
 import { TitleAndImage, ProductsContainer, CardContainer, ImageContainer, CardTexts, CardTitle, CardDescription } from "./OtherProducts.elements";
-import ServiceContact from "/src/components/layout/ContactComponent/ServiceContact";
+import ServiceContact from "/src/components/layout/ServiceContact/ServiceContact";
 
 //imagenes
 import droneImageTitle from "/src/assets/png/drone1.png";
@@ -52,7 +52,7 @@ export default function OtherProducts() {
         <section data-aos="fade-left">
           <H2WithBorders>
               Check Out Our Other Products
-              <a href="https://djistore.cr/?utm_source=google&utm_medium=cpc&utm_campaign=A20011_GOOGLE_SEM_GENERAL_Q2_2024&gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYfO-AH1p7p8egygqK3L8MiMbgvEkrRegegdcx1xQgN0FAlEPpJDaNxoCpOAQAvD_BwE"
+              <a href="/shop"
               target="_blank">By Our Store</a>
           </H2WithBorders>
         </section>

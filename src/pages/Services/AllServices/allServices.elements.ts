@@ -4,8 +4,8 @@ export { ServiceItem, PServices };
 
 
 export const CategoryCard = styled.div`
-    background-color: #fff;
-    color: #EE7814;
+    background-color: #171d25;
+    color: #fff;
     border: 1px solid #ddd;
     max-width: 80rem;
     margin: 2rem auto;
@@ -15,17 +15,18 @@ export const CategoryCard = styled.div`
     text-align: center;
     margin-bottom: 20px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
     }
 
     h2 {
         margin-bottom: 10px;
         font-size: 1.75rem;
-        color: #333;
+        color: #fff;
         transition: color 0.3s ease;
     }
 

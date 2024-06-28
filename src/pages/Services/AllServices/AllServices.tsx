@@ -4,12 +4,13 @@ import {ServicesContainer,
         ServiceItem, 
         PServices, 
         ServiceDescription, 
-        CategoryCard } 
+        CategoryCard,
+     } 
 from './allServices.elements';
 
-import ServiceContact from '../../../components/layout/ContactComponent/ServiceContact';
-
+import ServiceContact from '../../../components/layout/ServiceContact/ServiceContact';
 import { servicesData } from '../ServicesData';
+
 
 
 const AllServices: React.FC = () => {

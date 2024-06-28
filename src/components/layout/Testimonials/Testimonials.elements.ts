@@ -3,16 +3,18 @@ import styled from 'styled-components';
 export const TestimonialContainerDiv = styled.section`
   width: 100%;
   max-width: 89rem;
-  margin: 6rem auto 0px auto;
+  background-color: #171d25;
+  border-radius: 20px;
+  margin: 6rem auto 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding-bottom: 20px; /* Espacio adicional para evitar que el contenido se solape con la barra de scroll */
+  padding: 50px 0 20px 0; 
   
   @media screen and (max-width: 768px) {
-    flex-direction: row; /* Muestra las cards en línea en dispositivos móviles */
+    flex-direction: row; 
   }
 `;
 
@@ -29,20 +31,13 @@ export const Card = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
-  transition: border-color 0.3s, transform 0.3s ease; 
-
-
-  &:hover {
-      border-color: #f57c00; 
-      transform: scale(1.05);
-  }
 `;
 
 export const ProfileImage = styled.img`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 4px solid #4CAF50; /* borde verde */
+  border: 4px solid #ea7918; 
   position: absolute;
   top: -50px;
   left: 50%;
@@ -87,6 +82,7 @@ export const UserCompany = styled.p`
   margin: 0;
 
   span {
-    color: #4CAF50; /* texto verde */
+    color: #ea7918; 
+    font-weight: 600;
   }
 `;

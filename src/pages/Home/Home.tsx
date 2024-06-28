@@ -14,7 +14,7 @@ import {
   TextAndButtonContainer,
   TextInformation,
 } from "./Home.elements";
-import ServiceContact from "../../components/layout/ContactComponent/ServiceContact.tsx";
+import ServiceContact from "../../components/layout/ServiceContact/ServiceContact.tsx";
 import { BenefitsElement } from "./Benefits/BenefitsElement";
 import { Information } from "./Information/Information.tsx";
 import OutstandingProducts from "./OutstandingProducts/OutstandingProducts.tsx";
