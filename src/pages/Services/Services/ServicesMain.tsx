@@ -30,7 +30,7 @@ const Services: React.FC = () => {
 
       <ServiceContact 
           firstAText='Tell Us About Your Project'
-          firstAHref='/contacto'
+          firstAHref='/contact'
           secondAText='See More'
           secondAHref='/services/all'
       />

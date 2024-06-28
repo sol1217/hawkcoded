@@ -74,7 +74,7 @@ export default function OtherProducts() {
 
       <ServiceContact
         firstAText='You have doubts? Contact Us'
-        firstAHref='/contacto'
+        firstAHref='/contact'
         secondAText='Buy'
         secondAHref='/shop'
       ></ServiceContact>
