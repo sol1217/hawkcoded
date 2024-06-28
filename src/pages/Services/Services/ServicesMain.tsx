@@ -1,7 +1,7 @@
 import React from 'react';
 import { STitleContainer, H2Title } from '/src/components/GlobalStyles/GlobalStyles.elements';
 import { ServicesContainer, PServices, ServiceItem, ServiceIcon } from './Services.elements';
-import ServiceContact from './../ServiceContact/ServiceContact';
+import ServiceContact from '../../../components/layout/ContactComponent/ServiceContact';
 import TestimonialContainer from '/src/components/layout/Testimonials/TestimonialContainer';
 
 const servicesData = [
