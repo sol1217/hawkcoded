@@ -43,4 +43,25 @@ export const features = [
     content:
       "A balance transfer credit card can save you a lot of money in interest charges.",
   },
+  {
+    id: "feature-3",
+    icon: software,
+    title: "Balance Transfer",
+    content:
+      "A balance transfer credit card can save you a lot of money in interest charges.",
+  },
+  {
+    id: "feature-3",
+    icon: software,
+    title: "Balance Transfer",
+    content:
+      "A balance transfer credit card can save you a lot of money in interest charges.",
+  },
+  {
+    id: "feature-3",
+    icon: software,
+    title: "Balance Transfer",
+    content:
+      "A balance transfer credit card can save you a lot of money in interest charges.",
+  },
 ];

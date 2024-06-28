@@ -10,7 +10,11 @@ const rotate = keyframes`
   }
 `;
 
-export const AboutContainer = styled.div``;
+export const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
 export const ContentWrapper = styled.div`
   display: flex;
@@ -19,7 +23,7 @@ export const ContentWrapper = styled.div`
   flex-direction: row;
   padding: 100px 30px 30px 120px;
   background: rgba(44, 43, 43, 0.62);
-  width: 91%;
+  width: inherit;
   color: white;
   height: 85vh;
 
@@ -35,8 +39,6 @@ export const ImgContainer = styled.div`
   background-image: url(${abouImg});
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100vh;
 `;
 
 export const DepartmentsWrap = styled.div`
@@ -83,7 +85,7 @@ export const ContactContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+
   background-color: #171d25;
   padding: 30px;
   color: white;
@@ -137,10 +139,12 @@ export const ImageContact = styled.img`
 
 export const FeaturesSection = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
+  height: 500px;
 `;
 
 export const FeaturesWrap = styled.div`
@@ -151,7 +155,6 @@ export const FeaturesWrap = styled.div`
   align-items: center;
   padding: 10px;
   border-radius: 10px;
-
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: rgba(5, 10, 28, 0.89);
   color: white;
@@ -179,14 +182,65 @@ export const FeatureImgWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-color: rgba(255, 117, 0, 0.63);
 `;
 
-export const FeaturesItem = styled.div``;
+export const FeaturesItem = styled.div`
+  margin-left: 20px;
+`;
 
 export const TitleFeatures = styled.h2`
   font-size: 45px;
   text-align: center;
   color: #ff7500;
   text-shadow: 2px 0 0 black;
+`;
+
+export const InformationAboutUsWrap = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: #622719;
+  padding: 30px;
+`;
+
+export const InformationAboutUs = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.89);
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.89);
+  -moz-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.89);
+  border-radius: 20px;
+  padding: 20px;
+`;
+
+export const AboutImg = styled.img`
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+
+  &:hover {
+    transform: scale(0.97);
+  }
+`;
+
+export const TitleAbout = styled.h2`
+  font-size: 50px;
+  color: white;
+  text-shadow: 5px 0 0 black;
+`;
+
+export const TextAbout = styled.span`
+  font-size: 20px;
+  color: white;
+  width: 650px;
 `;

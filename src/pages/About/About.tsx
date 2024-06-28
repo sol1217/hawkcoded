@@ -1,5 +1,6 @@
 import {
   AboutContainer,
+  AboutImg,
   ButtonContact,
   ContactContainer,
   ContactInformarionWrap,
@@ -15,8 +16,12 @@ import {
   Image,
   ImageContact,
   ImgContainer,
+  InformationAboutUs,
+  InformationAboutUsWrap,
   InformationContact,
   ItemDepartment,
+  TextAbout,
+  TitleAbout,
   TitleContact,
   TitleDepartament,
   TitleFeatures,
@@ -24,6 +29,7 @@ import {
 import hand from "../../assets/png/hand.png";
 import { motion } from "framer-motion";
 import start from "../../../public/Star.svg";
+import hawkcodedAbout from "../../assets/jpg/software.jpg";
 
 import { departments, features } from "./AboutItem.ts";
 import { fadeIn, slideIn } from "../../../styles/animations.ts";
@@ -70,8 +76,8 @@ export default function About() {
       </ContactContainer>
 
       <section id="features" className="section">
+        <TitleFeatures>What People are saying about us</TitleFeatures>
         <FeaturesSection className="sectionImg">
-          <TitleFeatures>What People are saying about us</TitleFeatures>
           {features.map((feature, index) => (
             <motion.div
               key={feature.id}
@@ -99,6 +105,28 @@ export default function About() {
           ))}
         </FeaturesSection>
       </section>
+
+      <InformationAboutUsWrap>
+        <AboutImg src={hawkcodedAbout} />
+        <InformationAboutUs>
+          <TitleAbout>Our membership for you.</TitleAbout>
+          <TextAbout>
+            Different bodies, different needs. That’s why every subscription is
+            catered to your needs. Because we all need someone to care for us.
+            Different bodies, different needs. That’s why every subscription is
+            catered to your needs. Because we all need someone to care for us.
+            Different bodies, different needs. That’s why every subscription is
+            catered to your needs. Because we all need someone to care for us.
+            Different bodies, different needs. That’s why every subscription is
+            catered to your needs. Because we all need someone to care for us.
+            <br />
+            Different bodies, different needs. That’s why every subscription is
+            catered to your needs. Because we all need someone to care for us.
+            Different bodies, different needs. That’s why every subscription is
+            catered to your needs. Because we all need someone to care for us.
+          </TextAbout>
+        </InformationAboutUs>
+      </InformationAboutUsWrap>
     </AboutContainer>
   );
 }
