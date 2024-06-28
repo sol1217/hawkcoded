@@ -13,7 +13,7 @@ import {
 } from "./OutstandingProducts.elements.ts";
 
 import { FaArrowRight } from "react-icons/fa";
-import { products } from "./OutstandingProducts.ts";
+import { products } from "./constants.ts";
 
 export default function OutstandingProducts() {
   return (
