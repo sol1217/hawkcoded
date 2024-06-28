@@ -41,13 +41,19 @@ export const STitleContainer = styled.div`
 `;
 
 
-export const H2Title = styled.h2`
+interface H2TitleProps {
+  color?: string;
+  textShadow?: string;
+}
+
+export const H2Title = styled.h2<H2TitleProps>`
   color: ${(props) => props.color || 'white'};
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
   text-shadow: ${(props) => props.textShadow || '2px 2px 4px rgba(0, 0, 0, 0.3)'};
 `;
+
 
 
 export const PTitleContainer = styled.div`
