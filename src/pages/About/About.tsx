@@ -1,6 +1,8 @@
 import {
   AboutContainer,
   AboutImg,
+  AboutInformation,
+  AboutTitle,
   ButtonContact,
   ContactContainer,
   ContactInformarionWrap,
@@ -31,7 +33,7 @@ import { motion } from "framer-motion";
 import start from "../../../public/Star.svg";
 import hawkcodedAbout from "../../assets/jpg/software.jpg";
 
-import { departments, features } from "./AboutItem.ts";
+import { departments, features } from "./constants.ts";
 import { fadeIn, slideIn } from "../../../styles/animations.ts";
 
 export default function About() {
@@ -39,7 +41,13 @@ export default function About() {
     <AboutContainer>
       <ImgContainer>
         <ContentWrapper>
-          <h2>About US</h2>
+          <AboutTitle>About US</AboutTitle>
+          <AboutInformation>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+            aperiam ea eligendi consectetur et quas ipsa impedit. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Tenetur, aperiam ea
+            eligendi consectetur et quas ipsa impedit.
+          </AboutInformation>
         </ContentWrapper>
       </ImgContainer>
       <DepartamentsInfoWrap>

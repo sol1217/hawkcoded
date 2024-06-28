@@ -16,22 +16,52 @@ export const AboutContainer = styled.div`
   gap: 20px;
 `;
 
+export const AboutTitle = styled.h2`
+  font-size: 90px;
+  text-shadow: 5px 0 0 black;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
+  @media (max-width: 600px) {
+    font-size: 40px;
+  }
+`;
+
+export const AboutInformation = styled.span`
+  width: 600px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    width: 90%;
+  }
+`;
+
 export const ContentWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   padding: 100px 30px 30px 120px;
   background: rgba(44, 43, 43, 0.62);
   width: inherit;
   color: white;
   height: 85vh;
+  text-align: center;
 
   @media (max-width: 1500px) {
     flex-direction: column;
     justify-content: center;
     gap: 100px;
     padding: 100px 30px 30px 0px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px;
   }
 `;
 
@@ -85,10 +115,17 @@ export const ContactContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   background-color: #171d25;
   padding: 30px;
   color: white;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 700px) {
+    gap: 100px;
+  }
 `;
 
 export const ContactInformarionWrap = styled.div`
@@ -107,11 +144,21 @@ export const TitleContact = styled.span`
   text-align: center;
   color: #ff7500;
   text-shadow: 2px 0 0 white;
+
+  @media (max-width: 520px) {
+    font-size: 35px;
+    width: 80%;
+  }
 `;
 
 export const InformationContact = styled.span`
   font-size: 22px;
   text-align: center;
+
+  @media (max-width: 520px) {
+    font-size: 18px;
+    width: 70%;
+  }
 `;
 
 export const ButtonContact = styled.button`
@@ -131,10 +178,30 @@ export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 720px) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: 520px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const ImageContact = styled.img`
   animation: ${rotate} 4s linear infinite;
+
+  @media (max-width: 700px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 520px) {
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 export const FeaturesSection = styled.div`
@@ -145,6 +212,14 @@ export const FeaturesSection = styled.div`
   gap: 20px;
   flex-wrap: wrap;
   height: 500px;
+
+  @media (max-width: 1420px) {
+    height: 900px;
+  }
+
+  @media (max-width: 1420px) {
+    height: inherit;
+  }
 `;
 
 export const FeaturesWrap = styled.div`
@@ -165,6 +240,15 @@ export const FeaturesWrap = styled.div`
 
   &:hover .featuresImg {
     background-color: rgba(5, 10, 28, 0.89);
+  }
+
+  @media (max-width: 720px) {
+    width: 90%;
+  }
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+    text-align: center;
   }
 `;
 
@@ -205,6 +289,11 @@ export const InformationAboutUsWrap = styled.div`
   gap: 20px;
   background-color: #622719;
   padding: 30px;
+
+  @media (max-width: 1450px) {
+    flex-direction: column;
+    gap: 60px;
+  }
 `;
 
 export const InformationAboutUs = styled.div`
@@ -218,6 +307,10 @@ export const InformationAboutUs = styled.div`
   -moz-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.89);
   border-radius: 20px;
   padding: 20px;
+
+  @media (max-width: 1450px) {
+    width: 80%;
+  }
 `;
 
 export const AboutImg = styled.img`
@@ -231,16 +324,26 @@ export const AboutImg = styled.img`
   &:hover {
     transform: scale(0.97);
   }
+
+  @media (max-width: 560px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const TitleAbout = styled.h2`
   font-size: 50px;
   color: white;
   text-shadow: 5px 0 0 black;
+
+  @media (max-width: 460px) {
+    font-size: 40px;
+  }
 `;
 
 export const TextAbout = styled.span`
   font-size: 20px;
   color: white;
-  width: 650px;
+  max-width: 650px;
+  min-width: 200px;
 `;
