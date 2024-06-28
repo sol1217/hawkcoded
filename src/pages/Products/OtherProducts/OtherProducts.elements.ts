@@ -7,7 +7,6 @@ import { ProductsContainer,
     CardDescription
 } from "../Products/Products.elements";
 
-
 export const TitleAndImage = styled.div`
     overflow: hidden;
     margin-top: 100px;
@@ -42,4 +41,4 @@ export const TitleAndImage = styled.div`
 
 `;
 
-export {ProductsContainer, ImageContainer, CardTexts, CardContainer, CardTitle, CardDescription}
+export {ProductsContainer, ImageContainer, CardTexts, CardContainer, CardTitle, CardDescription, ServiceContactContainer as ContactContainer, ServiceButtonContact as ButtonContact, SeeMoreContainer}

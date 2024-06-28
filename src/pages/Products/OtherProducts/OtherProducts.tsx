@@ -1,11 +1,12 @@
 import { H2WithBorders } from "/src/components/GlobalStyles/GlobalStyles.elements";
 import { TitleAndImage, ProductsContainer, CardContainer, ImageContainer, CardTexts, CardTitle, CardDescription } from "./OtherProducts.elements";
+import ServiceContact from "/src/components/layout/ContactComponent/ServiceContact";
 
 //imagenes
 import droneImageTitle from "/src/assets/png/drone1.png";
-import droneProduct from "/src/assets/png/drone2.png";
-import cameraProduct from "/src/assets/png/camera.png";
-import stabilizerProduct from "/src/assets/png/estabilizador.png";
+import laptopProduct from "/src/assets/png/laptop-min.png";
+import djiDroneProduct from "/src/assets/png/drone2.png";
+import wingtraDroneProduct from "/src/assets/png/wingtra-drone-min.png"
 import accesoriesProduct from "/src/assets/png/accesories.png";
 
 interface Producto {
@@ -16,21 +17,21 @@ interface Producto {
 
 const productos: Producto[] = [
   {
-    title: 'Cameras Osmo Action',
-    description: 'DJI Osmo Action cameras offer 4K video recording, RockSteady stabilization, and dual screens to capture every moment with clarity and ease.',
-    img: cameraProduct
+    title: 'All PC Services',
+    description: 'We offer comprehensive PC services, including repairs, upgrades, custom builds, and maintenance for laptops and computers. Our expert team ensures your devices operate smoothly, providing support for both hardware and software.',
+    img: laptopProduct
   },
 
   {
-    title: 'FPV Drones',
+    title: 'DJI FPV Drones',
     description: 'DJI FPV drones provide an immersive flight experience, with high-quality real-time transmission and precise controls for pilots of all skill levels.',
-    img: droneProduct
+    img: djiDroneProduct
   },
 
   {
-    title: 'Professional Video Stabilizers',
-    description: 'DJI professional video stabilizers, including the Ronin series, offer advanced stabilization technology for filmmakers and video professionals to capture smooth and cinematic shots.',
-    img: stabilizerProduct 
+    title: 'Wingtra Mapping Drone',
+    description: 'The WingtraOne is an easy-to-use mapping drone that delivers consistent, high-quality topographic data faster and more cost-effectively than traditional surveying tools. Ideal for professionals seeking efficient and accurate mapping solutions.',
+    img: wingtraDroneProduct 
   },
 
   {
@@ -52,7 +53,7 @@ export default function OtherProducts() {
           <H2WithBorders>
               Check Out Our Other Products
               <a href="https://djistore.cr/?utm_source=google&utm_medium=cpc&utm_campaign=A20011_GOOGLE_SEM_GENERAL_Q2_2024&gad_source=1&gclid=CjwKCAjwps-zBhAiEiwALwsVYfO-AH1p7p8egygqK3L8MiMbgvEkrRegegdcx1xQgN0FAlEPpJDaNxoCpOAQAvD_BwE"
-              target="_blank">By DJI Store</a>
+              target="_blank">By Our Store</a>
           </H2WithBorders>
         </section>
       </TitleAndImage>
@@ -70,6 +71,13 @@ export default function OtherProducts() {
           </CardContainer>
         ))}
       </ProductsContainer>
+
+      <ServiceContact
+        firstAText='You have doubts? Contact Us'
+        firstAHref='/contacto'
+        secondAText='Buy'
+        secondAHref='/shop'
+      ></ServiceContact>
 
     </>
   )

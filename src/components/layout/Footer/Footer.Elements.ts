@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
+  margin-top: 3rem;
   background-color: #0e131a;
   display: flex;
   justify-content: space-between;

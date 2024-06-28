@@ -7,7 +7,7 @@ import {ServicesContainer,
         CategoryCard } 
 from './allServices.elements';
 
-import ServiceContact from '../ServiceContact/ServiceContact';
+import ServiceContact from '../../../components/layout/ContactComponent/ServiceContact';
 
 import { servicesData } from '../ServicesData';
 
