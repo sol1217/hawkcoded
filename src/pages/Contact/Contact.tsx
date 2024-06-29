@@ -1,19 +1,14 @@
 import {
-  ButtonSubmit,
   ContactContainer,
   ContactForm,
   ContactText,
-  FormTitle,
-  FormWrap,
   IconosContainer,
   ImgContainer,
   InfoContactWrap,
   InfoContainer,
   InformationText,
-  InputDesign,
   LogoImg,
   MainLogoImg,
-  TextareaDesign,
   TextWrap,
   TitleContact,
 } from "./Contact.elements.ts";
@@ -23,6 +18,9 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaYoutube } from "react-icons/fa";
+
+//formulario
+import Formulario from "./FormularioContacto/Formulario.tsx";
 
 export default function Contact() {
   return (
@@ -70,16 +68,11 @@ export default function Contact() {
             </a>
           </IconosContainer>
         </InfoContactWrap>
-        <FormWrap>
-          <FormTitle>Formulario de Contacto</FormTitle>
-          <InputDesign placeholder="Ingresa tu nombre" />
-          <InputDesign placeholder="Ingresa tu Email" />
-          <TextareaDesign placeholder="Escribe tu mensaje" />
-          <ButtonSubmit type="submit" placeholder="Submit" />
-        </FormWrap>
-      </ContactForm>
 
-      <div></div>
+        {/* formulario de contacto */}
+        <Formulario></Formulario>
+
+      </ContactForm>
     </ContactContainer>
   );
 }

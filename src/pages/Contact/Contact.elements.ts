@@ -224,6 +224,7 @@ export const MainLogoImg = styled.img`
 `;
 
 export const FormTitle = styled.h2`
+  margin: 0 auto;
   color: white;
   font-size: 25px;
   text-shadow: 1px 1px 0 black;
