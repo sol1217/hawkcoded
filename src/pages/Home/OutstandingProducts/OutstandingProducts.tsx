@@ -29,7 +29,7 @@ export default function OutstandingProducts() {
 
         <ViewProductContainer>
           {products.map((product, index) => (
-            <ViewProduct key={index}>
+            <ViewProduct key={index} data-aos="flip-up">
               <NameProduct>{product.name}</NameProduct>
               <ImgProduct src={product.imgSrc} alt={product.name} />
               <DescriptionProduct>{product.description}</DescriptionProduct>

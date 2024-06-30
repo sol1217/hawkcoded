@@ -60,7 +60,7 @@ export default function About() {
 
       <DepartmentsWrap>
         {departments.map((department, index) => (
-          <ItemDepartment key={index}>
+          <ItemDepartment key={index} data-aos="flip-up">
             <Image src={department.image} />
             <h2>{department.title}</h2>
             <p>{department.description}</p>
@@ -115,8 +115,8 @@ export default function About() {
       </section>
 
       <InformationAboutUsWrap>
-        <AboutImg src={hawkcodedAbout} />
-        <InformationAboutUs>
+        <AboutImg src={hawkcodedAbout} data-aos="fade-right"/>
+        <InformationAboutUs data-aos="fade-left">
           <TitleAbout>Our membership for you.</TitleAbout>
           <TextAbout>
             Different bodies, different needs. That’s why every subscription is

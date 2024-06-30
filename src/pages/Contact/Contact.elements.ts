@@ -16,8 +16,10 @@ const rotateAndScale = keyframes`
 export const ContactContainer = styled.div`
   display: flex;
   justify-content: center;
+  padding-inline: 20px;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 `;
 
 export const ImgContainer = styled.div`

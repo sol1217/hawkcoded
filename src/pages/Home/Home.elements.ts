@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  overflow: hidden;
 `;
 
 export const InformationBox = styled.div`
@@ -24,7 +25,6 @@ export const ContentWrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding: 100px 30px 30px 120px;
   background: rgba(44, 43, 43, 0.8);
   width: 100%;
   height: 100%;
@@ -34,14 +34,6 @@ export const ContentWrapper = styled.div`
     justify-content: center;
     gap: 100px;
     padding: 100px 30px 30px 0px;
-  }
-
-  @media (max-width: 570px) {
-    padding: 100px 30px 30px 40px;
-  }
-
-  @media (max-width: 530px) {
-    padding: 100px 30px 30px 0;
   }
 `;
 
@@ -54,33 +46,21 @@ export const OverviewContainer = styled.div`
   @media (max-width: 530px) {
     align-items: center;
     justify-content: center;
-    padding-left: 30px;
   }
 `;
 
 export const MainText = styled.h1`
   color: white;
   font-family: "Lantinghei SC";
-  width: 800px;
-  text-align: center;
+  width: 100%;
+  max-width: 800px;
 
-  @media (max-width: 820px) {
-    font-size: 40px;
-    width: 600px;
+  padding-left: 30px;
+
+  @media (min-width: 768px) {
+    padding-left: 20px;
   }
 
-  @media (max-width: 630px) {
-    width: 500px;
-    font-size: 30px;
-  }
-
-  @media (max-width: 530px) {
-    font-size: 20px;
-  }
-
-  @media (max-width: 380px) {
-    font-size: 18px;
-  }
 `;
 
 export const EmphasizeText = styled.b`
@@ -150,6 +130,7 @@ export const ButtonContact = styled.a`
   box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
   -webkit-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
   -moz-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
+  transition: border 0.3s ease, color 0.3s ease;
 
   &:active {
     transform: scale(0.95);

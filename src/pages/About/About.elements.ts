@@ -14,6 +14,7 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
 `;
 
 export const AboutTitle = styled.h2`
@@ -168,6 +169,12 @@ export const ButtonContact = styled.button`
   color: white;
   font-size: 20px;
   border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -233,6 +240,7 @@ export const FeaturesWrap = styled.div`
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: rgba(5, 10, 28, 0.89);
   color: white;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #ff7500;
@@ -320,6 +328,7 @@ export const AboutImg = styled.img`
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
   -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
   -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(0.97);

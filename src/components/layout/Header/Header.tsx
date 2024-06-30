@@ -23,7 +23,6 @@ export function Header() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        // Cambia el número 100 por la cantidad de píxeles que desees
         setIsBackgroundWhite(true);
       } else {
         setIsBackgroundWhite(false);
@@ -39,27 +38,25 @@ export function Header() {
   return (
     <HeaderContainer
       style={{
-        backgroundColor: isBackgroundWhite ? "#171d25" : "transparent",
-        boxShadow: isBackgroundWhite ? " 5px 5px 5px 0" : "none",
+        backgroundColor: isBackgroundWhite ? "#171d25" : "rgba(0, 0, 0, 0.4)",
+        boxShadow: isBackgroundWhite ? "5px 5px 5px 0" : "none",
       }}
     >
       <a href="/">
         <LogoImage src={logotype} />
       </a>
 
-      <MobilMenuButton onClick={handleShowMobilMenu}>
+      <MobilMenuButton isOpen={isShowMobilMenu} onClick={handleShowMobilMenu}>
         {isShowMobilMenu ? (
-          <IoIosClose fontSize={60} color="white" />
+          <IoIosClose size={40} color="white" style={{ transform: 'scale(1.2)' }} />
         ) : (
-          <IoMdMenu fontSize={50} color="white" />
+          <IoMdMenu size={40} color="white" />
         )}
       </MobilMenuButton>
 
-      {isShowMobilMenu && (
-        <MobilMenuSection>
-          <MobilMenu />
-        </MobilMenuSection>
-      )}
+      <MobilMenuSection isVisible={isShowMobilMenu}>
+        <MobilMenu />
+      </MobilMenuSection>
 
       <SearchContainer>
         <NavMenu flexDirection="row" color="white" />

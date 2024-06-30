@@ -28,7 +28,7 @@ export default function Contact() {
       <ImgContainer>
         <TextWrap>
           <TitleContact>Contacto</TitleContact>
-          <LogoImg src={simpleLogo} />
+          <LogoImg src={simpleLogo} data-aos="fade-right" />
           <InfoContainer>
             Respuesta Rápida: Nos comprometemos a responder a tu consulta en un
             plazo de 24 horas.
@@ -40,7 +40,7 @@ export default function Contact() {
       </ImgContainer>
       <ContactText>Información Adicional o Consultas</ContactText>
       <ContactForm>
-        <InfoContactWrap>
+        <InfoContactWrap data-aos="fade-right">
           <MainLogoImg src={logo} />
           <h2>Contáctanos para Consultas</h2>
           <span>

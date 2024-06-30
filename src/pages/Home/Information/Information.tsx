@@ -27,7 +27,7 @@ export function Information() {
       <ItemWrap>
         {items.map((items, index) => (
           <ImgAndTitleBox key={index}>
-            <img src={items.img} alt="sol" />
+            <img src={items.img} alt="aptitudes" />
             <p>{items.title}</p>
           </ImgAndTitleBox>
         ))}
