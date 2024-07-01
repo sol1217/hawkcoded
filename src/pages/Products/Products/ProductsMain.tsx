@@ -1,8 +1,4 @@
 import {
-  PTitleContainer,
-  H2Title,
-} from "/src/components/GlobalStyles/GlobalStyles.elements";
-import {
   ProductsContainer,
   CardContainer,
   ImageContainer,
@@ -10,17 +6,15 @@ import {
   CardTitle,
   CardDescription,
 } from "./Products.elements";
-import djiAir from "../../../assets/png/dji-air.png";
-import djiMavic from "../../../assets/png/dji-mavic-3.png";
+import djiMatrizRtk from "../../../assets/png/Matrice-300-RTK.png";
+import djiSerie30 from "../../../assets/png/Matrice-30-Series.png";
+import dji300 from "../../../assets/png/Matrice-300-RTK.png";
+import djiMavic3 from "../../../assets/png/DJI-Mavic-3.png";
 
-import serverImage from "/src/assets/png/servidor.png";
-import workStationImage from "/src/assets/png/workstation.png";
-import networkDevice from "/src/assets/png/wireless-router.png";
-
-//Paquetes
-import Packs from "./../Packs/Packs";
-//otros Productos
-import OtherProducts from "./../OtherProducts/OtherProducts";
+import {
+  H2Title,
+  PTitleContainer,
+} from "../../../components/GlobalStyles/GlobalStyles.elements.ts";
 
 interface Producto {
   title: string;
@@ -30,29 +24,30 @@ interface Producto {
 
 const productos: Producto[] = [
   {
-    title: "DJI MAVIC 3",
+    title: "Matrice 350 RTK",
     description:
-      "Con un potente rendimiento de vuelo y una cámara Hasselblad, Mavic 3 Classic ofrece la esencia absoluta de imágenes icónicas. Llévalo a cualquier aventura para crear un trabajo inolvidable.",
-    img: djiMavic,
+      "El Matrice 350 RTK, una plataforma insignia de drones mejorada, establece un nuevo punto de referencia para la industria. Esta plataforma de drones de próxima generación presenta un sistema de transmisión de video y una experiencia de control completamente nuevos, un sistema de batería más eficiente y características de seguridad más completas.",
+    img: djiMatrizRtk,
   },
 
   {
-    title: "DJI Air 3",
+    title: "Matrice 30 Series",
     description:
-      "Rendimiento complementario de la cámara Tiempo máximo de vuelo de 46 minutos, fotos de cámara dual de 48MP, videos HDR de doble cámara de 4K/60fps.Detección de obstáculos omnidireccionales, transmisión de video HD 04.",
-    img: djiAir,
+      "Integra múltiples sensores de alto rendimiento en un cuerpo ligero y portátil. Equipado con un control remoto diseñado para usuario.El Serie M30 integra cámaras gran angular, con zoom y térmica (solo el M30T) con un telémetro láser. Juntos pueden capturar los datos aéreos que necesites",
+    img: djiSerie30,
   },
 
   {
-    title: "DJI Mini 4 Pro (DJI RC-2)",
+    title: "Matrice 300 RTK",
     description:
-      "DJI Mini 4 Pro es mini dron de cámara más avanzado hasta la fecha. Integra potentes capacidades de imagen, detección omnidireccional de obstáculos, ActiveTrack 360° con el nuevo modo Trace y transmisión de vídeo FHD de 20 km, lo que trae aún más cosas para amar tanto para profesionales como para principiantes",
-    img: networkDevice,
+      "El Matrice 300 RTK es la plataforma dron comercial de DJI más reciente, y se inspira en los sistemas de aviónica más modernos.Ofrece un tiempo de vuelo de hasta 55 minutos, una avanzada IA y un sistema de gestión del estado del VANT.",
+    img: dji300,
   },
   {
-    title: "DJI Avata 2",
-    description: "kkk",
-    img: networkDevice,
+    title: "DJI Mavic 3 Enterprise",
+    description:
+      "La Serie Mavic 3 Enterprise redefine los estándares de la industria para los drones comerciales pequeños, Drone Mavic 3, control inteligente, estuche rígido transporte, cargador, 1 batería. ",
+    img: djiMavic3,
   },
 ];
 
@@ -76,12 +71,6 @@ const ProductsMain: React.FC = () => {
           </CardContainer>
         ))}
       </ProductsContainer>
-
-      {/* Paquetes de software */}
-      <Packs></Packs>
-
-      {/* Otros Productos */}
-      <OtherProducts></OtherProducts>
     </>
   );
 };

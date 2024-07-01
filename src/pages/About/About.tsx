@@ -41,7 +41,7 @@ export default function About() {
     <AboutContainer>
       <ImgContainer>
         <ContentWrapper>
-          <AboutTitle>About US</AboutTitle>
+          <AboutTitle>Sobre Nosotros</AboutTitle>
           <AboutInformation>
             Hemos entregado con éxito numerosos proyectos en varias industrias.
             Nuestro enfoque centrado en el cliente garantiza que superemos las
@@ -56,7 +56,6 @@ export default function About() {
         <WelcomText>
           Bienvenido a Hawkcoded, donde la innovación se encuentra con la
           excelencia en el desarrollo de software.
-          <br /> Fundada en [Año]
         </WelcomText>
       </DepartamentsInfoWrap>
 

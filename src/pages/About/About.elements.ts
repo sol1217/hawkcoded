@@ -13,14 +13,6 @@ const rotate = keyframes`
 export const AboutImg = styled.img`
   width: 500px;
   height: 500px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-  -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-
-  &:hover {
-    transform: scale(0.97);
-  }
 
   @media (max-width: 560px) {
     width: 300px;
@@ -111,9 +103,14 @@ export const ItemDepartment = styled.div`
   text-align: center;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid #ddd;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 export const Image = styled.img`
@@ -316,7 +313,7 @@ export const InformationAboutUsWrap = styled.div`
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  background-color: #622719;
+  background-color: #cc6109;
   padding: 30px;
 
   @media (max-width: 1450px) {
@@ -331,11 +328,14 @@ export const InformationAboutUs = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.89);
-  -webkit-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.89);
-  -moz-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.89);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.49);
   border-radius: 20px;
   padding: 20px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.49);
+  }
 
   @media (max-width: 1450px) {
     width: 80%;

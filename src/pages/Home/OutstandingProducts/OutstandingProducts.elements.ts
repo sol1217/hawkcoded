@@ -47,6 +47,7 @@ export const ViewProductContainer = styled.div`
 
 export const NameProduct = styled.h2`
   font-size: 35px;
+  text-align: center;
 `;
 
 export const DescriptionProduct = styled.span`
