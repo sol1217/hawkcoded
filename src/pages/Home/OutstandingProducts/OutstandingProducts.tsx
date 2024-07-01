@@ -20,7 +20,7 @@ export default function OutstandingProducts() {
     <div>
       <ProductsWrap>
         <ul>
-          <LiTag>Always The Best</LiTag>
+          <LiTag>Nuestros Productos</LiTag>
         </ul>
 
         <TitleProducts>

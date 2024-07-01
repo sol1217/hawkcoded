@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import abouImg from "../../assets/jpg/hawkcoded-about.jpg";
+import abouImg from "../../assets/png/hawkcoded-about.png";
 
 const rotate = keyframes`
   from {
@@ -7,6 +7,24 @@ const rotate = keyframes`
   }
   to {
     transform: rotate(360deg);
+  }
+`;
+
+export const AboutImg = styled.img`
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+
+  &:hover {
+    transform: scale(0.97);
+  }
+
+  @media (max-width: 560px) {
+    width: 300px;
+    height: 300px;
   }
 `;
 
@@ -28,8 +46,12 @@ export const AboutTitle = styled.h2`
   }
 `;
 
+export const WelcomText = styled.span`
+  font-size: 20px;
+`;
+
 export const AboutInformation = styled.span`
-  width: 600px;
+  max-width: 800px;
   font-size: 25px;
   text-align: center;
   display: flex;
@@ -166,8 +188,13 @@ export const ButtonContact = styled.button`
   width: 190px;
   background-color: #ff7500;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
   border-radius: 15px;
+
+  &:active {
+    transform: scale(0.95);
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -192,6 +219,8 @@ export const IconContainer = styled.div`
 
 export const ImageContact = styled.img`
   animation: ${rotate} 4s linear infinite;
+  width: 430px;
+  height: 430px;
 
   @media (max-width: 700px) {
     width: 300px;
@@ -310,24 +339,6 @@ export const InformationAboutUs = styled.div`
 
   @media (max-width: 1450px) {
     width: 80%;
-  }
-`;
-
-export const AboutImg = styled.img`
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-  -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-
-  &:hover {
-    transform: scale(0.97);
-  }
-
-  @media (max-width: 560px) {
-    width: 300px;
-    height: 300px;
   }
 `;
 

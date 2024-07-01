@@ -107,15 +107,14 @@ export const ContactForm = styled.div`
 export const FormWrap = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 20px;
   gap: 20px;
   width: 800px;
-  height: 352px;
+  height: 500px;
   background-color: #ff7500;
   border-radius: 0 20px 20px 0;
-  box-shadow: 1px 1px 5px 0;
   position: relative;
 
   @media (max-width: 1080px) {
@@ -171,6 +170,7 @@ export const ButtonSubmit = styled.input`
 export const InfoContactWrap = styled.div`
   background-color: #171d25;
   width: 800px;
+  height: 480px;
   padding: 30px;
   color: white;
   display: flex;
@@ -178,9 +178,8 @@ export const InfoContactWrap = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 10px;
+  gap: 22px;
   border-radius: 20px 0 0 20px;
-  height: 333px;
   box-shadow: 1px 1px 5px 0;
   position: relative;
 
@@ -211,7 +210,7 @@ export const MainLogoImg = styled.img`
   height: 150px;
   position: absolute;
   top: -10px;
-  left: 30px;
+  left: 300px;
   animation: ${rotateAndScale} 3s ease-in-out;
 
   &:hover {

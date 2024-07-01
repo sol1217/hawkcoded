@@ -51,10 +51,7 @@ export const NameProduct = styled.h2`
 
 export const DescriptionProduct = styled.span`
   padding: 10px;
-
-  @media (max-width: 520px) {
-    text-align: center;
-  }
+  text-align: center;
 `;
 
 export const ViewProduct = styled.div`

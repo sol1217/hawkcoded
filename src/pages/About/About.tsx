@@ -27,14 +27,14 @@ import {
   TitleContact,
   TitleDepartament,
   TitleFeatures,
+  WelcomText,
 } from "./About.elements.ts";
-import hand from "../../assets/png/hand.png";
+import service from "../../assets/png/services.png";
 import { motion } from "framer-motion";
 import start from "../../../public/Star.svg";
-import hawkcodedAbout from "../../assets/jpg/software.jpg";
-
+import robot from "../../assets/png/robot.png";
 import { departments, features } from "./constants.ts";
-import { fadeIn, slideIn } from "../../../styles/animations.ts";
+import { fadeIn } from "../../../styles/animations.ts";
 
 export default function About() {
   return (
@@ -43,19 +43,21 @@ export default function About() {
         <ContentWrapper>
           <AboutTitle>About US</AboutTitle>
           <AboutInformation>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
-            aperiam ea eligendi consectetur et quas ipsa impedit. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Tenetur, aperiam ea
-            eligendi consectetur et quas ipsa impedit.
+            Hemos entregado con éxito numerosos proyectos en varias industrias.
+            Nuestro enfoque centrado en el cliente garantiza que superemos las
+            expectativas en todo momento. Ofrecemos soporte y mantenimiento
+            continuos para garantizar la longevidad y eficiencia de nuestras
+            soluciones.
           </AboutInformation>
         </ContentWrapper>
       </ImgContainer>
       <DepartamentsInfoWrap>
-        <TitleDepartament>Our Team Experts</TitleDepartament>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
-          aperiam ea eligendi consectetur et quas ipsa impedit.
-        </p>
+        <TitleDepartament> ¿Que es Hawkcoded?</TitleDepartament>
+        <WelcomText>
+          Bienvenido a Hawkcoded, donde la innovación se encuentra con la
+          excelencia en el desarrollo de software.
+          <br /> Fundada en [Año]
+        </WelcomText>
       </DepartamentsInfoWrap>
 
       <DepartmentsWrap>
@@ -72,19 +74,22 @@ export default function About() {
         <ContactInformarionWrap>
           <TitleContact>Contactanos para mas información</TitleContact>
           <InformationContact>
-            Discover top-rated snowboards, gear, and accessories to enhance your
-            performance on the slopes.Discover top-rated snowboards, gear, and
-            accessories to enhance your performance on the slopes.
+            Prosperamos con la creatividad y el ingenio, buscando constantemente
+            nuevas formas de resolver problemas. La excelencia está en el núcleo
+            de todo lo que hacemos. Nos comprometemos a entregar productos y
+            servicios de primera calidad.
+            <br />
+            Nuestros clientes son nuestros socios.
           </InformationContact>
-          <ButtonContact>Lorem</ButtonContact>
+          <ButtonContact>Contacto</ButtonContact>
         </ContactInformarionWrap>
         <IconContainer>
-          <ImageContact src={hand} />
+          <ImageContact src={robot} />
         </IconContainer>
       </ContactContainer>
 
       <section id="features" className="section">
-        <TitleFeatures>What People are saying about us</TitleFeatures>
+        <TitleFeatures>¿Por Qué Elegirnos?</TitleFeatures>
         <FeaturesSection className="sectionImg">
           {features.map((feature, index) => (
             <motion.div
@@ -101,11 +106,8 @@ export default function About() {
                   </FeatureImgWrap>
 
                   <FeaturesItem>
-                    <h2>Rewards</h2>
-                    <p>
-                      The best credit cards offer some tantalizing combinations
-                      of promotions and prizes
-                    </p>
+                    <h2>{feature.title}</h2>
+                    <p>{feature.content}</p>
                   </FeaturesItem>
                 </FeaturesWrap>
               </FeaturesMain>
@@ -115,23 +117,21 @@ export default function About() {
       </section>
 
       <InformationAboutUsWrap>
-        <AboutImg src={hawkcodedAbout} />
+        <AboutImg src={service} />
         <InformationAboutUs>
-          <TitleAbout>Our membership for you.</TitleAbout>
+          <TitleAbout>Nuestros Servicios</TitleAbout>
           <TextAbout>
-            Different bodies, different needs. That’s why every subscription is
-            catered to your needs. Because we all need someone to care for us.
-            Different bodies, different needs. That’s why every subscription is
-            catered to your needs. Because we all need someone to care for us.
-            Different bodies, different needs. That’s why every subscription is
-            catered to your needs. Because we all need someone to care for us.
-            Different bodies, different needs. That’s why every subscription is
-            catered to your needs. Because we all need someone to care for us.
+            Además de los servicios mencionados, nos especializamos en adaptar
+            cada solución a las necesidades específicas de nuestros clientes,
+            asegurando un enfoque personalizado y resultados óptimos. Trabajamos
+            en colaboración estrecha con su equipo para entender sus desafíos y
+            proporcionar soluciones que realmente marquen la diferencia.
             <br />
-            Different bodies, different needs. That’s why every subscription is
-            catered to your needs. Because we all need someone to care for us.
-            Different bodies, different needs. That’s why every subscription is
-            catered to your needs. Because we all need someone to care for us.
+            Nuestro compromiso con la innovación y la excelencia nos impulsa a
+            utilizar las tecnologías más avanzadas y las mejores prácticas de la
+            industria. Desde la concepción hasta la implementación y el soporte
+            continuo, estamos dedicados a ayudar a su empresa a crecer y
+            prosperar en el competitivo mercado actual.
           </TextAbout>
         </InformationAboutUs>
       </InformationAboutUsWrap>

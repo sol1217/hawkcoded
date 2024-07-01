@@ -1,12 +1,20 @@
 import { H2WithBorders } from "/src/components/GlobalStyles/GlobalStyles.elements";
-import { TitleAndImage, ProductsContainer, CardContainer, ImageContainer, CardTexts, CardTitle, CardDescription } from "./OtherProducts.elements";
+import {
+  TitleAndImage,
+  ProductsContainer,
+  CardContainer,
+  ImageContainer,
+  CardTexts,
+  CardTitle,
+  CardDescription,
+} from "./OtherProducts.elements";
 import ServiceContact from "/src/components/layout/ServiceContact/ServiceContact";
 
 //imagenes
 import droneImageTitle from "/src/assets/png/drone1.png";
 import laptopProduct from "/src/assets/png/laptop-min.png";
 import djiDroneProduct from "/src/assets/png/drone2.png";
-import wingtraDroneProduct from "/src/assets/png/wingtra-drone-min.png"
+import wingtraDroneProduct from "/src/assets/png/wingtra-drone-min.png";
 import accesoriesProduct from "/src/assets/png/accesories.png";
 
 interface Producto {
@@ -17,30 +25,33 @@ interface Producto {
 
 const productos: Producto[] = [
   {
-    title: 'All PC Services',
-    description: 'We offer comprehensive PC services, including repairs, upgrades, custom builds, and maintenance for laptops and computers. Our expert team ensures your devices operate smoothly, providing support for both hardware and software.',
-    img: laptopProduct
+    title: "DJI Inspire 3",
+    description:
+      "DJI Inspire 3 es un dron con cámara de cine integrada con sistema de imágenes 8K de fotograma completo, configuraciones duales Tilt Boost, Pan 360° y con control dual.",
+    img: laptopProduct,
   },
 
   {
-    title: 'DJI FPV Drones',
-    description: 'DJI FPV drones provide an immersive flight experience, with high-quality real-time transmission and precise controls for pilots of all skill levels.',
-    img: djiDroneProduct
+    title: "DJI FPV ",
+    description:
+      "Los drones DJI FPV brindan una experiencia de vuelo inmersiva, con transmisión en tiempo real de alta calidad y controles precisos para pilotos de todos los niveles.",
+    img: djiDroneProduct,
   },
 
   {
-    title: 'Wingtra Mapping Drone',
-    description: 'The WingtraOne is an easy-to-use mapping drone that delivers consistent, high-quality topographic data faster and more cost-effectively than traditional surveying tools. Ideal for professionals seeking efficient and accurate mapping solutions.',
-    img: wingtraDroneProduct 
+    title: "Wingtra Mapping Drone",
+    description:
+      "The WingtraOne is an easy-to-use mapping drone that delivers consistent, high-quality topographic data faster and more cost-effectively than traditional surveying tools. Ideal for professionals seeking efficient and accurate mapping solutions.",
+    img: wingtraDroneProduct,
   },
 
   {
-    title: 'All Kinds of Accessories',
-    description: 'DJI offers a wide range of accessories, including spare parts, batteries, and carrying cases, to enhance and support your drone and camera equipment.',
-    img: accesoriesProduct 
-  }
+    title: "All Kinds of Accessories",
+    description:
+      "DJI offers a wide range of accessories, including spare parts, batteries, and carrying cases, to enhance and support your drone and camera equipment.",
+    img: accesoriesProduct,
+  },
 ];
-
 
 export default function OtherProducts() {
   return (
@@ -51,9 +62,10 @@ export default function OtherProducts() {
         </div>
         <section data-aos="fade-left">
           <H2WithBorders>
-              Check Out Our Other Products
-              <a href="/shop"
-              target="_blank">By Our Store</a>
+            Check Out Our Other Products
+            <a href="/shop" target="_blank">
+              By Our Store
+            </a>
           </H2WithBorders>
         </section>
       </TitleAndImage>
@@ -62,7 +74,7 @@ export default function OtherProducts() {
         {productos.map((producto, index) => (
           <CardContainer key={index}>
             <ImageContainer>
-              <img src={producto.img} alt="product_img"  loading="lazy"/>
+              <img src={producto.img} alt="product_img" loading="lazy" />
             </ImageContainer>
             <CardTexts data-aos="flip-up">
               <CardTitle>{producto.title}</CardTitle>
@@ -73,12 +85,11 @@ export default function OtherProducts() {
       </ProductsContainer>
 
       <ServiceContact
-        firstAText='You have doubts? Contact Us'
-        firstAHref='/contact'
-        secondAText='Buy'
-        secondAHref='/shop'
+        firstAText="You have doubts? Contact Us"
+        firstAHref="/contact"
+        secondAText="Buy"
+        secondAHref="/shop"
       ></ServiceContact>
-
     </>
-  )
+  );
 }

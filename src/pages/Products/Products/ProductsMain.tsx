@@ -1,16 +1,26 @@
+import {
+  PTitleContainer,
+  H2Title,
+} from "/src/components/GlobalStyles/GlobalStyles.elements";
+import {
+  ProductsContainer,
+  CardContainer,
+  ImageContainer,
+  CardTexts,
+  CardTitle,
+  CardDescription,
+} from "./Products.elements";
+import djiAir from "../../../assets/png/dji-air.png";
+import djiMavic from "../../../assets/png/dji-mavic-3.png";
 
-import { PTitleContainer, H2Title } from "/src/components/GlobalStyles/GlobalStyles.elements";
-import { ProductsContainer, CardContainer, ImageContainer, CardTexts, CardTitle, CardDescription } from "./Products.elements";
-
-import serverImage from '/src/assets/png/servidor.png';
-import workStationImage from '/src/assets/png/workstation.png';
-import networkDevice from '/src/assets/png/wireless-router.png';
-
+import serverImage from "/src/assets/png/servidor.png";
+import workStationImage from "/src/assets/png/workstation.png";
+import networkDevice from "/src/assets/png/wireless-router.png";
 
 //Paquetes
-import Packs from './../Packs/Packs';
+import Packs from "./../Packs/Packs";
 //otros Productos
-import OtherProducts from './../OtherProducts/OtherProducts';
+import OtherProducts from "./../OtherProducts/OtherProducts";
 
 interface Producto {
   title: string;
@@ -20,22 +30,30 @@ interface Producto {
 
 const productos: Producto[] = [
   {
-    title: 'Protect Your IT Environments With Powerful Cloud Security Solutions and Always on Support',
-    description: 'Our certified cloud security experts help protect your environments across hyperscale public and private clouds so you can run your business with confidence.',
-    img: serverImage
+    title: "DJI MAVIC 3",
+    description:
+      "Con un potente rendimiento de vuelo y una cámara Hasselblad, Mavic 3 Classic ofrece la esencia absoluta de imágenes icónicas. Llévalo a cualquier aventura para crear un trabajo inolvidable.",
+    img: djiMavic,
   },
 
   {
-    title: 'Enhance Your Workstation Performance with Cutting-Edge Technology',
-    description: 'Our advanced workstation solutions are designed to optimize productivity and efficiency, ensuring that your team has the best tools available to perform at their peak.',
-    img: workStationImage
+    title: "DJI Air 3",
+    description:
+      "Rendimiento complementario de la cámara Tiempo máximo de vuelo de 46 minutos, fotos de cámara dual de 48MP, videos HDR de doble cámara de 4K/60fps.Detección de obstáculos omnidireccionales, transmisión de video HD 04.",
+    img: djiAir,
   },
 
   {
-    title: 'Optimize Network Performance with Reliable Devices',
-    description: 'Our network devices offer robust performance and scalability, ensuring your infrastructure stays connected and secure in today\'s demanding environments.',
-    img: networkDevice
-  }
+    title: "DJI Mini 4 Pro (DJI RC-2)",
+    description:
+      "DJI Mini 4 Pro es mini dron de cámara más avanzado hasta la fecha. Integra potentes capacidades de imagen, detección omnidireccional de obstáculos, ActiveTrack 360° con el nuevo modo Trace y transmisión de vídeo FHD de 20 km, lo que trae aún más cosas para amar tanto para profesionales como para principiantes",
+    img: networkDevice,
+  },
+  {
+    title: "DJI Avata 2",
+    description: "kkk",
+    img: networkDevice,
+  },
 ];
 
 const ProductsMain: React.FC = () => {
@@ -49,7 +67,7 @@ const ProductsMain: React.FC = () => {
         {productos.map((producto, index) => (
           <CardContainer key={index}>
             <ImageContainer>
-              <img src={producto.img} alt="product_img" loading="lazy"/>
+              <img src={producto.img} alt="product_img" loading="lazy" />
             </ImageContainer>
             <CardTexts data-aos="flip-up">
               <CardTitle>{producto.title}</CardTitle>
@@ -64,7 +82,6 @@ const ProductsMain: React.FC = () => {
 
       {/* Otros Productos */}
       <OtherProducts></OtherProducts>
-
     </>
   );
 };
