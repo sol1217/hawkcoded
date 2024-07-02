@@ -1,4 +1,5 @@
-import NavMenu from "../NavMenu/NavMenu.tsx";
+import React, { useEffect, useState } from "react";
+import NavMenu from "../NavMenu/NavMenu";
 import { IoMdMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 import {
@@ -7,10 +8,9 @@ import {
   MobilMenuButton,
   MobilMenuSection,
   SearchContainer,
-} from "./Header.elements.ts";
+} from "./Header.elements";
 import logotype from "../../../assets/png/logo-type.png";
-import { useEffect, useState } from "react";
-import MobilMenu from "../MobileMenu/MobilMenu.tsx";
+import MobilMenu from "../MobileMenu/MobilMenu";
 
 export function Header() {
   const [isShowMobilMenu, setIsShowMobilMenu] = useState(false);
@@ -37,6 +37,7 @@ export function Header() {
 
   return (
     <HeaderContainer
+      isBackgroundWhite={isBackgroundWhite}  // <-- Añadir esta línea
       style={{
         backgroundColor: isBackgroundWhite ? "#171d25" : "rgba(0, 0, 0, 0.4)",
         boxShadow: isBackgroundWhite ? "5px 5px 5px 0" : "none",

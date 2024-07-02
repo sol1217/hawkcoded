@@ -10,7 +10,7 @@ import djiMatrizRtk from "../../../assets/png/Matrice-300-RTK.png";
 import djiSerie30 from "../../../assets/png/Matrice-30-Series.png";
 import dji300 from "../../../assets/png/Matrice-300-RTK.png";
 import djiMavic3 from "../../../assets/png/DJI-Mavic-3.png";
-import ServiceContact from "/src/components/layout/ServiceContact/ServiceContact";
+import ServiceContact from "../../../components/layout/ServiceContact/ServiceContact.tsx";
 
 import {
   H2Title,
