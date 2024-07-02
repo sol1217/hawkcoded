@@ -41,7 +41,7 @@ export function Home() {
               tecnológicas innovadoras para satisfacer las necesidades de
               nuestros clientes.
             </TextInformation>
-            <ButtonContact href="/contact">Contact Us</ButtonContact>
+            <ButtonContact href="/contact">Contacto</ButtonContact>
           </TextAndButtonContainer>
         </ContentWrapper>
       </InformationBox>
@@ -49,9 +49,9 @@ export function Home() {
       <BenefitsElement />
 
       <ServiceContact
-        firstAText="Tell Us About Your Project"
+        firstAText="Cuéntanos Sobre Tu Idea"
         firstAHref="/contacto"
-        secondAText="Services"
+        secondAText="Servicios"
         secondAHref="/services"
       />
 

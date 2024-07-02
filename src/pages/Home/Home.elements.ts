@@ -108,7 +108,6 @@ export const TextAndButtonContainer = styled.div`
 export const TextInformation = styled.div`
   width: 600px;
   font-size: 26px;
-  font-family: cursive;
 
   @media (max-width: 530px) {
     font-size: 20px;
@@ -123,7 +122,6 @@ export const ButtonContact = styled.a`
   background: transparent;
   color: white;
   font-size: 30px;
-  font-family: cursive;
   border: 3px solid #ff7500;
   text-align: center;
   cursor: pointer;

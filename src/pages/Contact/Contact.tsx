@@ -40,7 +40,7 @@ export default function Contact() {
       </ImgContainer>
       <ContactText>Información Adicional o Consultas</ContactText>
       <ContactForm>
-        <InfoContactWrap>
+        <InfoContactWrap data-aos="fade-right">
           <MainLogoImg src={logo} />
           <h2>Contáctanos para Consultas</h2>
           <span>

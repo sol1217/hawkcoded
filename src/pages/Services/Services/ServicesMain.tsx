@@ -29,9 +29,9 @@ const Services: React.FC = () => {
       </ServicesContainer>
 
       <ServiceContact 
-          firstAText='Tell Us About Your Project'
+          firstAText='Trabajemos Juntos'
           firstAHref='/contact'
-          secondAText='See More'
+          secondAText='Ver Todos'
           secondAHref='/services/all'
       />
 

@@ -163,11 +163,12 @@ export const TitleContact = styled.span`
 
 export const InformationContact = styled.span`
   font-size: 22px;
-  text-align: center;
+  padding-left: 30px;
 
   @media (max-width: 520px) {
     font-size: 18px;
     width: 70%;
+    padding-left: 0px;
   }
 `;
 
@@ -318,16 +319,12 @@ export const InformationAboutUs = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: rgba(5, 10, 28, 0.89);
   flex-direction: column;
   text-align: center;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.49);
-  border-radius: 20px;
+  border: 1px solid #fff;
+  border-radius: 0px 20px 0px 20px;
   padding: 20px;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.49);
-  }
 
   @media (max-width: 1450px) {
     width: 80%;
@@ -335,8 +332,8 @@ export const InformationAboutUs = styled.div`
 `;
 
 export const AboutImg = styled.img`
-  width: 500px;
-  height: 500px;
+  width: auto;
+  height: auto;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -351,8 +348,7 @@ export const AboutImg = styled.img`
 
 export const TitleAbout = styled.h2`
   font-size: 50px;
-  color: white;
-  text-shadow: 5px 0 0 black;
+  color: #fff;
 
   @media (max-width: 460px) {
     font-size: 40px;
@@ -361,7 +357,7 @@ export const TitleAbout = styled.h2`
 
 export const TextAbout = styled.span`
   font-size: 20px;
-  color: white;
+  color: #fff;
   max-width: 650px;
   min-width: 200px;
 `;

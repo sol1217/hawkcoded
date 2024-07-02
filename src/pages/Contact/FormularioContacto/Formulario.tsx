@@ -59,7 +59,7 @@ export default function Formulario() {
 
   
   return (
-    <FormWrap onSubmit={handleSubmit}>
+    <FormWrap onSubmit={handleSubmit} data-aos="fade-left">
         <FormTitle>Formulario de Contacto</FormTitle>
         {error && (
             //crear un elemento de alerta, por ahora es un <p>:

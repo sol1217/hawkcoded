@@ -54,9 +54,9 @@ const AllServices: React.FC = () => {
             </div>
 
             <ServiceContact 
-          firstAText='You have doubts? Contact Us'
+          firstAText='Tienes Dudas? Cuéntanos'
           firstAHref='/contact'
-          secondAText='Products'
+          secondAText='Productos'
           secondAHref='/products'
       />
         </div>
