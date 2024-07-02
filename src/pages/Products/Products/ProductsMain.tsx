@@ -15,6 +15,7 @@ import {
   H2Title,
   PTitleContainer,
 } from "../../../components/GlobalStyles/GlobalStyles.elements.ts";
+import Slider from "../../../components/layout/Slider/Slider.tsx";
 
 interface Producto {
   title: string;
@@ -71,6 +72,8 @@ const ProductsMain: React.FC = () => {
           </CardContainer>
         ))}
       </ProductsContainer>
+
+      <Slider />
     </>
   );
 };

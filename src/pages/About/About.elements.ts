@@ -171,20 +171,18 @@ export const InformationContact = styled.span`
   }
 `;
 
-export const ButtonContact = styled.button`
+export const ButtonContact = styled.a`
   padding: 20px;
-  width: 190px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ff7500;
   color: white;
   font-size: 22px;
   font-weight: bold;
   border-radius: 15px;
   cursor: pointer;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.04);
-  }
 `;
 
 export const IconContainer = styled.div`
@@ -339,10 +337,6 @@ export const InformationAboutUs = styled.div`
 export const AboutImg = styled.img`
   width: 500px;
   height: 500px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
-  -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
   transition: transform 0.3s ease;
 
   &:hover {

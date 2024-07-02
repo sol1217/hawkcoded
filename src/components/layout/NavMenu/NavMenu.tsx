@@ -6,7 +6,7 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
       <NavMenuLinks $flexDirection={flexDirection} $color={color}>
         <li>
           <LinkContainer $flexDirection={flexDirection} $color={color} href="/">
-            Home
+            Inicio
           </LinkContainer>
         </li>
         <li>
@@ -15,7 +15,7 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
             $color={color}
             href="/services"
           >
-            Services
+            Servicios
           </LinkContainer>
         </li>
         <li>
@@ -24,7 +24,7 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
             $color={color}
             href="/products"
           >
-            Products
+            Productos
           </LinkContainer>
         </li>
         <li>
@@ -33,7 +33,7 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
             $color={color}
             href="/about"
           >
-            About Us
+            Sobre nosotros
           </LinkContainer>
         </li>
         <li>
@@ -42,7 +42,7 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
             $color={color}
             href="/contact"
           >
-            Contact Us
+            Contacto
           </LinkContainer>
         </li>
       </NavMenuLinks>
