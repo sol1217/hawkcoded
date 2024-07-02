@@ -16,6 +16,10 @@ export default function Formulario() {
   const [mensaje, setMensaje] = useState<string>('');
   const [error, setError] = useState<string>('');
 
+  const SERVICE_KEY = import.meta.env.VITE_CONTACT_SERVICE_ID;
+  const TMPLT_KEY = import.meta.env.VITE_CONTACT_TEMPLATE_ID;
+  const USER_KEY = import.meta.env.VITE_CONTACT_USER_ID;
+
 
   useEffect(()=> {
     if(error) {
@@ -38,13 +42,13 @@ export default function Formulario() {
     } 
 
     emailjs.send(
-        'service_6hl3znj',
-        'template_uqejv3g', {
+        SERVICE_KEY,
+        TMPLT_KEY, {
             nombre,
             email,
             mensaje,
         },
-        'Iwdz_ELZzSGl0pwg_'
+        USER_KEY
     )
     .then(()=> {
         alert('Correo Enviado Correctamente.');

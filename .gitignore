@@ -25,3 +25,4 @@ dist-ssr
 eslintrc.cjs
 tsconfig.node.json
 .idx
+.env
