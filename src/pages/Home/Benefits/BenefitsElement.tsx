@@ -60,7 +60,7 @@ export function BenefitsElement() {
 
       <BenefitsContainer>
         {businesses.map((business, index) => (
-          <InformationBussines key={index}>
+          <InformationBussines key={index} data-aos="flip-up">
             <IconsCompanny>{business.img}</IconsCompanny>
 
             <DescriptionWrap>

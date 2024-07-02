@@ -34,7 +34,8 @@ import { motion } from "framer-motion";
 import start from "../../../public/Star.svg";
 import robot from "../../assets/png/robot.png";
 import { departments, features } from "./constants.ts";
-import { fadeIn } from "../../../styles/animations.ts";
+import { fadeIn, slideIn } from "../../../styles/animations.ts";
+import Slider from "/src/components/layout/Slider/Slider.tsx";
 
 export default function About() {
   return (
@@ -61,7 +62,7 @@ export default function About() {
 
       <DepartmentsWrap>
         {departments.map((department, index) => (
-          <ItemDepartment key={index}>
+          <ItemDepartment key={index} data-aos="flip-up">
             <Image src={department.image} />
             <h2>{department.title}</h2>
             <p>{department.description}</p>
@@ -116,9 +117,9 @@ export default function About() {
       </section>
 
       <InformationAboutUsWrap>
-        <AboutImg src={service} />
-        <InformationAboutUs>
-          <TitleAbout>Nuestros Servicios</TitleAbout>
+        <AboutImg src={hawkcodedAbout} data-aos="fade-right"/>
+        <InformationAboutUs data-aos="fade-left">
+          <TitleAbout>Our membership for you.</TitleAbout>
           <TextAbout>
             Además de los servicios mencionados, nos especializamos en adaptar
             cada solución a las necesidades específicas de nuestros clientes,
@@ -134,6 +135,8 @@ export default function About() {
           </TextAbout>
         </InformationAboutUs>
       </InformationAboutUsWrap>
+
+      <Slider/>
     </AboutContainer>
   );
 }

@@ -1,7 +1,7 @@
 export const items = [
   {
     title: "Innovación",
-    img: "./src/assets/icons/settings.svg",
+    img: "./src/assets/icons/box-data.svg",
   },
   {
     title: "Calidad",

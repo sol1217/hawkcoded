@@ -10,20 +10,11 @@ const rotate = keyframes`
   }
 `;
 
-export const AboutImg = styled.img`
-  width: 500px;
-  height: 500px;
-
-  @media (max-width: 560px) {
-    width: 300px;
-    height: 300px;
-  }
-`;
-
 export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
 `;
 
 export const AboutTitle = styled.h2`
@@ -188,9 +179,11 @@ export const ButtonContact = styled.button`
   font-size: 22px;
   font-weight: bold;
   border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 
-  &:active {
-    transform: scale(0.95);
+  &:hover {
+    transform: scale(1.04);
   }
 `;
 
@@ -259,6 +252,7 @@ export const FeaturesWrap = styled.div`
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: rgba(5, 10, 28, 0.89);
   color: white;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #ff7500;
@@ -339,6 +333,25 @@ export const InformationAboutUs = styled.div`
 
   @media (max-width: 1450px) {
     width: 80%;
+  }
+`;
+
+export const AboutImg = styled.img`
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.89);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(0.97);
+  }
+
+  @media (max-width: 560px) {
+    width: 300px;
+    height: 300px;
   }
 `;
 

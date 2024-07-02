@@ -1,17 +1,41 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { SearchInputProps } from "./Header.types.ts";
 
+const rotateIn = keyframes`
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(90deg) scale(1.2);
+  }
+`;
+
+const rotateOut = keyframes`
+  0% {
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+`;
+
 export const HeaderContainer = styled.div`
-  padding: 20px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 20px 4px;
   align-items: center;
   position: fixed;
-  width: 100%;
   z-index: 99;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: ${(props) =>
+    props.isBackgroundWhite ? "5px 5px 5px rgba(0, 0, 0, 0.3)" : "none"};
 
-  /*background: linear-gradient(#086c90, #ff7500);*/
+  @media (min-width: 1200px) {
+    justify-content: space-around;
+    padding: 20px 4px;
+  }
 `;
 
 export const LogoImage = styled.img`
@@ -51,18 +75,13 @@ export const SearchInput = styled.input.attrs<SearchInputProps>((props) => ({
     opacity: props.isShowInput ? "1" : "0",
   },
 }))<SearchInputProps>`
-  transition:
-    width 0.5s ease,
-    opacity 0.5s ease;
+  transition: width 0.5s ease, opacity 0.5s ease;
   background: rgba(227, 233, 236, 0.4);
   padding: 10px;
   border: none;
   border-radius: 15px;
   color: black;
   z-index: 99;
-
-  &:focus {
-  }
 `;
 
 export const SearchButton = styled.div`
@@ -77,13 +96,19 @@ export const SearchButton = styled.div`
 export const MobilMenuButton = styled.button`
   background-color: transparent;
   border: none;
+  & > svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    animation: ${({ isOpen }) => (isOpen ? rotateIn : rotateOut)} 0.3s forwards;
+  }
 
   @media (min-width: 1200px) {
     display: none;
   }
 `;
 
-export const MobilMenuSection = styled.div`
+export const MobilMenuSection = styled.div<{ isVisible: boolean }>`
   position: absolute;
   top: 100px;
   right: 30px;
@@ -95,8 +120,14 @@ export const MobilMenuSection = styled.div`
   align-items: center;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 0;
+  overflow: hidden;
+  max-height: ${({ isVisible }) => (isVisible ? '300px' : '0')};
+  transition: max-height 0.3s ease;
+  opacity: ${({ isVisible }) => (isVisible ? '1' : '0')};
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 
-  @media (max-width: 450px) {
-    right: 50px;
+
+  @media (min-width: 1200px) {
+    display: none;
   }
 `;

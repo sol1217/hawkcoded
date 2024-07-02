@@ -6,13 +6,17 @@ export const BenefitsContainer = styled.div`
   justify-content: center;
   align-items: center;
   justify-items: center;
-  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
   padding: 10px;
 
   @media (max-width: 1290px) {
     grid-template-columns: repeat(1, 550px);
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+    gap: 4rem;
   }
 `;
 
@@ -27,11 +31,13 @@ export const InformationBussines = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
+  max-height: 150px;
+  height: 100%;
   border-radius: 15px;
-  padding: 10px;
-  height: 150px;
+  padding: 20px;
   border: 1px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: scale(1.05);
@@ -41,13 +47,12 @@ export const InformationBussines = styled.div`
   @media (max-width: 650px) {
     flex-direction: column;
     align-items: center;
-    height: inherit;
-    width: 90%;
     padding: 20px;
+    width: 90%;
   }
 
   @media (max-width: 580px) {
-    width: 60%;
+    width: 100%;
   }
 `;
 
@@ -57,6 +62,7 @@ export const DescriptionWrap = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
+  height: 100%;
 `;
 
 export const TitleInformation = styled.h2`
@@ -71,7 +77,11 @@ export const TitleBenefits = styled.h2`
   font-family: Verdana;
 
   @media (max-width: 1290px) {
-    font-size: 150%;
+    font-size: 24px;
     padding: 10px;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 20px;
   }
 `;

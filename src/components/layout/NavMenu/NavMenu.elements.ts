@@ -21,6 +21,7 @@ export const LinkContainer = styled.a<NavMenuLinksProps>`
   font-weight: bold;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.3s ease;
 
   &:hover {
     color: #ff7500;
