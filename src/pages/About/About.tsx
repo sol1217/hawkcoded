@@ -35,6 +35,7 @@ import hawkcodedAbout from "../../assets/jpg/software.jpg";
 
 import { departments, features } from "./constants.ts";
 import { fadeIn, slideIn } from "../../../styles/animations.ts";
+import Slider from "/src/components/layout/Slider/Slider.tsx";
 
 export default function About() {
   return (
@@ -135,6 +136,8 @@ export default function About() {
           </TextAbout>
         </InformationAboutUs>
       </InformationAboutUsWrap>
+
+      <Slider/>
     </AboutContainer>
   );
 }
