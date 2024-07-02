@@ -34,7 +34,7 @@ import { motion } from "framer-motion";
 import start from "../../../public/Star.svg";
 import robot from "../../assets/png/robot.png";
 import { departments, features } from "./constants.ts";
-import { fadeIn, slideIn } from "../../../styles/animations.ts";
+import { fadeIn } from "../../../styles/animations.ts";
 import Slider from "/src/components/layout/Slider/Slider.tsx";
 
 export default function About() {
@@ -117,7 +117,7 @@ export default function About() {
       </section>
 
       <InformationAboutUsWrap>
-        <AboutImg src={hawkcodedAbout} data-aos="fade-right"/>
+        <AboutImg src={service} data-aos="fade-right"/>
         <InformationAboutUs data-aos="fade-left">
           <TitleAbout>Our membership for you.</TitleAbout>
           <TextAbout>
