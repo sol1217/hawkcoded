@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BenefitsContainer = styled.div`
   display: grid;
@@ -20,10 +20,10 @@ export const BenefitsContainer = styled.div`
   }
 `;
 
-export const IconsCompanny = styled.div`
-  width: 20px;
-  height: 20px;
-  background-color: rgba(255, 117, 0, 0.69);
+
+export const IconsCompany = styled.img`
+  width: 50px;
+  height: 50px;
   border-radius: 60px;
 `;
 
@@ -38,6 +38,19 @@ export const InformationBussines = styled.div`
   padding: 20px;
   border: 1px solid #ddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    top: 20px; 
+    left: 10px; 
+    z-index: -1; 
+  }
 
   &:hover {
     transform: scale(1.05);
@@ -53,6 +66,10 @@ export const InformationBussines = styled.div`
 
   @media (max-width: 580px) {
     width: 100%;
+
+    &::before {
+      display: none; 
+    }
   }
 `;
 

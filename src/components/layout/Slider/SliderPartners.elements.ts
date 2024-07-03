@@ -7,13 +7,21 @@ interface Partner {
   name: string;
 }
 
+import djiLogo from './../../../assets/png/dji-logo.png';
+import StarLinkLogo from './../../../assets/png/starlink-logo.svg';
+import FourHawsLogo from './../../../assets/png/4hawks-logo.png';
+import MicrosoftLogo from './../../../assets/png/microsoft-logo.svg';
+import WingtraLogo from './../../../assets/png/wingtra-logo.png';
+import OracleLogo from './../../../assets/png/oracle-logo.svg';
+
+
 export const partners: Partner[] = [
-  { id: 1, imageUrl: '/src/assets/png/dji-logo.png', name: "DJI" },
-  { id: 2, imageUrl: '/src/assets/png/starlink-logo.svg', name: "Starlink" },
-  { id: 3, imageUrl: '/src/assets/png/4hawks-logo.png', name: "4hawks" },
-  { id: 4, imageUrl: '/src/assets/png/microsoft-logo.svg', name: "Microsoft" },
-  { id: 5, imageUrl: '/src/assets/png/wingtra-logo.png', name: "Wingtra" },
-  { id: 6, imageUrl: '/src/assets/png/oracle-logo.svg', name: "Oracle" },
+  { id: 1, imageUrl: djiLogo, name: "DJI" },
+  { id: 2, imageUrl: StarLinkLogo, name: "Starlink" },
+  { id: 3, imageUrl: FourHawsLogo, name: "4hawks" },
+  { id: 4, imageUrl: MicrosoftLogo, name: "Microsoft" },
+  { id: 5, imageUrl: WingtraLogo, name: "Wingtra" },
+  { id: 6, imageUrl: OracleLogo, name: "Oracle" },
 ];
 
 // Animación de desplazamiento

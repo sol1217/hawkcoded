@@ -1,6 +1,6 @@
 import React from 'react';
-import { SliderContainer, SlideTrack, Slide, SlideImage, SlideName } from './Slider.elements';
-import { partners } from './Slider.elements';
+import { SliderContainer, SlideTrack, Slide, SlideImage, SlideName } from './SliderPartners.elements';
+import { partners } from './SliderPartners.elements';
 
 // Componente principal
 const Slider: React.FC = () => {

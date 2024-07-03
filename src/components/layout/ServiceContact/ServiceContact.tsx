@@ -1,4 +1,5 @@
 import { ServiceContactContainer, ServiceButtonContact, SeeMoreContainer } from "./ServiceContact.elements"
+import { FaArrowRight } from "react-icons/fa";
 
 interface ContactProps {
   firstAText: string,
@@ -14,7 +15,7 @@ const ServiceContact: React.FC<ContactProps> = ({firstAText, firstAHref, secondA
         <ServiceButtonContact href={firstAHref}>{firstAText}</ServiceButtonContact>
         <SeeMoreContainer href={secondAHref}>
             {secondAText}
-            <img src="/src/assets/icons/arrow-right-solid.svg" loading="lazy" alt="see_more" />
+            <FaArrowRight fill="#fff"></FaArrowRight>
         </SeeMoreContainer>
     </ServiceContactContainer>
   )

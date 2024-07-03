@@ -1,34 +1,40 @@
+import inovationImage from './../../../assets/icons/box-data.svg';
+import cloudImage from './../../../assets/icons/cloud.svg';
+import menuImage from './../../../assets/icons/menu.svg';
+import settingsImage from './../../../assets/icons/settings.svg'
+
+
 export const items = [
   {
     title: "Innovación",
-    img: "./src/assets/icons/box-data.svg",
+    img: inovationImage,
   },
   {
     title: "Calidad",
-    img: "./src/assets/icons/cloud.svg",
+    img: cloudImage,
   },
   {
     title: "Colaboración",
-    img: "./src/assets/icons/box-data.svg",
+    img: inovationImage,
   },
   {
     title: "Adaptabilidad",
-    img: "./src/assets/icons/menu.svg",
+    img: menuImage,
   },
   {
     title: "Sostenibilidad",
-    img: "./src/assets/icons/settings.svg",
+    img: settingsImage,
   },
   {
     title: "Seguridad",
-    img: "./src/assets/icons/cloud.svg",
+    img: cloudImage,
   },
   {
     title: "Finanzas",
-    img: "./src/assets/icons/box-data.svg",
+    img: inovationImage,
   },
   {
     title: "Desarrollo",
-    img: "./src/assets/icons/menu.svg",
+    img: menuImage,
   },
 ];

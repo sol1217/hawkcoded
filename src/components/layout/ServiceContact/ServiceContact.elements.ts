@@ -47,7 +47,7 @@ export const SeeMoreContainer = styled.a`
   color: #000;
   transition: color 0.3s ease;
 
-  & > img {
+  & > svg {
     width: 15px;
     background-color: #ee7814;
     padding: 5px;

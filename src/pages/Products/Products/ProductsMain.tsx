@@ -16,7 +16,7 @@ import {
   H2Title,
   PTitleContainer,
 } from "../../../components/GlobalStyles/GlobalStyles.elements.ts";
-import Slider from "../../../components/layout/Slider/Slider.tsx";
+import Slider from "../../../components/layout/Slider/SliderPartners.tsx";
 
 interface Producto {
   title: string;
