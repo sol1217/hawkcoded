@@ -6,13 +6,13 @@ import { RiFileCodeLine } from "react-icons/ri";
 import { PiEqualizerBold } from "react-icons/pi";
 import {
   BenefitsContainer,
-  DescriptionWrap,
-  IconsCompany,
-  InformationBussines,
+  BenefitsIcon,
+  BenefitsItem,
+  PBenefits,
   TitleBenefits,
-  TitleInformation,
 } from "./Benefits.elements";
 import { IconType } from "react-icons";
+import React from "react";
 
 const iconComponents: Record<string, IconType> = {
   IoGitCompareOutline: IoGitCompareOutline,
@@ -49,18 +49,6 @@ export function BenefitsElement() {
       description:
         "Ofrecemos soluciones efectivas y eficientes que maximizan el retorno de inversión.",
     },
-    {
-      title: "Entrega Puntual",
-      icon: "RiFileCodeLine" as keyof typeof iconComponents,
-      description:
-        "Nos comprometemos a cumplir con los plazos establecidos, asegurando que tu proyecto esté listo cuando lo necesitas.",
-    },
-    {
-      title: "Satisfacción del Cliente",
-      icon: "PiEqualizerBold" as keyof typeof iconComponents,
-      description:
-        "Nuestro objetivo principal es la satisfacción completa de nuestros clientes, y trabajamos arduamente para lograrla.",
-    },
   ];
 
   return (
@@ -71,14 +59,11 @@ export function BenefitsElement() {
 
       <BenefitsContainer>
         {businesses.map((business, index) => (
-          <InformationBussines key={index} data-aos="flip-up">
-            <IconsCompany as={iconComponents[business.icon]} fontSize={40} />
-
-            <DescriptionWrap>
-              <TitleInformation>{business.title}</TitleInformation>
-              <h3>{business.description}</h3>
-            </DescriptionWrap>
-          </InformationBussines>
+          <BenefitsItem data-aos="flip-up" key={index}>
+            <PBenefits>{business.title}</PBenefits>
+            <p style={{ color: "#000" }}>{business.description}</p>
+            <BenefitsIcon src={business.icon} alt="icon" />
+          </BenefitsItem>
         ))}
       </BenefitsContainer>
     </div>

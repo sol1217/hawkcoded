@@ -1,25 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
-export const BenefitsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 550px);
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  gap: 20px;
-  padding: 10px;
-
-  @media (max-width: 1290px) {
-    grid-template-columns: repeat(1, 550px);
+const rotateY = keyframes`
+  from {
+    transform: rotateY(0deg);
   }
-
-  @media (max-width: 650px) {
-    grid-template-columns: 1fr;
-    margin-top: 4rem;
-    gap: 4rem;
+  to {
+    transform: rotateY(360deg);
   }
 `;
-
 
 export const IconsCompany = styled.img`
   width: 50px;
@@ -37,7 +25,9 @@ export const InformationBussines = styled.div`
   border-radius: 15px;
   padding: 20px;
   border: 1px solid #ddd;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
 
   &::before {
@@ -47,9 +37,9 @@ export const InformationBussines = styled.div`
     border-radius: 50%;
     background-color: orange;
     position: absolute;
-    top: 20px; 
-    left: 10px; 
-    z-index: -1; 
+    top: 20px;
+    left: 10px;
+    z-index: -1;
   }
 
   &:hover {
@@ -68,7 +58,7 @@ export const InformationBussines = styled.div`
     width: 100%;
 
     &::before {
-      display: none; 
+      display: none;
     }
   }
 `;
@@ -101,4 +91,53 @@ export const TitleBenefits = styled.h2`
   @media (max-width: 650px) {
     font-size: 20px;
   }
+`;
+
+export const PBenefits = styled.p`
+  color: #ff7500;
+  font-size: 1.2rem;
+  font-weight: 900;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const BenefitsContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
+export const BenefitsItem = styled.div`
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover img {
+    animation: ${rotateY} 1s linear infinite; // Aplicamos la animación al icono al hacer hover
+  }
+`;
+
+export const BenefitsIcon = styled.img`
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
 `;

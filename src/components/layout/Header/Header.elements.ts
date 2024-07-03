@@ -1,5 +1,10 @@
 import styled, { keyframes } from "styled-components";
-import { HeaderContainerProps, MobilMenuButtonProps, MobilMenuSectionProps, SearchInputProps } from "./Header.types";
+import {
+  HeaderContainerProps,
+  MobilMenuButtonProps,
+  MobilMenuSectionProps,
+  SearchInputProps,
+} from "./Header.types";
 
 const rotateIn = keyframes`
   0% {
@@ -20,21 +25,26 @@ const rotateOut = keyframes`
 `;
 
 export const HeaderContainer = styled.div<HeaderContainerProps>`
-  width: 100%;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 4px;
+  justify-content: flex-start;
+  padding: 25px 60px 25px 60px;
   align-items: center;
+  gap: 30px;
   position: fixed;
   z-index: 99;
   transition: background-color 0.3s ease;
-  backdrop-filter: blur(8px);
-  box-shadow: ${(props) =>
-    props.isBackgroundWhite ? "5px 5px 5px rgba(0, 0, 0, 0.3)" : "none"};
+  background-color: white;
+  box-shadow: 5px 5px;
 
   @media (min-width: 1200px) {
+    justify-content: flex-start;
+    padding: 20px 60px;
+  }
+
+  @media (max-width: 1200px) {
     justify-content: space-around;
-    padding: 20px 4px;
+    padding: 30px;
   }
 `;
 
@@ -54,22 +64,26 @@ export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
 `;
 
 export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
-  position: absolute;
+  position: fixed;
   top: 100px;
-  right: 30px;
-  background-color: rgba(255, 255, 255, 0.91);
-  padding: 10px;
+  right: 10px;
+  background-color: #ff7500;
+  padding: 25px;
   width: 200px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  z-index: 100;
   align-items: center;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 0;
   overflow: hidden;
-  max-height: ${({ isVisible }) => (isVisible ? '300px' : '0')};
+  max-height: ${({ isVisible }) => (isVisible ? "300px" : "0")};
   transition: max-height 0.3s ease;
-  opacity: ${({ isVisible }) => (isVisible ? '1' : '0')};
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: ${({ isVisible }) => (isVisible ? "1" : "0")};
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
 
   @media (min-width: 1200px) {
     display: none;
@@ -82,7 +96,9 @@ export const SearchInput = styled.input.attrs<SearchInputProps>((props) => ({
     opacity: props.isShowInput ? "1" : "0",
   },
 }))<SearchInputProps>`
-  transition: width 0.5s ease, opacity 0.5s ease;
+  transition:
+    width 0.5s ease,
+    opacity 0.5s ease;
   background: rgba(227, 233, 236, 0.4);
   padding: 10px;
   border: none;
@@ -90,7 +106,6 @@ export const SearchInput = styled.input.attrs<SearchInputProps>((props) => ({
   color: black;
   z-index: 99;
 `;
-
 
 export const LogoImage = styled.img`
   width: 280px;
@@ -102,15 +117,18 @@ export const LogoImage = styled.img`
   }
 `;
 
-
 export const SearchContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  width: 70%;
 
   @media (max-width: 1200px) {
     display: none;
+  }
+
+  @media (max-width: 1300px) {
+    width: 60%;
   }
 `;

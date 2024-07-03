@@ -30,7 +30,7 @@ export const AboutTitle = styled.h2`
 `;
 
 export const WelcomText = styled.span`
-  font-size: 20px;
+  font-size: 25px;
 `;
 
 export const AboutInformation = styled.span`
@@ -40,10 +40,6 @@ export const AboutInformation = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 700px) {
-    width: 90%;
-  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -194,6 +190,7 @@ export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 0 10px 0;
 
   @media (max-width: 720px) {
     width: 400px;
@@ -219,6 +216,11 @@ export const ImageContact = styled.img`
   @media (max-width: 520px) {
     width: 250px;
     height: 250px;
+  }
+
+  @media (max-width: 400px) {
+    width: 200px;
+    height: 200px;
   }
 `;
 

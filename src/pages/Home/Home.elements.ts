@@ -54,13 +54,16 @@ export const MainText = styled.h1`
   font-family: "Lantinghei SC";
   width: 100%;
   max-width: 800px;
-
+  text-align: center;
   padding-left: 30px;
 
   @media (min-width: 768px) {
     padding-left: 20px;
   }
 
+  @media (max-width: 530px) {
+    font-size: 35px;
+  }
 `;
 
 export const EmphasizeText = styled.b`
@@ -111,7 +114,7 @@ export const TextInformation = styled.div`
 
   @media (max-width: 530px) {
     font-size: 20px;
-    width: 350px;
+    width: 380px;
   }
 `;
 
@@ -128,7 +131,9 @@ export const ButtonContact = styled.a`
   box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
   -webkit-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
   -moz-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
-  transition: border 0.3s ease, color 0.3s ease;
+  transition:
+    border 0.3s ease,
+    color 0.3s ease;
 
   &:active {
     transform: scale(0.95);
