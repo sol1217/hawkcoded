@@ -35,7 +35,9 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
   z-index: 99;
   transition: background-color 0.3s ease;
   background-color: white;
-  box-shadow: 5px 5px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 
   @media (min-width: 1200px) {
     justify-content: flex-start;
@@ -64,9 +66,9 @@ export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
 `;
 
 export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
-  position: fixed;
+  position: absolute;
   top: 100px;
-  right: 10px;
+  right: 70px;
   background-color: #ff7500;
   padding: 25px;
   width: 200px;

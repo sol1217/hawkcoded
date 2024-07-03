@@ -41,8 +41,12 @@ export const ContactLink = styled.a`
   padding: 13px;
   background-color: #ff7500;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
   font-weight: bold;
   color: white;
+
+  &:hover {
+    background-color: #171d25;
+  }
 `;
