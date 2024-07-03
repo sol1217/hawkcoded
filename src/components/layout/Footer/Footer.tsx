@@ -14,17 +14,17 @@ export default function Footer() {
         <PStyled>©HawkCoded {year}.</PStyled>
       </div>
       <LinksContainer>
-        <a>
-          <FaSquareInstagram fontSize={30} color="white" />
+        <a href="https://www.instagram.com/hawkcoded/" target="_blank">
+          <FaSquareInstagram />
         </a>
         <a>
-          <FaFacebook fontSize={30} color="white" />
+          <FaFacebook />
         </a>
         <a>
-          <IoLogoWhatsapp fontSize={30} color="white" />
+          <IoLogoWhatsapp />
         </a>
         <a>
-          <FaYoutube fontSize={30} color="white" />
+          <FaYoutube />
         </a>
       </LinksContainer>
     </FooterStyled>

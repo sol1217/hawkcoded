@@ -6,7 +6,7 @@ import { partners } from './SliderPartners.elements';
 const Slider: React.FC = () => {
   return (
     <SliderContainer>
-      <h1>Nuestras Marcas</h1>
+      <h1>Marcas Que Confían En Nosotros</h1>
       <SlideTrack>
         {partners.map((partner) => (
           <Slide key={partner.id}>

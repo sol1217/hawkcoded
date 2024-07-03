@@ -31,7 +31,7 @@ const AllServices: React.FC = () => {
   return (
     <div>
       <STitleContainer>
-        <H2Title>All Our Services</H2Title>
+        <H2Title>Todos Nuestros Servicios</H2Title>
       </STitleContainer>
       <div>
         {/* Mapear cada categoría */}

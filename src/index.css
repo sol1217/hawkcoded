@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'Assistant';
+  src: url('./assets/fonts/Assistant-VariableFont_wght.ttf') format('truetype');
+}
+
+
 body{
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 a {
@@ -12,6 +18,11 @@ a {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 .features {

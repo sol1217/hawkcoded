@@ -14,7 +14,7 @@ const TestimonialContainer: React.FC = () => {
 
   return (
     <>
-      <H2WithBorders>What Our Clients Say:</H2WithBorders>
+      <H2WithBorders>Lo Que Nuestros Clientes Piensan</H2WithBorders>
 
       <TestimonialContainerDiv>
         {testimonios.slice(0, visibleTestimonios).map((testimonial, index) => (
@@ -29,7 +29,7 @@ const TestimonialContainer: React.FC = () => {
         </TestimonialContainerDiv>
 
           {testimonios.length > visibleTestimonios && (
-            <LoadMoreButton onClick={loadMoreTestimonios}>See More</LoadMoreButton>
+            <LoadMoreButton onClick={loadMoreTestimonios}>Ver Más</LoadMoreButton>
           )}
     </>
   );

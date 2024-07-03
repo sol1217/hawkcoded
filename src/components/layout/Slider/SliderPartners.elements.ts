@@ -32,12 +32,13 @@ export const scrollAnimation = keyframes`
 
 // Componentes styled-components
 export const SliderContainer = styled.div`
-  background: #e87814;
+  background: #F3C398;
   color: white; 
   position: relative;
   text-align: center;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
   padding: 20px 0; 
+  border-top: 3px solid #e87814;
   
   &::before,
   &::after {
@@ -69,7 +70,7 @@ export const SlideTrack = styled.div`
   animation: ${scrollAnimation} ${partners.length * 5}s linear infinite; 
   display: flex;
   width: calc(250px * ${partners.length});
-  background: #e87814;
+  background: #F3C398;
   overflow: hidden; 
 `;
 

@@ -119,3 +119,18 @@ export const H2WithBorders = styled.h2`
       }
 
 `;
+
+
+export const H3Error = styled.h3`
+  color: #f44336;
+  background-color: #fff;
+  border: 1px solid #f44336;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute; /* Establece posición absoluta */
+  top: -40px; /* Ajusta la posición superior según necesites */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta para centrar horizontalmente */
+  z-index: 10; /* Asegura que esté por encima del contenido */
+`;

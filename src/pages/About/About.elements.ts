@@ -19,7 +19,7 @@ export const AboutContainer = styled.div`
 
 export const AboutTitle = styled.h2`
   font-size: 90px;
-  text-shadow: 5px 0 0 black;
+  text-align: center;
 
   @media (max-width: 1500px) {
     flex-direction: column;
@@ -95,8 +95,10 @@ export const ItemDepartment = styled.div`
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #ddd;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+ 
+  & > p {
+    text-wrap: balance;
+  }
 
   &:hover {
     transform: scale(1.05);
@@ -105,31 +107,30 @@ export const ItemDepartment = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 300px;
+  width: 100%;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 `;
 
 export const DepartamentsInfoWrap = styled.div`
-  text-align: center;
   padding: 20px;
+  text-align: center;
 `;
 
 export const TitleDepartament = styled.h2`
   color: #ff7500;
   font-size: 40px;
-  text-shadow: 1px 0 0 black;
 `;
 
 export const ContactContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #171d25;
+  background-color: #fff;
   padding: 30px;
-  color: white;
+  color: #000;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 830px) {
     flex-direction: column;
   }
 
@@ -141,19 +142,26 @@ export const ContactContainer = styled.div`
 export const ContactInformarionWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 32px;
-  width: 450px;
+  max-width: 450px;
   padding: 20px;
+
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 `;
 
-export const TitleContact = styled.span`
+export const TitleContact = styled.h2`
   font-size: 45px;
   font-weight: bold;
-  text-align: center;
-  color: #ff7500;
-  text-shadow: 2px 0 0 white;
+  color: #000;
+  margin: 0;
+
+  & > span {
+    color: #ff7500;
+  }
 
   @media (max-width: 520px) {
     font-size: 35px;
@@ -163,11 +171,10 @@ export const TitleContact = styled.span`
 
 export const InformationContact = styled.span`
   font-size: 22px;
-  padding-left: 30px;
+  text-wrap: balance;
 
   @media (max-width: 520px) {
     font-size: 18px;
-    width: 70%;
     padding-left: 0px;
   }
 `;
@@ -182,39 +189,37 @@ export const ButtonContact = styled.a`
   color: white;
   font-size: 22px;
   font-weight: bold;
+  border: 1px solid transparent;
   border-radius: 15px;
   cursor: pointer;
-`;
+  transition:
+  border-color 0.3s,
+  background-color 0.3s,
+  color 0.3s;
 
-export const IconContainer = styled.div`
-  background-color: white;
-  border-radius: 50%;
-  height: 600px;
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 720px) {
-    width: 400px;
-    height: 400px;
-  }
-
-  @media (max-width: 520px) {
-    width: 300px;
-    height: 300px;
+  &:hover {
+    border: 1px solid #ff7500;
+    background-color: #fff;
+    color: #ff7500;
   }
 `;
+
 
 export const ImageContact = styled.img`
-  animation: ${rotate} 4s linear infinite;
+  animation: ${rotate} 50s linear infinite;
   width: 430px;
   height: 430px;
 
-  @media (max-width: 700px) {
-    width: 300px;
-    height: 300px;
+  @media (max-width: 1100px) {
+    width: 270px;
+    height: 270px;
   }
+
+    @media (max-width: 860px) {
+    width: 200px;
+    height: 200px;
+  }
+
 
   @media (max-width: 520px) {
     width: 250px;
@@ -224,42 +229,31 @@ export const ImageContact = styled.img`
 
 export const FeaturesSection = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
-  height: 500px;
-
-  @media (max-width: 1420px) {
-    height: 900px;
-  }
-
-  @media (max-width: 1420px) {
-    height: inherit;
-  }
+  margin: 0 auto;
+  gap: 20px; 
+  padding: 20px;
 `;
 
 export const FeaturesWrap = styled.div`
   display: flex;
   gap: 15px;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #000;
   border-radius: 10px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: rgba(5, 10, 28, 0.89);
-  color: white;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+
 
   &:hover {
-    background-color: #ff7500;
+    transform: scale(1.03);
   }
 
-  &:hover .featuresImg {
-    background-color: rgba(5, 10, 28, 0.89);
-  }
 
   @media (max-width: 720px) {
     width: 90%;
@@ -271,12 +265,6 @@ export const FeaturesWrap = styled.div`
   }
 `;
 
-export const FeaturesMain = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
 
 export const FeatureImgWrap = styled.div`
   border-radius: 50%;
@@ -285,19 +273,21 @@ export const FeatureImgWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 
-  background-color: rgba(255, 117, 0, 0.63);
+  & > img {
+    color: #fff;
+    fill: #fff;
+  }
 `;
 
 export const FeaturesItem = styled.div`
-  margin-left: 20px;
 `;
 
 export const TitleFeatures = styled.h2`
   font-size: 45px;
   text-align: center;
   color: #ff7500;
-  text-shadow: 2px 0 0 black;
 `;
 
 export const InformationAboutUsWrap = styled.div`
@@ -306,8 +296,9 @@ export const InformationAboutUsWrap = styled.div`
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  background-color: #cc6109;
+  background-color: #fff;
   padding: 30px;
+  margin: 4rem 0;
 
   @media (max-width: 1450px) {
     flex-direction: column;
@@ -349,6 +340,7 @@ export const AboutImg = styled.img`
 export const TitleAbout = styled.h2`
   font-size: 50px;
   color: #fff;
+  margin-top: 0;
 
   @media (max-width: 460px) {
     font-size: 40px;
@@ -360,4 +352,5 @@ export const TextAbout = styled.span`
   color: #fff;
   max-width: 650px;
   min-width: 200px;
+  text-wrap: pretty;
 `;

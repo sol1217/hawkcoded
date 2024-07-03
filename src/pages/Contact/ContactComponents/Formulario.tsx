@@ -4,7 +4,8 @@ import {
     FormWrap,
     InputDesign,
     TextareaDesign,
-} from "./Fomulario.elements";
+} from "./../Contact.elements";
+import { H3Error } from "./../../../components/GlobalStyles/GlobalStyles.elements";
 
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
@@ -67,7 +68,7 @@ export default function Formulario() {
         <FormTitle>Formulario de Contacto</FormTitle>
         {error && (
             //crear un elemento de alerta, por ahora es un <p>:
-            <p>{error}</p> 
+            <H3Error>{error}</H3Error> 
         )}
         <InputDesign placeholder="Ingresa Tu Nombre" onChange={(e) => setNombre(e.target.value)}/>
         <InputDesign placeholder="Ingresa Tu Email" onChange={(e) => setEmail(e.target.value)}/>

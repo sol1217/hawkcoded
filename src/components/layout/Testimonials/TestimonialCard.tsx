@@ -1,4 +1,12 @@
-import { Card, ProfileImage, TestimonialTexts, Testimonial, UserInfo, UserName, UserCompany } from "./Testimonials.elements"
+import { 
+  TestimonialFigure, 
+  Triangle, 
+  TestimonialBlockquote, 
+  TestimonialImg, 
+  TestimonialAuthor, 
+  TestimonialTitle, 
+  TestimonialSubtitle } 
+from "./Testimonials.elements"
 
 interface TestimonialCardProps {
   img: string;
@@ -9,17 +17,18 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ img, name, company = '', testimonial }) => {
   return (
-    <Card data-aos="fade-up">
-      <ProfileImage src={img} loading="lazy" alt={`${name} profile`} />
-        <TestimonialTexts>
-            <Testimonial>"{testimonial}"</Testimonial>
-            <UserInfo>
-              <UserName>{name}</UserName>
-              {company && <UserCompany>CEO of <span>{company}</span></UserCompany>}
-            </UserInfo>
-        </TestimonialTexts>
-    </Card>
+    <TestimonialFigure data-aos="fade-up">
+      <Triangle />
+      <TestimonialBlockquote>
+        "{testimonial}"
+      </TestimonialBlockquote>
+      <TestimonialImg src={img} alt={`${name}'s profile`} />
+      <TestimonialAuthor>
+        <TestimonialTitle>{name}</TestimonialTitle>
+        {company && <TestimonialSubtitle>{company}</TestimonialSubtitle>}
+      </TestimonialAuthor>
+    </TestimonialFigure>
   );
-}
+};
 
 export default TestimonialCard;

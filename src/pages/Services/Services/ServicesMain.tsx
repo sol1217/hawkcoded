@@ -10,17 +10,17 @@ import rulerIcon from './../../../assets/icons/ruler-solid.svg';
 import chartIcon from './../../../assets/icons/chart-simple-solid.svg';
 
 const servicesData = [
-  { id: 1, title: 'Web Development', description: 'Creating websites and web applications', icon: globeIcon},
-  { id: 2, title: 'Mobile App Development', description: 'Developing mobile applications for iOS and Android', icon: mobileIcon},
-  { id: 3, title: 'UI/UX Design', description: 'Designing user interfaces and user experience', icon:  rulerIcon},
-  { id: 4, title: 'Digital Marketing', description: 'Promoting brands and products through digital channels', icon: chartIcon},
+  { id: 1, title: 'Desarrollo Web', description: 'Creamos sitios web y aplicaciones.', icon: globeIcon},
+  { id: 2, title: 'Desarrollo Móvil', description: 'Desarrollamos aplicaciones para iOS y Android.', icon: mobileIcon},
+  { id: 3, title: 'UI/UX Design', description: 'Diseñamos Interfaces Atractivas y Funcionales.', icon:  rulerIcon},
+  { id: 4, title: 'Marketing Digital', description: 'Promocionamos Productos y Marcas En Medios Digitales.', icon: chartIcon},
 ];
 
 const Services: React.FC = () => {
   return (
     <>
       <STitleContainer>
-        <H2Title>These Are Our Services</H2Title>
+        <H2Title>Estos Son Nuestros Servicios</H2Title>
       </STitleContainer>
 
       <ServicesContainer>
