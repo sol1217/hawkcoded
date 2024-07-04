@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactContainer, ContactInformarionWrap, TitleContact, InformationContact, ButtonContact, ImageContact } from './ContactSection.element';
+import { ContactContainer, ContactInformarionWrap, TitleContact, InformationContact, ButtonContact, ImageContact } from './ContactSection.elements';
 import imgRotative from "./../../../../assets/png/engine.svg";
 
 const ContactSection: React.FC = () => (

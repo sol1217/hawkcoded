@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImgContainer, ContentWrapper, AboutTitle, AboutInformation } from './AboutTittleInfo.elementes';
+import { ImgContainer, ContentWrapper, AboutTitle, AboutInformation } from './AboutTittleInfo.elements';
 
 const AboutTitleInfo: React.FC = () => (
   <ImgContainer>
