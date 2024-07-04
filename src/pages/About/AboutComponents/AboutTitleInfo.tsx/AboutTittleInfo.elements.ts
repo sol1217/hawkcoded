@@ -32,6 +32,11 @@ export const ContentWrapper = styled.div`
   @media (max-width: 600px) {
     padding: 20px;
   }
+
+  
+  @media (max-width: 480px) {
+    margin-top: 5rem;
+  }
 `;
 
 

@@ -25,29 +25,14 @@ const rotateOut = keyframes`
 `;
 
 export const HeaderContainer = styled.div<HeaderContainerProps>`
-  width: 100vw;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  padding: 25px 60px 25px 60px;
-  align-items: center;
-  gap: 30px;
-  position: fixed;
-  z-index: 99;
-  transition: background-color 0.3s ease;
+  justify-content: space-between;
+  padding: 20px 0px;
   background-color: white;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
-
-  @media (min-width: 1200px) {
-    justify-content: flex-start;
-    padding: 20px 60px;
-  }
-
-  @media (max-width: 1200px) {
-    justify-content: space-around;
-    padding: 30px;
-  }
 `;
 
 export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
@@ -68,7 +53,7 @@ export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
 export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
   position: absolute;
   top: 100px;
-  right: 70px;
+  right: 10px;
   background-color: #ff7500;
   padding: 25px;
   width: 200px;

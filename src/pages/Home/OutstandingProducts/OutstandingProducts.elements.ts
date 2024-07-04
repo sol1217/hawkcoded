@@ -15,7 +15,6 @@ export const ProductsWrap = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-inline: 4rem;
 
   @media (min-width: 768px) {
     padding-inline: 6rem;

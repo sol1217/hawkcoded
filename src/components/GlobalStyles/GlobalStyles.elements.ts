@@ -54,6 +54,12 @@ export const H2Title = styled.h2<H2TitleProps>`
   font-weight: 600;
   text-align: center;
   text-shadow: ${(props) => props.textShadow || '2px 2px 4px rgba(0, 0, 0, 0.3)'};
+
+  
+  @media (max-width: 480px) {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
 `;
 
 
