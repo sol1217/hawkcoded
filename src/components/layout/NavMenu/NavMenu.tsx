@@ -1,8 +1,13 @@
-import { LinkContainer, NavMenuLinks } from "./NavMenu.elements.ts";
+import {
+  ContactLink,
+  LinkContainer,
+  NavContainer,
+  NavMenuLinks,
+} from "./NavMenu.elements.ts";
 
 const NavMenu = ({ flexDirection = "", color = "" }) => {
   return (
-    <nav>
+    <NavContainer $flexDirection={flexDirection} $color={color}>
       <NavMenuLinks $flexDirection={flexDirection} $color={color}>
         <li>
           <LinkContainer $flexDirection={flexDirection} $color={color} href="/">
@@ -36,17 +41,8 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
             Sobre nosotros
           </LinkContainer>
         </li>
-        <li>
-          <LinkContainer
-            $flexDirection={flexDirection}
-            $color={color}
-            href="/contact"
-          >
-            Contacto
-          </LinkContainer>
-        </li>
       </NavMenuLinks>
-    </nav>
+    </NavContainer>
   );
 };
 

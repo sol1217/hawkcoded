@@ -11,6 +11,7 @@ import {
 } from "./Header.elements";
 import logotype from "../../../assets/png/logo-type.png";
 import MobilMenu from "../MobileMenu/MobilMenu";
+import { ContactLink } from "../../layout/NavMenu/NavMenu.elements.ts";
 
 export function Header() {
   const [isShowMobilMenu, setIsShowMobilMenu] = useState(false);
@@ -37,11 +38,7 @@ export function Header() {
 
   return (
     <HeaderContainer
-      isBackgroundWhite={isBackgroundWhite}  // <-- Añadir esta línea
-      style={{
-        backgroundColor: isBackgroundWhite ? "#171d25" : "rgba(0, 0, 0, 0.4)",
-        boxShadow: isBackgroundWhite ? "5px 5px 5px 0" : "none",
-      }}
+      isBackgroundWhite={isBackgroundWhite} // <-- Añadir esta línea
     >
       <a href="/">
         <LogoImage src={logotype} />
@@ -49,18 +46,28 @@ export function Header() {
 
       <MobilMenuButton isOpen={isShowMobilMenu} onClick={handleShowMobilMenu}>
         {isShowMobilMenu ? (
-          <IoIosClose size={40} color="white" style={{ transform: 'scale(1.2)' }} />
+          <IoIosClose
+            size={40}
+            color="black"
+            style={{ transform: "scale(1.2)" }}
+          />
         ) : (
-          <IoMdMenu size={40} color="white" />
+          <IoMdMenu size={40} color="black" />
         )}
       </MobilMenuButton>
 
       <MobilMenuSection isVisible={isShowMobilMenu}>
         <MobilMenu />
+        <div>
+          <ContactLink href="/contact">Contacto</ContactLink>
+        </div>
       </MobilMenuSection>
 
       <SearchContainer>
-        <NavMenu flexDirection="row" color="white" />
+        <NavMenu flexDirection="row" color="black" />
+        <div>
+          <ContactLink href="/contact">Contacto</ContactLink>
+        </div>
       </SearchContainer>
     </HeaderContainer>
   );
