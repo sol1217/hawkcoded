@@ -1,7 +1,7 @@
 import React from 'react';
-import { FeaturesSection, FeaturesWrap, FeatureImgWrap, FeaturesItem, TitleFeatures } from "./../About.elements.ts";
-import start from "./../../../../public/Star.svg";
-import { features } from "./../Data/constants.ts";
+import { TitleFeatures, FeaturesSection, FeaturesWrap, FeatureImgWrap, FeaturesItem } from './Features.elements.ts';
+import start from "./../../../../../public/Star.svg";
+import { features } from "./../../Data/constants.ts";
 
 const FeaturesSectionComponent: React.FC = () => (
   <section id="features" className="section">

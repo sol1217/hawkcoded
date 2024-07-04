@@ -1,19 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { H2WithBorders } from "./../../components/GlobalStyles/GlobalStyles.elements";
 export {H2WithBorders}
-import phone from "../../assets/jpg/phone.jpg";
+import phone from "../../assets/bg-images/phone.webp";
 
-const rotateAndScale = keyframes`
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(360deg) scale(1.1);
-  }
-  100% {
-    transform: rotate(720deg) scale(1);
-  }
-`;
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -39,6 +28,9 @@ export const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
 `;
 
 export const TextWrap = styled.div`
@@ -218,7 +210,7 @@ export const MainLogoImg = styled.img`
   top: 20px;
   left: 20px;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1187px) {
     display: none;
   }
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import stockServiceImage from '/src/assets/bg-images/stock-image-services.webp';
-import stockProductImage_1 from '/src/assets/bg-images/software.webp'
+import stockServiceImage from './../../assets/bg-images/computer.webp';
+import stockProductImage_1 from './../../assets/bg-images/software.webp'
 
 
 export const LoadMoreButton = styled.button`
@@ -37,7 +37,9 @@ export const STitleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
 `;
 
 
@@ -68,7 +70,9 @@ export const PTitleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
 `;
 
 
@@ -133,4 +137,30 @@ export const H3Error = styled.h3`
   left: 50%; /* Centra horizontalmente */
   transform: translateX(-50%); /* Ajusta para centrar horizontalmente */
   z-index: 10; /* Asegura que esté por encima del contenido */
+`;
+
+
+export const ButtonContact = styled.a`
+  padding: 15px;
+  border-radius: 50px;
+  width: 200px;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  border: 3px solid #ff7500;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
+  -webkit-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
+  -moz-box-shadow: -30px -12px 87px -41px rgba(255, 255, 255, 0.76) inset;
+  transition: border 0.3s ease, color 0.3s ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:hover {
+    border: 3px solid #fff;
+    color: #ff7500;
+  }
 `;

@@ -1,6 +1,6 @@
-import software from "./../../../assets/jpg/software.jpg";
-import solution from "./../../../assets/jpg/solution.jpg";
-import objetive from "./../../../assets/jpg/objetive.jpg";
+import software from "./../../../assets/bg-images/software.webp";
+import solution from "./../../../assets/bg-images/solution.webp";
+import objetive from "./../../../assets/bg-images/objetive.webp";
 
 export const departments = [
   {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { ContactContainer, ContactInformarionWrap, TitleContact, InformationContact, ButtonContact, ImageContact } from "./../About.elements.ts";
-import robot from "./../../../assets/png/robot.png";
+import { ContactContainer, ContactInformarionWrap, TitleContact, InformationContact, ButtonContact, ImageContact } from './ContactSection.element';
+import imgRotative from "./../../../../assets/png/engine.svg";
 
 const ContactSection: React.FC = () => (
   <ContactContainer>
@@ -16,7 +16,8 @@ const ContactSection: React.FC = () => (
       </InformationContact>
       <ButtonContact href="/contact">Contacto</ButtonContact>
     </ContactInformarionWrap>
-    <ImageContact src={robot} />
+    
+    <ImageContact src={imgRotative} />
   </ContactContainer>
 );
 

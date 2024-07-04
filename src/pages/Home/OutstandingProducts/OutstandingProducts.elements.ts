@@ -15,30 +15,30 @@ export const ProductsWrap = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 4rem;
+  padding-inline: 4rem;
 
   @media (min-width: 768px) {
-    padding: 6rem;
+    padding-inline: 6rem;
   }
 
   @media (min-width: 940px) {
-    padding: 2rem;
+    padding-inline: 2rem;
   }
 
   @media (min-width: 1400px) {
-    padding: 8rem;
+    padding-inline: 8rem;
   }
 
 
   @media (min-width: 1800px) {
-    padding: 18rem;
+    padding-inline: 18rem;
   }
 
 `;
 
 export const TitleProducts = styled.h2`
-  font-size: 40px;
-  margin-bottom: 6rem;
+  font-size: 2em;
+  margin-bottom: 4rem;
 
   @media (max-width: 950px) {
     text-align: center;

@@ -119,9 +119,8 @@ export const TitleInformation = styled.h2`
 `;
 
 export const TitleBenefits = styled.h2`
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
-  margin-bottom: 4rem;
 
   & > span {
     color: #ff7500;
@@ -129,12 +128,10 @@ export const TitleBenefits = styled.h2`
 
 
   @media (max-width: 1290px) {
-    font-size: 28px;
     padding: 10px;
   }
 
   @media (max-width: 650px) {
-    font-size: 26px;
     margin-bottom: 0;
   }
 `;

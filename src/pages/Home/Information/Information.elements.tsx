@@ -13,7 +13,7 @@ export const BusinessWrap = styled.section`
 
 export const BussinesText = styled.h1`
   color: #333;
-  font-size: 2.5em;
+  font-size: 2em;
 `;
 
 export const TextColor = styled.span`
@@ -35,6 +35,9 @@ export const ItemWrap = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
 `;
 
 export const ImgAndTitleBox = styled.div`

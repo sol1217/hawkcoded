@@ -1,11 +1,11 @@
 import React from 'react';
-import { DepartmentsWrap, ItemDepartment, Image, DepartamentsInfoWrap, TitleDepartament, WelcomText } from "./../About.elements.ts";
-import { departments } from "./../Data/constants.ts";
+import { DepartamentsInfoWrap, TitleDepartament, WelcomText, DepartmentsWrap, ItemDepartment, Image } from './DepartmentsSection.elements.ts';
+import { departments } from "../../Data/constants.ts";
 
 const DepartmentsSection: React.FC = () => (
   <>
     <DepartamentsInfoWrap>
-      <TitleDepartament> ¿Que es Hawkcoded?</TitleDepartament>
+      <TitleDepartament> ¿Que es HawkCoded?</TitleDepartament>
       <WelcomText>
         Bienvenido a Hawkcoded, donde la innovación se encuentra con la
         excelencia en el desarrollo de software.

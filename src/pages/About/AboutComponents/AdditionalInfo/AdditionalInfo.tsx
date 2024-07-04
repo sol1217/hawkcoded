@@ -1,12 +1,12 @@
 import React from 'react';
-import { AboutImg, InformationAboutUs, InformationAboutUsWrap, TitleAbout, TextAbout } from "./../About.elements.ts";
-import service from "./../../../assets/png/services.png";
+import { InformationAboutUsWrap, AboutImg, InformationAboutUs, TitleAbout, TextAbout } from './AdditionalInfo.elements';
+import service from "./../../../../assets/png/services.png";
 
 const AdditionalInfo: React.FC = () => (
   <InformationAboutUsWrap>
     <AboutImg src={service} data-aos="fade-right" />
     <InformationAboutUs data-aos="fade-left">
-      <TitleAbout> Ayudar a su empresa a crecer</TitleAbout>
+      <TitleAbout> Ayudar a su empresa a <span style={{color: '#ff7500'}}>crecer</span></TitleAbout>
       <TextAbout>
         Además de los servicios mencionados, nos especializamos en adaptar
         cada solución a las necesidades específicas de nuestros clientes,

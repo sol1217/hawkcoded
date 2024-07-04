@@ -1,11 +1,11 @@
 import React from 'react';
-import { AboutTitle, AboutInformation, ContentWrapper, ImgContainer } from "./../About.elements.ts";
+import { ImgContainer, ContentWrapper, AboutTitle, AboutInformation } from './AboutTittleInfo.elementes';
 
 const AboutTitleInfo: React.FC = () => (
   <ImgContainer>
     <ContentWrapper>
-      <AboutTitle>Sobre Nosotros</AboutTitle>
-      <AboutInformation>
+      <AboutTitle data-aos="fade-up">Sobre Nosotros</AboutTitle>
+      <AboutInformation data-aos="fade-up">
         Hemos entregado con éxito numerosos proyectos en varias industrias.
         Nuestro enfoque centrado en el cliente garantiza que superemos las
         expectativas en todo momento. Ofrecemos soporte y mantenimiento
