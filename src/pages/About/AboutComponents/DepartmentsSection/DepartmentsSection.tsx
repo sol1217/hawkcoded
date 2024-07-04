@@ -1,6 +1,6 @@
 import React from 'react';
 import { DepartamentsInfoWrap, TitleDepartament, WelcomText, DepartmentsWrap, ItemDepartment, Image } from './DepartmentsSection.elements.ts';
-import { departments } from "../../Data/constants.ts";
+import { departments } from "./../../Data/constants.ts";
 
 const DepartmentsSection: React.FC = () => (
   <>
