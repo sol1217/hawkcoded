@@ -1,9 +1,9 @@
 import { HomeContainer } from "./Home.elements";
 import HomeSlider from "./HomeSlider/HomeSlider.tsx";
-import { BenefitsElement } from "./Benefits/BenefitsElement";
+import { BenefitsElement } from "./HomeComponents/Benefits/BenefitsElement.tsx";
 import ServiceContact from "./../../components/layout/ServiceContact/ServiceContact.tsx";
-import { Information } from "./Information/Information.tsx";
-import OutstandingProducts from "./OutstandingProducts/OutstandingProducts.tsx";
+import { Information } from "./HomeComponents/Information/Information.tsx";
+import OutstandingProducts from "./HomeComponents/OutstandingProducts/OutstandingProducts.tsx";
 
 import slides from "./HomeSlider/HomeSliderData.ts";
 

@@ -59,14 +59,14 @@ export function Header() {
       <MobilMenuSection isVisible={isShowMobilMenu}>
         <MobilMenu />
         <div>
-          <ContactLink href="/contact">Contacto</ContactLink>
+          <ContactLink $background="white" $color="#ef7533" href="/contact">Contacto</ContactLink>
         </div>
       </MobilMenuSection>
 
       <SearchContainer>
         <NavMenu flexDirection="row" color="black" />
         <div>
-          <ContactLink href="/contact">Contacto</ContactLink>
+          <ContactLink $background="" $color="white" href="/contact">Contacto</ContactLink>
         </div>
       </SearchContainer>
     </HeaderContainer>

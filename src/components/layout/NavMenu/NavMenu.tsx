@@ -7,7 +7,7 @@ import {
 
 const NavMenu = ({ flexDirection = "", color = "" }) => {
   return (
-    <NavContainer $flexDirection={flexDirection} $color={color}>
+    <NavContainer >
       <NavMenuLinks $flexDirection={flexDirection} $color={color}>
         <li>
           <LinkContainer $flexDirection={flexDirection} $color={color} href="/">

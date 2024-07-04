@@ -5,13 +5,13 @@ interface NavMenuLinksProps {
   $color: string;
 }
 
-export const NavContainer = styled.div<NavMenuLinksProps>`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: ${({ $flexDirection }) => $flexDirection || "row"};
+interface ButtonLinkProps {
+  $background: string;
+  $color: string;
+}
 
-  padding: 0 20px 0 20px;
+export const NavContainer = styled.div`
+  
 `;
 
 export const NavMenuLinks = styled.ol<NavMenuLinksProps>`
@@ -34,19 +34,30 @@ export const LinkContainer = styled.a<NavMenuLinksProps>`
 
   &:hover {
     color: #ff7500;
+    font-weight: bold;
   }
 `;
 
-export const ContactLink = styled.a`
-  padding: 13px;
-  background-color: #ff7500;
-  font-size: 20px;
-  border-radius: 8px;
-  text-align: center;
+export const ContactLink = styled.a<ButtonLinkProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
   font-weight: bold;
-  color: white;
+  border-bottom: 5px solid #b46436;
+  transition: 0.3s;
+  color: ${({ $color }) => $color || "white"};
+  background-color:  ${({ $background }) => $background || "#ef7533"};;
 
   &:hover {
-    background-color: #171d25;
+    border-bottom-width: 0;
+    transform: translateY(5px);
   }
+
 `;

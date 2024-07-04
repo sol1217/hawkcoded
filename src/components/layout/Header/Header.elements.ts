@@ -25,14 +25,22 @@ const rotateOut = keyframes`
 `;
 
 export const HeaderContainer = styled.div<HeaderContainerProps>`
-  width: 100%;
+  
+  width: inherit;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 40px;
   background-color: white;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 99;
+
+  @media (max-width: 1200px) {
+    justify-content: space-between;
+  }
 `;
 
 export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
@@ -109,13 +117,12 @@ export const SearchContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  gap: 30px;
+  padding: 2px;
+  width: 100%;
 
   @media (max-width: 1200px) {
     display: none;
   }
-
-  @media (max-width: 1300px) {
-    width: 60%;
-  }
+  
 `;

@@ -10,13 +10,15 @@ import djiMatrizRtk from "../../../assets/png/Matrice-300-RTK.png";
 import djiSerie30 from "../../../assets/png/Matrice-30-Series.png";
 import dji300 from "../../../assets/png/Matrice-300-RTK.png";
 import djiMavic3 from "../../../assets/png/DJI-Mavic-3.png";
+import logo  from "../../../assets/png/logo-hawkcoded.png"
 import ServiceContact from "../../../components/layout/ServiceContact/ServiceContact.tsx";
 
 import {
-  H2Title,
+  H2Title, ImageLogo,
   PTitleContainer,
 } from "../../../components/GlobalStyles/GlobalStyles.elements.ts";
 import Slider from "../../../components/layout/Slider/SliderPartners.tsx";
+import React from "react";
 
 interface Producto {
   title: string;
@@ -58,6 +60,7 @@ const ProductsMain: React.FC = () => {
     <>
       <PTitleContainer>
         <H2Title>Estos Son Nuestros Productos</H2Title>
+        <ImageLogo src={logo}/>
       </PTitleContainer>
 
       <ProductsContainer>

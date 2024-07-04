@@ -1,6 +1,6 @@
 import React from 'react';
 import { InformationAboutUsWrap, AboutImg, InformationAboutUs, TitleAbout, TextAbout } from './AdditionalInfo.elements';
-import service from "./../../../../assets/png/services.png";
+import service from "./../../../../assets/png/service.png";
 
 const AdditionalInfo: React.FC = () => (
   <InformationAboutUsWrap>

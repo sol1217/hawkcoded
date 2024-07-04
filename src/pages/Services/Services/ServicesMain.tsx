@@ -1,5 +1,5 @@
 import React from 'react';
-import { STitleContainer, H2Title } from '../../../components/GlobalStyles/GlobalStyles.elements';
+import {STitleContainer, H2Title, ImageLogo} from '../../../components/GlobalStyles/GlobalStyles.elements';
 import { ServicesContainer, PServices, ServiceItem, ServiceIcon } from './Services.elements';
 import ServiceContact from '../../../components/layout/ServiceContact/ServiceContact';
 import TestimonialContainer from '../../../components/layout/Testimonials/TestimonialContainer';
@@ -8,6 +8,7 @@ import globeIcon from './../../../assets/icons/globe-solid.svg';
 import mobileIcon from './../../../assets/icons/mobile-screen-solid.svg';
 import rulerIcon from './../../../assets/icons/ruler-solid.svg';
 import chartIcon from './../../../assets/icons/chart-simple-solid.svg';
+import logo  from "../../../assets/png/logo-hawkcoded.png"
 
 const servicesData = [
   { id: 1, title: 'Desarrollo Web', description: 'Creamos sitios web y aplicaciones.', icon: globeIcon},
@@ -21,6 +22,7 @@ const Services: React.FC = () => {
     <>
       <STitleContainer>
         <H2Title>Estos Son Nuestros Servicios</H2Title>
+        <ImageLogo src={logo}/>
       </STitleContainer>
 
       <ServicesContainer>
@@ -33,7 +35,7 @@ const Services: React.FC = () => {
         ))}
       </ServicesContainer>
 
-      <ServiceContact 
+      <ServiceContact
           firstAText='Trabajemos Juntos'
           firstAHref='/contact'
           secondAText='Ver Todos'

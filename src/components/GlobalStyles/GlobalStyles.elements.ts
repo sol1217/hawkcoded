@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import stockServiceImage from './../../assets/bg-images/computer.webp';
-import stockProductImage_1 from './../../assets/bg-images/software.webp'
+import stockServiceImage from './../../assets/png/ball-software.jpg';
+import stockProductImage_1 from './../../assets/png/product.png'
 
 
 export const LoadMoreButton = styled.button`
@@ -34,6 +34,8 @@ export const STitleContainer = styled.div`
     background-color: rgba(226, 226, 226, 0.9);
     background-size: cover;
     background-position: center;
+    flex-direction: column;
+    gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +43,11 @@ export const STitleContainer = styled.div`
     -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
 `;
+
+export const ImageLogo = styled.img`
+    width: 280px;
+  height: 70px;
+`
 
 
 interface H2TitleProps {
@@ -73,13 +80,17 @@ export const PTitleContainer = styled.div`
     background-color: rgba(226, 226, 226, 0.9);
     background-size: cover;
     background-position: center;
+    gap: 20px;
     display: flex;
     justify-content: center;
+  flex-direction: column;
+  gap: 20px;
     align-items: center;
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
 `;
+
 
 
 export const H2WithBorders = styled.h2`

@@ -14,7 +14,6 @@ import MicrosoftLogo from './../../../assets/png/microsoft-logo.svg';
 import WingtraLogo from './../../../assets/png/wingtra-logo.png';
 import OracleLogo from './../../../assets/png/oracle-logo.svg';
 
-
 export const partners: Partner[] = [
   { id: 1, imageUrl: djiLogo, name: "DJI" },
   { id: 2, imageUrl: StarLinkLogo, name: "Starlink" },
@@ -69,7 +68,7 @@ export const SliderContainer = styled.div`
 export const SlideTrack = styled.div`
   animation: ${scrollAnimation} ${partners.length * 5}s linear infinite; 
   display: flex;
-  width: calc(250px * ${partners.length});
+  width: calc(250px * ${partners.length * 2}); // Duplicamos el ancho
   background: #F3C398;
   overflow: hidden; 
 `;

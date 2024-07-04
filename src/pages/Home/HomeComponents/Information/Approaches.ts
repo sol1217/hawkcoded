@@ -1,7 +1,7 @@
-import inovationImage from './../../../assets/icons/box-data.svg';
-import cloudImage from './../../../assets/icons/cloud.svg';
-import menuImage from './../../../assets/icons/menu.svg';
-import settingsImage from './../../../assets/icons/settings.svg'
+import inovationImage from '.././../../../assets/icons/box-data.svg';
+import cloudImage from '.././../../../assets/icons/cloud.svg';
+import menuImage from '.././../../../assets/icons/menu.svg';
+import settingsImage from '.././../../../assets/icons/settings.svg'
 
 
 export const items = [
