@@ -3,17 +3,19 @@
   src: url('./assets/fonts/Assistant-VariableFont_wght.ttf') format('truetype');
 }
 
-
-body{
+body {
   margin: 0;
   font-family: "Assistant", sans-serif;
+}
+
+body.bg-blur {
+  overflow: hidden;
 }
 
 a {
   font-weight: 500;
   text-decoration: inherit;
 }
-
 
 h1 {
   font-size: 3.2em;
@@ -30,6 +32,6 @@ ul {
   flex-direction: column;
 }
 
-.section{
+.section {
   padding: 10px;
 }

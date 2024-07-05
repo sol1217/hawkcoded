@@ -25,10 +25,9 @@ const rotateOut = keyframes`
 `;
 
 export const HeaderContainer = styled.div<HeaderContainerProps>`
-  
   width: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 40px;
   padding: 20px 40px;
@@ -38,8 +37,21 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   z-index: 99;
 
-  @media (max-width: 1200px) {
-    justify-content: space-between;
+  @media (min-width: 1200px) {
+    justify-content: space-center;
+    padding: 5px 40px;
+  }
+
+  & > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  & > a > h1 {
+    font-size: 24px;
+    margin: 0;
   }
 `;
 
@@ -60,15 +72,15 @@ export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
 
 export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
   position: absolute;
+  display: flex;
   top: 100px;
   right: 10px;
   background-color: #ff7500;
   padding: 25px;
   width: 200px;
-  display: flex;
   justify-content: center;
   flex-direction: column;
-  z-index: 100;
+  z-index: 101;
   align-items: center;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 0;
@@ -103,12 +115,12 @@ export const SearchInput = styled.input.attrs<SearchInputProps>((props) => ({
 `;
 
 export const LogoImage = styled.img`
-  width: 280px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 
   @media (max-width: 550px) {
-    width: 200px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
   }
 `;
 

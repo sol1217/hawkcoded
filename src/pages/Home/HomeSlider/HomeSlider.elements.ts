@@ -14,6 +14,10 @@ export const SliderContainer = styled.div`
   -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+
+  @media (max-width: 480px) {
+    height: 500px;
+  }
 `;
 
 export const Slide = styled.div<SlideProps>`
@@ -59,7 +63,7 @@ export const SlideContent = styled.div`
 
   @media (max-width: 719px) {
     margin-left: -3rem;
-    padding-inline: 1rem;
+    padding-inline: 8rem;
   }
 `;
 
@@ -113,6 +117,11 @@ export const ArrowButton = styled.button`
   &:hover {
     background-color: white;
     color: #ff7500;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.3rem;
+    height: 50px;
   }
 `;
 

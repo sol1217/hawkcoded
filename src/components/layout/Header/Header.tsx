@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from "react";
-import NavMenu from "../NavMenu/NavMenu";
-import { IoMdMenu } from "react-icons/io";
-import { IoIosClose } from "react-icons/io";
-import {
-  HeaderContainer,
-  LogoImage,
-  MobilMenuButton,
-  MobilMenuSection,
-  SearchContainer,
-} from "./Header.elements";
-import logotype from "../../../assets/png/logo-type.png";
+import NavMenu from "../NavMenu/NavMenu.tsx";
 import MobilMenu from "../MobileMenu/MobilMenu";
+import logotype from "../../../assets/png/main-logo.png";
+import { IoMdMenu, IoIosClose } from "react-icons/io";
+import { HeaderContainer, LogoImage, MobilMenuButton, MobilMenuSection, SearchContainer } from "./Header.elements";
 import { ContactLink } from "../../layout/NavMenu/NavMenu.elements.ts";
 
 export function Header() {
@@ -20,6 +13,14 @@ export function Header() {
   const handleShowMobilMenu = () => {
     setIsShowMobilMenu(!isShowMobilMenu);
   };
+
+  useEffect(() => {
+    if (isShowMobilMenu) {
+      document.body.style.overflow = "hidden"; 
+    } else {
+      document.body.style.overflow = ""; 
+    }
+  }, [isShowMobilMenu]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,20 +38,15 @@ export function Header() {
   }, []);
 
   return (
-    <HeaderContainer
-      isBackgroundWhite={isBackgroundWhite} // <-- Añadir esta línea
-    >
+    <HeaderContainer isBackgroundWhite={isBackgroundWhite}>
       <a href="/">
         <LogoImage loading="lazy" alt="logo_image" src={logotype} />
+        <h1>HawkCoded</h1>
       </a>
 
       <MobilMenuButton isOpen={isShowMobilMenu} onClick={handleShowMobilMenu}>
         {isShowMobilMenu ? (
-          <IoIosClose
-            size={40}
-            color="black"
-            style={{ transform: "scale(1.2)" }}
-          />
+          <IoIosClose size={40} color="black" style={{ transform: "scale(1.2)" }} />
         ) : (
           <IoMdMenu size={40} color="black" />
         )}

@@ -50,7 +50,7 @@ export function BenefitsElement() {
   return (
     <div>
       <TitleBenefits>
-        Beneficios de trabajar con nuestra empresa de <span>software.</span>
+        Beneficios de trabajar con nuestra empresa de <span>software</span>
       </TitleBenefits>
 
       <BenefitsContainer>
