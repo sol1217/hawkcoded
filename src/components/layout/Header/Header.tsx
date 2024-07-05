@@ -41,7 +41,7 @@ export function Header() {
       isBackgroundWhite={isBackgroundWhite} // <-- Añadir esta línea
     >
       <a href="/">
-        <LogoImage src={logotype} />
+        <LogoImage loading="lazy" alt="logo_image" src={logotype} />
       </a>
 
       <MobilMenuButton isOpen={isShowMobilMenu} onClick={handleShowMobilMenu}>

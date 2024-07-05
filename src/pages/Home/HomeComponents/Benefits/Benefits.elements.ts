@@ -124,6 +124,8 @@ export const TitleBenefits = styled.h2`
 
   & > span {
     color: #ff7500;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
   }
 
 

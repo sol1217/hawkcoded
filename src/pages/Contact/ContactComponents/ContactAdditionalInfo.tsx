@@ -7,7 +7,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const ContactAdditionalInfo: React.FC = () => (
   <InfoContactWrap data-aos="fade-right">
-    <MainLogoImg src={logo} />
+    <MainLogoImg loading='lazy' alt='logo' src={logo} />
     <h2>Contáctanos para Consultas</h2>
     <span>
       Si tienes alguna pregunta, deseas obtener más información sobre

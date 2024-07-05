@@ -1,4 +1,4 @@
-import djiMavic3m from "../../../../assets/png/DJI-Mavic-3.png";
+import djiMavic3m from "../../../../assets/png/DJI-Mavic-3.webp";
 import djiMavic2 from "../../../../assets/png/Matrice-350-RTK.png";
 import phantom from "../../../../assets/png/Phantom-4-RTK.png";
 

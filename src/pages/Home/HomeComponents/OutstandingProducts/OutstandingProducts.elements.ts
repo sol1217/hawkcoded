@@ -67,6 +67,7 @@ export const ViewProduct = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: #fff; 
   color: #000; 
   border: 1px solid #FF8C00;
@@ -75,6 +76,8 @@ export const ViewProduct = styled.a`
   transition: transform 0.3s ease;
   will-change: box-shadow;
   text-decoration: none;
+  height: 100%;
+  min-height: 483.91px;
 
   &:hover {
     transform: scale(1.02);
@@ -107,13 +110,16 @@ export const DescriptionProduct = styled.span`
 
 export const ImgProduct = styled.img`
   width: 100%;
-  height: auto;
+  max-width: 360px;
+  max-height: 360px; 
+  height: 100%;
   display: block;
 `;
 
 export const RouteProduct = styled.div`
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
   background-color: #FF8C00;

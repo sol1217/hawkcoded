@@ -6,7 +6,7 @@ const ContactInfo: React.FC = () => (
   <ImgContainer>
     <TextWrap>
       <TitleContact>Contacto</TitleContact>
-      <LogoImg src={simpleLogo} data-aos="fade-right" />
+      <LogoImg loading='lazy' alt='contact-logo' src={simpleLogo} data-aos="fade-right" />
       <InfoContainer>
         <span>Respuesta Rápida:</span> Nos comprometemos a responder a tu consulta en un
         plazo de 24 horas.

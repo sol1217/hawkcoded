@@ -22,7 +22,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ img, name, company = 
       <TestimonialBlockquote>
         "{testimonial}"
       </TestimonialBlockquote>
-      <TestimonialImg src={img} alt={`${name}'s profile`} />
+      <TestimonialImg loading="lazy" src={img} alt={`${name}'s profile`} />
       <TestimonialAuthor>
         <TestimonialTitle>{name}</TestimonialTitle>
         {company && <TestimonialSubtitle>{company}</TestimonialSubtitle>}

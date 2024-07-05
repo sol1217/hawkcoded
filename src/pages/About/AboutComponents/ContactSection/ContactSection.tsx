@@ -17,7 +17,7 @@ const ContactSection: React.FC = () => (
       <ButtonContact href="/contact">Contacto</ButtonContact>
     </ContactInformarionWrap>
     
-    <ImageContact src={imgRotative} />
+    <ImageContact loading='lazy' alt='gear' src={imgRotative} />
   </ContactContainer>
 );
 

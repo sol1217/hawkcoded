@@ -19,10 +19,17 @@ export const NavMenuLinks = styled.ol<NavMenuLinksProps>`
   flex-direction: ${({ $flexDirection }) => $flexDirection || "row"};
   justify-content: space-around;
   align-items: center;
+  min-height: 43px; 
   gap: 30px;
   list-style-type: none;
   padding: 10px;
   color: ${({ $color }) => $color || "white"};
+
+  @media (max-width: 1200px){
+    & > li {
+      min-height: 23px;
+    }
+  }
 `;
 
 export const LinkContainer = styled.a<NavMenuLinksProps>`
@@ -30,11 +37,18 @@ export const LinkContainer = styled.a<NavMenuLinksProps>`
   font-weight: 200;
   font-size: 19px;
   font-family: sans-serif;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, font-size 0.3s ease;
 
   &:hover {
     color: #ff7500;
-    font-weight: bold;
+    font-size: 20px;
+  }
+
+  @media (max-width: 1200px) {
+      &:hover {
+      color: #fff;
+      font-size: 20px;
+    }
   }
 `;
 

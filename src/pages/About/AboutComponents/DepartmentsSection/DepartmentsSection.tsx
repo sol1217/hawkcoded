@@ -14,7 +14,7 @@ const DepartmentsSection: React.FC = () => (
     <DepartmentsWrap>
       {departments.map((department, index) => (
         <ItemDepartment key={index} data-aos="flip-up">
-          <Image src={department.image} />
+          <Image loading='lazy' alt='dep_img' src={department.image} />
           <h2>{department.title}</h2>
           <p>{department.description}</p>
         </ItemDepartment>

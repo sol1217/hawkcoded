@@ -31,7 +31,7 @@ export default function OutstandingProducts() {
             {products.map((product, index) => (
               <ViewProduct href="/products" key={index} data-aos="flip-up">
                 <NameProduct>{product.name}</NameProduct>
-                <ImgProduct src={product.imgSrc} alt={product.name} />
+                <ImgProduct loading="lazy" src={product.imgSrc} alt={product.name} />
                 <DescriptionProduct>{product.description}</DescriptionProduct>
                 <RouteProduct>
                   <a style={{color: "#fff"}} href="/products" target="_blank">Visualizar en apartado de productos</a>

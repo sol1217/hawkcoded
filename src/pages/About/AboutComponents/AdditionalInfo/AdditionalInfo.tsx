@@ -4,7 +4,7 @@ import service from "./../../../../assets/png/service.png";
 
 const AdditionalInfo: React.FC = () => (
   <InformationAboutUsWrap>
-    <AboutImg src={service} data-aos="fade-right" />
+    <AboutImg loading='lazy' alt='about_img' src={service} data-aos="fade-right" />
     <InformationAboutUs data-aos="fade-left">
       <TitleAbout> Ayudar a su empresa a <span style={{color: '#ff7500'}}>crecer</span></TitleAbout>
       <TextAbout>

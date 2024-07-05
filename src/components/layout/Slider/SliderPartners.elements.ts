@@ -68,7 +68,6 @@ export const SliderContainer = styled.div`
 export const SlideTrack = styled.div`
   animation: ${scrollAnimation} ${partners.length * 5}s linear infinite; 
   display: flex;
-  width: calc(250px * ${partners.length * 2}); // Duplicamos el ancho
   background: #F3C398;
   overflow: hidden; 
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import stockServiceImage from './../../assets/png/ball-software.jpg';
-import stockProductImage_1 from './../../assets/png/product.png'
+import stockServiceImage from './../../assets/bg-images/computer.webp';
+import stockProductImage_1 from './../../assets/png/ball-software.jpg'
 
 
 export const LoadMoreButton = styled.button`
