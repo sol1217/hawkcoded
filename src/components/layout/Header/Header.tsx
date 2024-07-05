@@ -3,7 +3,7 @@ import NavMenu from "../NavMenu/NavMenu.tsx";
 import MobilMenu from "../MobileMenu/MobilMenu";
 import logotype from "../../../assets/png/main-logo.png";
 import { IoMdMenu, IoIosClose } from "react-icons/io";
-import { HeaderContainer, LogoImage, MobilMenuButton, MobilMenuSection, SearchContainer } from "./Header.elements";
+import { HeaderContainer, LogoImage, HeaderMarker, MobilMenuButton, MobilMenuSection, SearchContainer } from "./Header.elements";
 import { ContactLink } from "../../layout/NavMenu/NavMenu.elements.ts";
 
 export function Header() {
@@ -41,7 +41,7 @@ export function Header() {
     <HeaderContainer isBackgroundWhite={isBackgroundWhite}>
       <a href="/">
         <LogoImage loading="lazy" alt="logo_image" src={logotype} />
-        <h1>HawkCoded</h1>
+        <HeaderMarker>HawkCoded</HeaderMarker>
       </a>
 
       <MobilMenuButton isOpen={isShowMobilMenu} onClick={handleShowMobilMenu}>

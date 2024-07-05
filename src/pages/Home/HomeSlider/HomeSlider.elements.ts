@@ -62,7 +62,7 @@ export const SlideContent = styled.div`
   }
 
   @media (max-width: 719px) {
-    margin-left: -3rem;
+    margin-left: -2rem;
     padding-inline: 8rem;
   }
 `;

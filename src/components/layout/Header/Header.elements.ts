@@ -29,8 +29,8 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
   gap: 40px;
-  padding: 20px 40px;
   background-color: white;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
@@ -39,7 +39,11 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
 
   @media (min-width: 1200px) {
     justify-content: space-center;
-    padding: 5px 40px;
+    padding: 0px 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 4px;
   }
 
   & > a {
@@ -48,12 +52,24 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
     text-decoration: none;
     color: black;
   }
+`;
 
-  & > a > h1 {
+export const HeaderMarker = styled.h1`
     font-size: 24px;
     margin: 0;
-  }
-`;
+    font-weight: 800;
+    color: #ee7816;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 37px;
+      margin: 0;
+    }
+`
+
 
 export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
   background-color: transparent;
@@ -115,12 +131,12 @@ export const SearchInput = styled.input.attrs<SearchInputProps>((props) => ({
 `;
 
 export const LogoImage = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 
   @media (max-width: 550px) {
-    width: 80px;
-    height: 80px;
+    width: 48px;
+    height: 48px;
   }
 `;
 
