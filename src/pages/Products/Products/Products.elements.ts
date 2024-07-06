@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const ProductsContainer = styled.section`
+export const ProductsContainer = styled.div`
+  overflow: hidden;
+`;
+
+export const Products = styled.section`
   max-width: 900px;
   margin: 4rem auto 0 auto;
   display: flex;

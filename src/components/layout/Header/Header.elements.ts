@@ -81,7 +81,7 @@ export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
     animation: ${({ isOpen }) => (isOpen ? rotateIn : rotateOut)} 0.3s forwards;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     display: none;
   }
 `;
@@ -108,7 +108,7 @@ export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
     max-height 0.3s ease,
     opacity 0.3s ease;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     display: none;
   }
 `;
@@ -149,7 +149,7 @@ export const SearchContainer = styled.div`
   padding: 2px;
   width: 100%;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
     display: none;
   }
   

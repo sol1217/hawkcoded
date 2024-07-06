@@ -1,5 +1,6 @@
 import {
   ProductsContainer,
+  Products,
   CardContainer,
   ImageContainer,
   CardTexts,
@@ -57,13 +58,13 @@ const productos: Producto[] = [
 
 const ProductsMain: React.FC = () => {
   return (
-    <>
+    <ProductsContainer>
       <PTitleContainer>
         <H2Title>Estos Son Nuestros Productos</H2Title>
         <ImageLogo src={logo}/>
       </PTitleContainer>
 
-      <ProductsContainer>
+      <Products>
         {productos.map((producto, index) => (
           <CardContainer key={index}>
             <ImageContainer>
@@ -75,7 +76,7 @@ const ProductsMain: React.FC = () => {
             </CardTexts>
           </CardContainer>
         ))}
-      </ProductsContainer>
+      </Products>
 
       <ServiceContact
         firstAText="Me Interesa Un Producto"
@@ -86,7 +87,7 @@ const ProductsMain: React.FC = () => {
 
 
       <Slider />
-    </>
+    </ProductsContainer>
   );
 };
 
