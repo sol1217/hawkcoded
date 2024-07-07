@@ -109,6 +109,10 @@ export const ArrowButton = styled.button`
   color: white;
   font-size: 2rem;
   cursor: pointer;
+  height: 100%;
+  width: 100%;
+  max-height: 40px;
+  max-width: 40px;
   outline: none;
   z-index: 100;
   transition: background-color 0.3s ease;
