@@ -15,14 +15,6 @@ export function Header() {
   };
 
   useEffect(() => {
-    if (isShowMobilMenu) {
-      document.body.style.overflow = "hidden"; 
-    } else {
-      document.body.style.overflow = ""; 
-    }
-  }, [isShowMobilMenu]);
-
-  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setIsBackgroundWhite(true);
