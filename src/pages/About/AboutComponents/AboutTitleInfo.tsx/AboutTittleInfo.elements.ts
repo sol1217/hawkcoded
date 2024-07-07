@@ -26,7 +26,6 @@ export const ContentWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 100px;
-    padding: 100px 30px 30px 0px;
   }
 
   @media (max-width: 600px) {
@@ -55,14 +54,13 @@ export const AboutTitle = styled.h2`
 
 export const AboutInformation = styled.span`
   max-width: 800px;
+  width: 100%;
   font-size: 25px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 
-  @media (max-width: 700px) {
-    width: 90%;
+  @media (max-width: 772px) {
+    max-width: 90%;
   }
 `;
 
