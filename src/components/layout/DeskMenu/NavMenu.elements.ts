@@ -18,25 +18,20 @@ export const NavMenuLinks = styled.ol<NavMenuLinksProps>`
   display: flex;
   flex-direction: ${({ $flexDirection }) => $flexDirection || "row"};
   justify-content: space-around;
-  align-items: center;
-  min-height: 43px; 
-  gap: 30px;
+  align-items: center; /* Ajusta todos los elementos li para que se estiren verticalmente */
+  min-height: 43px;
+  gap: 40px;
   list-style-type: none;
   padding: 10px;
   color: ${({ $color }) => $color || "white"};
-
-  @media (max-width: 1200px){
-    & > li {
-      min-height: 23px;
-    }
-  }
 `;
 
 export const LinkContainer = styled.a<NavMenuLinksProps>`
   color: ${({ $color }) => $color || "white"};
   font-weight: 200;
+  text-align: center;
   font-size: 19px;
-  font-family: sans-serif;
+  font-family: "Rajdhani", sans-serif;
   transition: color 0.3s ease, font-size 0.3s ease;
 
   &:hover {
@@ -46,7 +41,6 @@ export const LinkContainer = styled.a<NavMenuLinksProps>`
 
   @media (max-width: 1200px) {
       &:hover {
-      color: #fff;
       font-size: 20px;
     }
   }
@@ -64,14 +58,13 @@ export const ContactLink = styled.a<ButtonLinkProps>`
   width: 120px;
   height: 40px;
   font-weight: bold;
-  border-bottom: 5px solid #b46436;
+  border-bottom: 1px solid #231e1b;
   transition: 0.3s;
   color: ${({ $color }) => $color || "white"};
   background-color:  ${({ $background }) => $background || "#ef7533"};;
 
   &:hover {
-    border-bottom-width: 0;
-    transform: translateY(5px);
+    transform: scale(1.04);
   }
 
 `;

@@ -1,11 +1,13 @@
 @font-face {
-  font-family: 'Assistant';
-  src: url('./assets/fonts/Assistant-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-Medium.ttf') format('truetype'),
+  url('./assets/fonts/Rajdhani-SemiBold.ttf') format('truetype'),
+  url('./assets/fonts/Rajdhani-Bold.ttf') format('truetype');
 }
 
 body {
   margin: 0;
-  font-family: "Assistant", sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
 body.bg-blur {

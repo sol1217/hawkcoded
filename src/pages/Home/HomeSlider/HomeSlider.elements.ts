@@ -9,7 +9,10 @@ interface SlideProps {
 export const SliderContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 700px; /* Altura del slider */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; 
   overflow: hidden;
   -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
@@ -83,7 +86,6 @@ export const SlideTitle = styled.h2`
 
 export const SlideDescription = styled.p`
   font-size: 1rem;
-  font-weight: 600;
   text-align: left;
   text-wrap: balance;
   min-width: 400px;
@@ -95,8 +97,8 @@ export const SlideDescription = styled.p`
   }
 
   @media (min-width: 1200px) {
-    max-width: 600px;
-    min-width: 600px;
+    // max-width: 600px;
+    // min-width: 600px;
   }
 `;
 
@@ -114,7 +116,7 @@ export const ArrowButton = styled.button`
   max-height: 40px;
   max-width: 40px;
   outline: none;
-  z-index: 100;
+  z-index: 31;
   transition: background-color 0.3s ease;
   border-radius: 50%;
   display: flex;

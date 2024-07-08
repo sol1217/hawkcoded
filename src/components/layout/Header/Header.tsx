@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import NavMenu from "../NavMenu/NavMenu.tsx";
-import MobilMenu from "../MobileMenu/MobilMenu";
-import logotype from "../../../assets/png/main-logo.png";
+import { HeaderContainer, DesktopMenuContainer, LogoImage, MobilMenuButton, MobilMenuSection, ContactButtonsContainer } from "./Header.elements";
+import { ContactLink } from "./../DeskMenu/NavMenu.elements.ts";
+import NavMenu from "./../DeskMenu/NavMenu.tsx";
+
 import { IoMdMenu, IoIosClose } from "react-icons/io";
-import { HeaderContainer, LogoImage, HeaderMarker, MobilMenuButton, MobilMenuSection, SearchContainer } from "./Header.elements";
-import { ContactLink } from "../../layout/NavMenu/NavMenu.elements.ts";
+import MobilMenu from "../MobileMenu/MobilMenu";
+import logotype from "./../../../assets/png/nuevo-logo.png";
+
 
 export function Header() {
   const [isShowMobilMenu, setIsShowMobilMenu] = useState(false);
@@ -31,11 +33,23 @@ export function Header() {
 
   return (
     <HeaderContainer isBackgroundWhite={isBackgroundWhite}>
+
       <a href="/">
         <LogoImage loading="lazy" alt="logo_image" src={logotype} />
-        <HeaderMarker>HawkCoded</HeaderMarker>
       </a>
 
+    {/* desktop menu */}
+      <DesktopMenuContainer>
+        <NavMenu flexDirection="row" color="black"/>
+      </DesktopMenuContainer>
+
+      <ContactButtonsContainer>
+        <ContactLink $background="" $color="white" href="/contact">Contacto</ContactLink>
+        <ContactLink $background="" $color="white" href="/ecommerce">Ecommerce</ContactLink>
+      </ContactButtonsContainer>
+
+
+    {/* mobile menu */}
       <MobilMenuButton isOpen={isShowMobilMenu} onClick={handleShowMobilMenu}>
         {isShowMobilMenu ? (
           <IoIosClose size={40} color="black" style={{ transform: "scale(1.2)" }} />
@@ -46,17 +60,12 @@ export function Header() {
 
       <MobilMenuSection isVisible={isShowMobilMenu}>
         <MobilMenu />
-        <div>
+        <section>
           <ContactLink $background="white" $color="#ef7533" href="/contact">Contacto</ContactLink>
-        </div>
+          <ContactLink $background="white" $color="#ef7533" href="/ecommerce">Ecommerce</ContactLink>
+        </section>
       </MobilMenuSection>
 
-      <SearchContainer>
-        <NavMenu flexDirection="row" color="black" />
-        <div>
-          <ContactLink $background="" $color="white" href="/contact">Contacto</ContactLink>
-        </div>
-      </SearchContainer>
     </HeaderContainer>
   );
 }
