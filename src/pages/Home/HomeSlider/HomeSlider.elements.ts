@@ -106,10 +106,7 @@ export const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-<<<<<<< HEAD
-=======
   height: 80px;
->>>>>>> f00811ce89a55458d777c01a5f58ce5cb8711413
   background-color: transparent;
   border: none;
   color: white;
@@ -123,28 +120,12 @@ export const ArrowButton = styled.button`
   z-index: 31;
   transition: background-color 0.3s ease;
   border-radius: 50%;
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  justify-content: center;
-=======
   width: 80px;
->>>>>>> f00811ce89a55458d777c01a5f58ce5cb8711413
 
   &:hover {
     background-color: white;
     color: #ff7500;
-<<<<<<< HEAD
-    height: 40px;
-    width: 40px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.3rem;
-    height: 50px;
-=======
     
->>>>>>> f00811ce89a55458d777c01a5f58ce5cb8711413
   }
 `;
 
