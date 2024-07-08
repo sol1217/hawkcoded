@@ -10,11 +10,7 @@ import {
 import djiMatrizRtk from "../../../assets/png/Matrice-300-RTK.png";
 import djiSerie30 from "../../../assets/png/Matrice-30-Series.png";
 import dji300 from "../../../assets/png/Matrice-300-RTK.png";
-<<<<<<< HEAD
 import djiMavic3 from "../../../assets/png/mavic-3-enterp.png";
-=======
-import djiMavic3 from "../../../assets/bg-images/DJI-Mavic-3.webp";
->>>>>>> f00811ce89a55458d777c01a5f58ce5cb8711413
 import logo  from "../../../assets/png/logo-hawkcoded.png"
 import ServiceContact from "../../../components/layout/ServiceContact/ServiceContact.tsx";
 
