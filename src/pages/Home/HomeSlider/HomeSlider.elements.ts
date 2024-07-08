@@ -100,7 +100,7 @@ export const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 100px;
+  height: 80px;
   background-color: transparent;
   border: none;
   color: white;
@@ -109,10 +109,13 @@ export const ArrowButton = styled.button`
   outline: none;
   z-index: 100;
   transition: background-color 0.3s ease;
+  border-radius: 50%;
+  width: 80px;
 
   &:hover {
     background-color: white;
     color: #ff7500;
+    
   }
 `;
 
