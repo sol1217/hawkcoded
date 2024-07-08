@@ -36,7 +36,7 @@ export const animacion = keyframes`
 // Componentes styled-components
 
 export const SliderContainer = styled.div`
-  background-color: #DDB99E;
+  background-color: #FFE8DB;
   display: flex;
   border-top: 3px solid #ee7814;
   flex-direction: column;
@@ -46,7 +46,7 @@ export const SliderContainer = styled.div`
   & > h1 {
     font-size: 1.5em;
     padding: 19px 4px;
-    color: #fff;
+    color: #231E1B;
     position: relative;
 
     &::before, &::after {
@@ -71,7 +71,7 @@ export const SliderContainer = styled.div`
 
 
 export const SliderC = styled.div`
-    background-color: #DDB99E;
+    background-color: #FFE8DB;
     height: 100px;
     width: 100%;
     overflow: hidden;
@@ -88,7 +88,7 @@ export const Move = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: #fff;
+      color: #231E1B;
     }
 `;
 
@@ -98,7 +98,9 @@ export const SlideImage = styled.img`
   max-width: 100px;
   width: 100%;
   margin-bottom: 10px; 
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 `;
+
 
 export const SlideName = styled.h3`
   font-size: 20px; 

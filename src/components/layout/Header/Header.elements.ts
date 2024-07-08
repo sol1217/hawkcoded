@@ -126,7 +126,7 @@ export const ContactButtonsContainer = styled.div`
   width: 100%;
   max-width: 240px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
 
   @media (max-width: 1100px) {
     display: none;

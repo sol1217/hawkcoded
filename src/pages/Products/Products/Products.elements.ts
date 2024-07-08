@@ -10,7 +10,6 @@ export const Products = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  padding: 20px;
   justify-content: center;
   align-items: center;
 
@@ -38,7 +37,7 @@ export const ImageContainer = styled.div`
     bottom: -10px;
     width: 100%;
     height: 100px;
-    background-color: orange;
+    background-color: #ef7533;
     border-radius: 50%;
     transform: scale(0);
     transition: transform 0.3s ease;

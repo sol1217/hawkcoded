@@ -4,27 +4,25 @@ interface Enlace {
     href: string;
   }
   
-export const enlaces: Enlace[] = [
+  export const enlaces: Enlace[] = [
     { id: 1, enlace: 'Inicio', href: '/' },
     { id: 2, enlace: 'Servicios', href: '/services' },
     { id: 3, enlace: 'Productos', href: '/products' },
     { id: 4, enlace: 'Sobre Nosotros', href: '/about' },
-];
-
-
-
-interface AdditionalLinks {
+  ];
+  
+  interface AdditionalLinks {
     [key: string]: { id: string; label: string }[];
-}
-
-export const additionalLinks: AdditionalLinks = {
-'/services': [
-    { id: 'testimoniales', label: 'Testimoniales' },
-    { id: 'categorias', label: 'Categorías' },
-],
-'/products': [
-    { id: 'nuevos', label: 'Nuevos' },
-    { id: 'populares', label: 'Populares' },
-],
-};
-
+  }
+  
+  export const additionalLinks: AdditionalLinks = {
+    '/services': [
+      { id: '#testimoniales', label: 'Testimoniales' },
+      { id: '/all', label: 'Categorías' },
+    ],
+    '/products': [
+      { id: '#nuevos', label: 'Los Más Populares' },
+      { id: 'populares', label: 'Populares' },
+    ],
+  };
+  

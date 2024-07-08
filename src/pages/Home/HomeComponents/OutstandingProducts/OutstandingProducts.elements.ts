@@ -15,24 +15,6 @@ export const ProductsWrap = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  @media (min-width: 768px) {
-    padding-inline: 6rem;
-  }
-
-  @media (min-width: 940px) {
-    padding-inline: 2rem;
-  }
-
-  @media (min-width: 1400px) {
-    padding-inline: 8rem;
-  }
-
-
-  @media (min-width: 1800px) {
-    padding-inline: 18rem;
-  }
-
 `;
 
 export const TitleProducts = styled.h2`
@@ -81,6 +63,11 @@ export const ViewProduct = styled.a`
 
   &:hover {
     transform: scale(1.02);
+  }
+
+  @media (max-width: 675.45px) {
+    width: 100%;
+    max-width: 443px;
   }
 `;
 

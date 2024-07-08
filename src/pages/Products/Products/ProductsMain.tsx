@@ -10,7 +10,7 @@ import {
 import djiMatrizRtk from "../../../assets/png/Matrice-300-RTK.png";
 import djiSerie30 from "../../../assets/png/Matrice-30-Series.png";
 import dji300 from "../../../assets/png/Matrice-300-RTK.png";
-import djiMavic3 from "../../../assets/png/DJI-Mavic-3.webp";
+import djiMavic3 from "../../../assets/png/mavic-3-enterp.png";
 import logo  from "../../../assets/png/logo-hawkcoded.png"
 import ServiceContact from "../../../components/layout/ServiceContact/ServiceContact.tsx";
 
@@ -19,7 +19,7 @@ import {
   PTitleContainer,
 } from "../../../components/GlobalStyles/GlobalStyles.elements.ts";
 import Slider from "../../../components/layout/Slider/SliderPartners.tsx";
-import React from "react";
+import useScrollToHash from "./../../../helpers/useScrollToHash.tsx";
 
 interface Producto {
   title: string;
@@ -57,12 +57,15 @@ const productos: Producto[] = [
 ];
 
 const ProductsMain: React.FC = () => {
+  useScrollToHash();
+
   return (
     <ProductsContainer>
       <PTitleContainer>
         <H2Title>Estos Son Nuestros Productos</H2Title>
         <ImageLogo src={logo}/>
       </PTitleContainer>
+      <div  id="nuevos"></div>
 
       <Products>
         {productos.map((producto, index) => (

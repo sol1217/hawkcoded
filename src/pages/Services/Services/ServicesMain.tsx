@@ -10,6 +10,8 @@ import rulerIcon from './../../../assets/icons/ruler-solid.svg';
 import chartIcon from './../../../assets/icons/chart-simple-solid.svg';
 import logo  from "../../../assets/png/logo-hawkcoded.png"
 
+import useScrollToHash from './../../../helpers/useScrollToHash';
+
 const servicesData = [
   { id: 1, title: 'Desarrollo Web', description: 'Creamos sitios web y aplicaciones.', icon: globeIcon},
   { id: 2, title: 'Desarrollo Móvil', description: 'Desarrollamos aplicaciones para iOS y Android.', icon: mobileIcon},
@@ -18,11 +20,14 @@ const servicesData = [
 ];
 
 const Services: React.FC = () => {
+
+  useScrollToHash();
+
   return (
     <>
       <STitleContainer>
         <H2Title>Estos Son Nuestros Servicios</H2Title>
-        <ImageLogo src={logo}/>
+        <ImageLogo src={logo} alt='Logo'/>
       </STitleContainer>
 
       <ServicesContainer>
