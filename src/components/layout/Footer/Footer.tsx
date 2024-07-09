@@ -9,8 +9,7 @@ import {
   ScheduleWrap
 } from "./Footer.Elements";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { FaFacebook, FaYoutube } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebook} from "react-icons/fa";
 import logo from "../../../assets/png/logo-white-bg.png"
 import { LuClock } from "react-icons/lu";
 import { MdOutlineLocationOn } from "react-icons/md";
