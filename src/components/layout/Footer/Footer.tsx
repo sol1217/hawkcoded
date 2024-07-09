@@ -42,7 +42,7 @@ export default function Footer() {
       </NavMenuWrap>
 
       <LocationMainWrap>
-        <h2>Ubicaciones</h2>
+        <h3>Ubicaciones</h3>
         <LocationContainer>
           <MdOutlineLocationOn fontSize={50}/>
           <LocationText> Calle Amelia Francasci #18, Los Prados, Santo Domingo</LocationText>

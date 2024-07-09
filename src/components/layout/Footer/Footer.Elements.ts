@@ -3,22 +3,32 @@ import styled from "styled-components";
 export const FooterStyled = styled.footer`
   margin-top: 3rem;
   background-color: #0e131a;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  place-content: center;
   padding: 40px;
   color: white;
 
-  @media (max-width:1250px){
-    flex-direction: column;
-   gap: 70px;
+
+  @media (max-width: 1119px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 55px;
   }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 55px;
+  }
+
+
 `;
 
 export const ScheduleWrap = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: self-start;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 `;
@@ -34,19 +44,25 @@ export const OpeningHoursContainer = styled.div`
   align-items: center;
   flex-direction: row;
   gap: 10px;
+  margin-top: -1rem;
 `
 
 export const NavMenuWrap = styled.div`
   display: flex;
   justify-content: center;
-  align-items: self-start;
-  gap: 15px;
+  align-items: center;
   flex-direction: column;
-  font-size: 20px;
+  gap: 23px;
+  font-size: 19px;
+
+  & > h3 {
+    margin: 0 auto;
+  }
 `
 
 export const LinkMenu = styled.a`
   color: #808080;
+  transition: all 0.3s;
   
   &:hover{
     color: white;
@@ -56,10 +72,19 @@ export const LinkMenu = styled.a`
 export const LocationMainWrap = styled.div`
   display: flex;
   justify-content: center;
-  align-items: self-start;
+  align-items: center;
   flex-direction: column;
   gap: 3px;
   width: 280px;
+
+  @media (max-width: 1119px) {
+    width: auto;
+  }
+
+  & > h3 {
+    font-size: 20px;
+    margin: 0 auto;
+  }
 `
 
 export const LocationContainer = styled.div`
@@ -67,6 +92,8 @@ export const LocationContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 8px;
+  width: 100%;
+  max-width: 300px;
 `
 
 export const LocationText = styled.p`

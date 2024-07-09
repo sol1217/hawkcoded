@@ -19,6 +19,7 @@ export const SubLinksWrapper = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
+  right: 0;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -57,9 +58,20 @@ export const LinkContainer = styled.a<NavMenuLinksProps>`
   position: relative;
   padding-inline: 1rem;
 
+  & > span {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+
   &:hover {
     color: #ff7500;
     font-size: 20px;
+
+    & > span {
+      transform: rotateX(180deg);
+    }
   }
 
   @media (max-width: 1200px) {
@@ -81,12 +93,15 @@ export const ContactLink = styled.a<ButtonLinkProps>`
   width: 120px;
   height: 40px;
   font-weight: bold;
-  border-bottom: 1px solid #231e1b;
-  transition: 0.3s;
+  border: 1px solid ${({ $color }) => $color || "#000"};
+  transition: all 0.3s ease;
   color: ${({ $color }) => $color || "white"};
   background-color: ${({ $background }) => $background || "#ef7533"};
 
   &:hover {
+    color: ${({ $background }) => $background || "#ef7533"};
+    background-color: ${({ $color }) => $color || "#ef7533"};
+    border: 1px solid ${({ $background }) => $background || "#000"};
     transform: scale(1.04);
   }
 `;
@@ -95,10 +110,12 @@ export const SubLinkContainer = styled.a`
   text-decoration: none;
   color: black;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 4px;
   font-size: 14px;
+  transition: all 0.3s ease;
 
   &:hover {
+    color: #ff7500;
     background-color: #f0f0f0;
   }
 `;

@@ -43,6 +43,11 @@ export const ViewProductContainer = styled.div`
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+
+  @media (min-width: 1500px) {
+      padding-inline: 12rem;
+  }
 `;
 
 export const ViewProduct = styled.a`

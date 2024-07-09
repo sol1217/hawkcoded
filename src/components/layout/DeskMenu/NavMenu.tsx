@@ -15,6 +15,10 @@ const NavMenu = ({ flexDirection = "", color = "" }) => {
           <LinkContainer $flexDirection={flexDirection} $color={color} href={enlace.href}>
             {enlace.enlace}
             {additionalLinks[enlace.href] && (
+                <span>▼</span>
+            )}
+
+            {additionalLinks[enlace.href] && (
               <SubLinksWrapper className="sublinks">
                 {additionalLinks[enlace.href].map((subEnlace) => (
                   <SubLinkContainer key={subEnlace.id} href={`${enlace.href}${subEnlace.id}`}>

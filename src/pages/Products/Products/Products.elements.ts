@@ -74,7 +74,6 @@ export const CardContainer = styled.div`
   gap: 38px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 10px;
   overflow: visible;
   background-color: white;
   text-align: left;
@@ -96,6 +95,7 @@ export const CardContainer = styled.div`
   @media screen and (max-width: 580px) {
     flex-direction: column-reverse;
     gap: 10px;
+    padding-inline: 2rem;
   }
 `;
 

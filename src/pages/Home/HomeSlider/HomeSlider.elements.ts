@@ -80,7 +80,7 @@ export const SlideTitle = styled.h2`
 
   @media (max-width: 480px) {
     text-align: left;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 `;
 
