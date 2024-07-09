@@ -45,11 +45,7 @@ export default function Footer() {
         <h2>Ubicaciones</h2>
         <LocationContainer>
           <MdOutlineLocationOn fontSize={50}/>
-          <LocationText> Calle Amelia Francasci #18, Los Prados, Santo Domingo</LocationText>
-        </LocationContainer>
-        <LocationContainer>
-          <MdOutlineLocationOn fontSize={50}/>
-          <LocationText> Calle Amelia Francasci #18, Los Prados, Santo Domingo</LocationText>
+          <LocationText>Torre empresarial Blue Mall piso 23</LocationText>
         </LocationContainer>
       </LocationMainWrap>
 
@@ -63,9 +59,6 @@ export default function Footer() {
           </a>
           <a href="https://www.linkedin.com/company/hawkcoded/">
             <FaLinkedin />
-          </a>
-          <a>
-            <FaYoutube />
           </a>
         </LinksContainer>
 
