@@ -80,7 +80,7 @@ export const SlideTitle = styled.h2`
 
   @media (max-width: 480px) {
     text-align: left;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 `;
 
@@ -95,17 +95,13 @@ export const SlideDescription = styled.p`
     max-width: 200px;
     min-width: 200px;
   }
-
-  @media (min-width: 1200px) {
-    // max-width: 600px;
-    // min-width: 600px;
-  }
 `;
 
 export const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  height: 80px;
   background-color: transparent;
   border: none;
   color: white;
@@ -119,20 +115,12 @@ export const ArrowButton = styled.button`
   z-index: 31;
   transition: background-color 0.3s ease;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 80px;
 
   &:hover {
     background-color: white;
     color: #ff7500;
-    height: 40px;
-    width: 40px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.3rem;
-    height: 50px;
+    
   }
 `;
 

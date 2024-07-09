@@ -41,7 +41,7 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
 
   @media (min-width: 1200px) {
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0px 60px;
   }
 
   @media (max-width: 480px) {
@@ -64,7 +64,7 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
 
 
 export const DesktopMenuContainer = styled.div`
-  @media (max-width: 1100px) {
+  @media (max-width: 1110px) {
     display: none;
   }
 `;
@@ -79,7 +79,7 @@ export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
     animation: ${({ isOpen }) => (isOpen ? rotateIn : rotateOut)} 0.3s forwards;
   }
 
-  @media (min-width: 1100.91px) {
+  @media (min-width: 1110.91px) {
     display: none;
   }
 `;
@@ -103,7 +103,7 @@ export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
   transition: max-height 0.3s ease, opacity 0.3s ease; /* Combina las transiciones en una sola declaración */
   opacity: ${({ isVisible }) => (isVisible ? "1" : "0")};
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1110px) {
     display: none;
   }
 
@@ -128,7 +128,7 @@ export const ContactButtonsContainer = styled.div`
   display: flex;
   gap: 20px;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1110px) {
     display: none;
   }
 `;

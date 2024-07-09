@@ -44,8 +44,8 @@ export function Header() {
       </DesktopMenuContainer>
 
       <ContactButtonsContainer>
-        <ContactLink $background="" $color="white" href="/contact">Contacto</ContactLink>
-        <ContactLink $background="" $color="white" href="/ecommerce">Ecommerce</ContactLink>
+        <ContactLink $background="white" $color="#ef7533" href="/contact">Contacto</ContactLink>
+        <ContactLink $background="#ef7533" $color="white" href="/ecommerce">Ecommerce</ContactLink>
       </ContactButtonsContainer>
 
 
