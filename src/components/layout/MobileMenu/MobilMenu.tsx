@@ -1,10 +1,16 @@
-import { MobilMenuContainer } from "./MobilMenu.elements.ts";
-import NavMenu from "../NavMenu/NavMenu.tsx";
+import { MobilMenuContainer, LinkContainer } from "./MobilMenu.elements.ts";
+import { enlaces } from "./../DeskMenu/enlaces.data.ts";
 
 export default function MobilMenu() {
   return (
     <MobilMenuContainer>
-      <NavMenu flexDirection="column" color="white" />
+        {enlaces.map((enlace) => (
+          <li key={enlace.id}>
+          <LinkContainer $flexDirection={''} $color={''} href={enlace.href}>
+            {enlace.enlace}
+          </LinkContainer>
+        </li>
+        ))}
     </MobilMenuContainer>
   );
 }

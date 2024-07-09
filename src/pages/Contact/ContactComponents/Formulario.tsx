@@ -6,9 +6,9 @@ import {
     TextareaDesign,
 } from "./../Contact.elements";
 import { H3Error } from "./../../../components/GlobalStyles/GlobalStyles.elements";
-
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import showAlert from "./../../../helpers/useShowAlert";
 
 export default function Formulario() {
  
@@ -52,12 +52,21 @@ export default function Formulario() {
         USER_KEY
     )
     .then(()=> {
-        alert('Correo Enviado Correctamente.');
+        showAlert({
+            title: 'Mensaje Enviado',
+            text: 'Su correo electrónico se envió correctamente.',
+            icon: 'success'
+        })
         setNombre('');
         setEmail('');
         setMensaje('');
     })
     .catch((error) => {
+        showAlert({
+            title: 'Error',
+            text: 'Ocurrió un error inesperado al intentar enviar el correo.',
+            icon: 'error'
+        })
         console.log(error);
     })
   }
@@ -67,7 +76,7 @@ export default function Formulario() {
     <FormWrap onSubmit={handleSubmit} data-aos="fade-left">
         <FormTitle>Formulario de Contacto</FormTitle>
         {error && (
-            //crear un elemento de alerta, por ahora es un <p>:
+            //crear un elemento de alerta:
             <H3Error>{error}</H3Error> 
         )}
         <InputDesign placeholder="Ingresa Tu Nombre" onChange={(e) => setNombre(e.target.value)}/>

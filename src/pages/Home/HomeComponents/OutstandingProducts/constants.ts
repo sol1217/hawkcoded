@@ -1,5 +1,5 @@
-import djiMavic3m from "../../../../assets/bg-images/DJI-Mavic-3.webp";
-import djiMavic2 from "../../../../assets/png/Matrice-350-RTK.png";
+import djiMavic3m from "../../../../assets/png/mavic-3-m.png";
+import djiMavic2 from "../../../../assets/png/mavic-2-enterp-adv.png";
 import phantom from "../../../../assets/png/Phantom-4-RTK.png";
 
 export const products = [

@@ -9,11 +9,18 @@ interface SlideProps {
 export const SliderContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 700px; /* Altura del slider */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; 
   overflow: hidden;
   -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+
+  @media (max-width: 480px) {
+    height: 500px;
+  }
 `;
 
 export const Slide = styled.div<SlideProps>`
@@ -58,8 +65,8 @@ export const SlideContent = styled.div`
   }
 
   @media (max-width: 719px) {
-    margin-left: -3rem;
-    padding-inline: 1rem;
+    margin-left: -2rem;
+    padding-inline: 8rem;
   }
 `;
 
@@ -73,13 +80,12 @@ export const SlideTitle = styled.h2`
 
   @media (max-width: 480px) {
     text-align: left;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 `;
 
 export const SlideDescription = styled.p`
   font-size: 1rem;
-  font-weight: 600;
   text-align: left;
   text-wrap: balance;
   min-width: 400px;
@@ -88,11 +94,6 @@ export const SlideDescription = styled.p`
   @media (max-width: 500px) {
     max-width: 200px;
     min-width: 200px;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 600px;
-    min-width: 600px;
   }
 `;
 
@@ -106,8 +107,12 @@ export const ArrowButton = styled.button`
   color: white;
   font-size: 2rem;
   cursor: pointer;
+  height: 100%;
+  width: 100%;
+  max-height: 40px;
+  max-width: 40px;
   outline: none;
-  z-index: 100;
+  z-index: 31;
   transition: background-color 0.3s ease;
   border-radius: 50%;
   width: 80px;

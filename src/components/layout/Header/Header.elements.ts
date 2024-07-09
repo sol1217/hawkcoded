@@ -3,7 +3,6 @@ import {
   HeaderContainerProps,
   MobilMenuButtonProps,
   MobilMenuSectionProps,
-  SearchInputProps,
 } from "./Header.types";
 
 const rotateIn = keyframes`
@@ -25,21 +24,48 @@ const rotateOut = keyframes`
 `;
 
 export const HeaderContainer = styled.div<HeaderContainerProps>`
-  
   width: inherit;
+  z-index: 100; 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
   gap: 40px;
-  padding: 20px 40px;
   background-color: white;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   z-index: 99;
+  position: sticky;
+  top: 0;
 
-  @media (max-width: 1200px) {
+  @media (min-width: 1200px) {
     justify-content: space-between;
+    padding: 0px 60px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 4px;
+  }
+
+  & > section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+    & > a {
+    display: flex;
+  }
+  }
+`;
+
+
+export const DesktopMenuContainer = styled.div`
+  @media (max-width: 1110px) {
+    display: none;
   }
 `;
 
@@ -53,76 +79,56 @@ export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
     animation: ${({ isOpen }) => (isOpen ? rotateIn : rotateOut)} 0.3s forwards;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1110.91px) {
     display: none;
   }
 `;
 
 export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
   position: absolute;
+  display: flex;
   top: 100px;
   right: 10px;
-  background-color: #ff7500;
+  background-color: #231E1B;
   padding: 25px;
   width: 200px;
-  display: flex;
   justify-content: center;
   flex-direction: column;
-  z-index: 100;
+  z-index: 101; 
   align-items: center;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 0;
   overflow: hidden;
-  max-height: ${({ isVisible }) => (isVisible ? "300px" : "0")};
-  transition: max-height 0.3s ease;
+  max-height: ${({ isVisible }) => (isVisible ? "500px" : "0")};
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Combina las transiciones en una sola declaración */
   opacity: ${({ isVisible }) => (isVisible ? "1" : "0")};
-  transition:
-    max-height 0.3s ease,
-    opacity 0.3s ease;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1110px) {
     display: none;
+  }
+
+  & > section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 `;
 
-export const SearchInput = styled.input.attrs<SearchInputProps>((props) => ({
-  style: {
-    width: props.isShowInput ? "180px" : "0",
-    opacity: props.isShowInput ? "1" : "0",
-  },
-}))<SearchInputProps>`
-  transition:
-    width 0.5s ease,
-    opacity 0.5s ease;
-  background: rgba(227, 233, 236, 0.4);
-  padding: 10px;
-  border: none;
-  border-radius: 15px;
-  color: black;
-  z-index: 99;
-`;
+
 
 export const LogoImage = styled.img`
-  width: 280px;
-  height: 70px;
-
-  @media (max-width: 550px) {
-    width: 200px;
-    height: 50px;
-  }
+  width: 240px;
+  height: 55px;
 `;
 
-export const SearchContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  padding: 2px;
-  width: 100%;
 
-  @media (max-width: 1200px) {
+export const ContactButtonsContainer = styled.div`
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: 1110px) {
     display: none;
   }
-  
 `;

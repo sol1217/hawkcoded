@@ -8,7 +8,7 @@ interface Partner {
 }
 
 import djiLogo from './../../../assets/png/dji-logo.png';
-import StarLinkLogo from './../../../assets/png/starlink-logo.svg';
+import StarLinkLogo from './../../../assets/png/starlink-logo.png';
 import FourHawsLogo from './../../../assets/png/4hawks-logo.png';
 import MicrosoftLogo from './../../../assets/png/microsoft-logo.svg';
 import WingtraLogo from './../../../assets/png/wingtra-logo.png';
@@ -24,70 +24,83 @@ export const partners: Partner[] = [
 ];
 
 // Animación de desplazamiento
-export const scrollAnimation = keyframes`
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * ${partners.length})); }
+export const animacion = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 `;
 
 // Componentes styled-components
+
 export const SliderContainer = styled.div`
-  background: #F3C398;
-  color: white; 
-  position: relative;
-  text-align: center;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  padding: 20px 0; 
-  border-top: 3px solid #e87814;
-  
-  &::before,
-  &::after {
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
-  
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-
-  &::before {
-    left: 0;
-    top: 0;
-  }
-
-  h1 {
-    margin-bottom: 27px;
-    font-size: 28px;
-  }
-`;
-
-export const SlideTrack = styled.div`
-  animation: ${scrollAnimation} ${partners.length * 5}s linear infinite; 
+  background-color: #FFE8DB;
   display: flex;
-  background: #F3C398;
-  overflow: hidden; 
-`;
-
-export const Slide = styled.div`
-  display: flex;
+  border-top: 3px solid #ee7814;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 250px;
-  margin: 0 10px; 
+  align-items: center;
+
+  & > h1 {
+    font-size: 1.5em;
+    padding: 19px 4px;
+    color: #231E1B;
+    position: relative;
+
+    &::before, &::after {
+      content: "";
+      background-color: #ee7814;
+      width: 200px;
+      height: 1px;
+      position: absolute; 
+    }
+
+    &::after {
+      top: 80%;
+      right: -10%;
+    }
+
+    &::before {
+      top: 20%;
+      left: -10%;
+    }
+  }
+`
+
+
+export const SliderC = styled.div`
+    background-color: #FFE8DB;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
 `;
+
+
+export const Move = styled.div`
+    display: flex;
+    justify-content:space-evenly;
+    width: calc(150px * 14);
+    animation: ${animacion} 50s linear infinite;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #231E1B;
+    }
+`;
+
 
 export const SlideImage = styled.img`
   height: 60px; 
   max-width: 100px;
   width: 100%;
   margin-bottom: 10px; 
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 `;
+
 
 export const SlideName = styled.h3`
   font-size: 20px; 

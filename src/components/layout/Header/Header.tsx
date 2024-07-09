@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
-import NavMenu from "../NavMenu/NavMenu";
-import { IoMdMenu } from "react-icons/io";
-import { IoIosClose } from "react-icons/io";
-import {
-  HeaderContainer,
-  LogoImage,
-  MobilMenuButton,
-  MobilMenuSection,
-  SearchContainer,
-} from "./Header.elements";
-import logotype from "../../../assets/png/logo-type.png";
+import { HeaderContainer, DesktopMenuContainer, LogoImage, MobilMenuButton, MobilMenuSection, ContactButtonsContainer } from "./Header.elements";
+import { ContactLink } from "./../DeskMenu/NavMenu.elements.ts";
+import NavMenu from "./../DeskMenu/NavMenu.tsx";
+
+import { IoMdMenu, IoIosClose } from "react-icons/io";
 import MobilMenu from "../MobileMenu/MobilMenu";
-import { ContactLink } from "../../layout/NavMenu/NavMenu.elements.ts";
+import logotype from "./../../../assets/png/nuevo-logo.png";
+
 
 export function Header() {
   const [isShowMobilMenu, setIsShowMobilMenu] = useState(false);
@@ -37,20 +32,27 @@ export function Header() {
   }, []);
 
   return (
-    <HeaderContainer
-      isBackgroundWhite={isBackgroundWhite} // <-- Añadir esta línea
-    >
+    <HeaderContainer isBackgroundWhite={isBackgroundWhite}>
+
       <a href="/">
         <LogoImage loading="lazy" alt="logo_image" src={logotype} />
       </a>
 
+    {/* desktop menu */}
+      <DesktopMenuContainer>
+        <NavMenu flexDirection="row" color="black"/>
+      </DesktopMenuContainer>
+
+      <ContactButtonsContainer>
+        <ContactLink $background="white" $color="#ef7533" href="/contact">Contacto</ContactLink>
+        <ContactLink $background="#ef7533" $color="white" href="/ecommerce">Ecommerce</ContactLink>
+      </ContactButtonsContainer>
+
+
+    {/* mobile menu */}
       <MobilMenuButton isOpen={isShowMobilMenu} onClick={handleShowMobilMenu}>
         {isShowMobilMenu ? (
-          <IoIosClose
-            size={40}
-            color="black"
-            style={{ transform: "scale(1.2)" }}
-          />
+          <IoIosClose size={40} color="black" style={{ transform: "scale(1.2)" }} />
         ) : (
           <IoMdMenu size={40} color="black" />
         )}
@@ -58,17 +60,12 @@ export function Header() {
 
       <MobilMenuSection isVisible={isShowMobilMenu}>
         <MobilMenu />
-        <div>
+        <section>
           <ContactLink $background="white" $color="#ef7533" href="/contact">Contacto</ContactLink>
-        </div>
+          <ContactLink $background="white" $color="#ef7533" href="/ecommerce">Ecommerce</ContactLink>
+        </section>
       </MobilMenuSection>
 
-      <SearchContainer>
-        <NavMenu flexDirection="row" color="black" />
-        <div>
-          <ContactLink $background="" $color="white" href="/contact">Contacto</ContactLink>
-        </div>
-      </SearchContainer>
     </HeaderContainer>
   );
 }

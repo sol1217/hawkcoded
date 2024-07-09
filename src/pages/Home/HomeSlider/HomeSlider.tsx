@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import {
   SliderContainer,
   Slide,
@@ -17,14 +17,37 @@ interface HomeSliderProps {
 
 const HomeSlider: React.FC<HomeSliderProps> = ({ slides })  => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const intervarlRef = useRef<NodeJS.Timeout | null>(null);
 
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
-  };
 
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
-  };
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => prev === slides.length - 1 ? 0 : prev + 1);
+  }, [slides.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  }, [slides.length]);
+
+  const resetInterval = useCallback(()=> {
+    if(intervarlRef.current) {
+      clearInterval(intervarlRef.current);
+    }
+
+    intervarlRef.current = setInterval(()=> {
+      nextSlide();
+    }, 5000);
+  }, [nextSlide])
+
+
+  const handleNextSlide = () => {
+    nextSlide();
+    resetInterval();
+  }
+
+  const handlePrevSlide = () => {
+    prevSlide();
+    resetInterval();
+  }
 
   return (
     <SliderContainer>
@@ -42,8 +65,8 @@ const HomeSlider: React.FC<HomeSliderProps> = ({ slides })  => {
           </SlideContent>
         </Slide>
       ))}
-      <LeftArrow onClick={prevSlide}>{'<'}</LeftArrow>
-      <RightArrow onClick={nextSlide}>{'>'}</RightArrow>
+      <LeftArrow onClick={handlePrevSlide}>{'<'}</LeftArrow>
+      <RightArrow onClick={handleNextSlide}>{'>'}</RightArrow>
     </SliderContainer>
   );
 };
