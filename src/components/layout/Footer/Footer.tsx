@@ -23,7 +23,7 @@ export default function Footer() {
     <FooterStyled>
 
       <ScheduleWrap>
-        <a href="/"><img src={logo} width={280} height={70}/></a>
+        <a href="/"><img src={logo} alt="footer_logo"/></a>
         <OpeningHoursContainer>
           <LuClock fontSize={25}/>
           <ScheduleText>Lunes a viernes de 7AM a 5PM <br/> Sabados de 7 AM a 12PM</ScheduleText>
@@ -36,7 +36,6 @@ export default function Footer() {
         <LinkMenu href="/about">Sobre Nosotros</LinkMenu>
         <LinkMenu href="/services">Nuestros Servicios</LinkMenu>
         <LinkMenu href="/products">Algunos Productos</LinkMenu>
-        <LinkMenu>Politicas de Seguridad</LinkMenu>
 
       </NavMenuWrap>
 
@@ -53,10 +52,10 @@ export default function Footer() {
           <a href="https://www.instagram.com/hawkcoded/" target="_blank">
             <FaSquareInstagram/>
           </a>
-          <a href="https://www.facebook.com/hawkcoded?mibextid=LQQJ4d">
+          <a href="https://www.facebook.com/hawkcoded?mibextid=LQQJ4d" target="_blank">
             <FaFacebook />
           </a>
-          <a href="https://www.linkedin.com/company/hawkcoded/">
+          <a href="https://www.linkedin.com/company/hawkcoded/" target="_blank">
             <FaLinkedin />
           </a>
         </LinksContainer>

@@ -31,6 +31,13 @@ export const ScheduleWrap = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 20px;
+
+  & > a > img {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    max-height: 75px;
+  }
 `;
 
 export const ScheduleText = styled.p`

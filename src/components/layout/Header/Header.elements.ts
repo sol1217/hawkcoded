@@ -117,8 +117,10 @@ export const MobilMenuSection = styled.div<MobilMenuSectionProps>`
 
 
 export const LogoImage = styled.img`
-  width: 240px;
-  height: 55px;
+  max-width: 240px;
+  width: 100%;
+  height: 100%;
+  max-height: 55px;
 `;
 
 
