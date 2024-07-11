@@ -26,7 +26,7 @@ const ProductsMain: React.FC = () => {
     <ProductsContainer>
       <PTitleContainer>
         <H2Title>Estos Son Nuestros Productos</H2Title>
-        <ImageLogo src={logo}/>
+        <ImageLogo src={logo} alt="logo"/>
       </PTitleContainer>
       <div  id="nuevos"></div>
 

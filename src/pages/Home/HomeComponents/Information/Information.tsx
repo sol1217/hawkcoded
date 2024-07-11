@@ -13,11 +13,11 @@ export function Information() {
   return (
     <BusinessWrap>
       <ul>
-        <LiTag>Nuestro Enfoque</LiTag>
+        <LiTag className="text-with-drop-shadow">Nuestro Enfoque</LiTag>
       </ul>
 
       <BussinesText>
-        Desarrollo de <TextColor>Software Personalizado</TextColor>
+        Desarrollo de <TextColor className="text-with-drop-shadow">Software Personalizado</TextColor>
       </BussinesText>
       <InformationWrap>
         Ofrecemos asesoramiento estratégico en tecnología para ayudar a las
@@ -28,7 +28,7 @@ export function Information() {
         {items.map((items, index) => (
           <ImgAndTitleBox key={index}>
             <img src={items.img} alt="aptitudes" />
-            <p>{items.title}</p>
+            <p className="text-with-drop-shadow">{items.title}</p>
           </ImgAndTitleBox>
         ))}
       </ItemWrap>

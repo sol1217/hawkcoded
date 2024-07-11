@@ -5,7 +5,7 @@ import imgRotative from "./../../../../assets/png/engine.svg";
 const ContactSection: React.FC = () => (
   <ContactContainer>
     <ContactInformarionWrap>
-      <TitleContact>Contactanos para <span>más información</span>.</TitleContact>
+      <TitleContact>Contactanos para <span className="text-with-drop-shadow">más información</span>.</TitleContact>
       <InformationContact>
         Prosperamos con la creatividad y el ingenio, buscando constantemente
         nuevas formas de resolver problemas. <span style={{fontWeight: '700'}}>La excelencia está en el núcleo
@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => (
         <br />
         Nuestros clientes son nuestros socios.
       </InformationContact>
-      <ButtonContact href="/contact">Contacto</ButtonContact>
+      <ButtonContact href="/contact"><span className="text-with-drop-shadow">Contacto</span></ButtonContact>
     </ContactInformarionWrap>
     
     <ImageContact loading='lazy' alt='gear' src={imgRotative} />

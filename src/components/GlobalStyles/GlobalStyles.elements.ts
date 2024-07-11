@@ -14,6 +14,7 @@ export const LoadMoreButton = styled.button`
   border-radius: 5px;
   font-size: 16px;
   transition: border-color 0.3s, background-color 0.3s, color 0.3s; 
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
 
 
   &:hover {
@@ -42,6 +43,7 @@ export const STitleContainer = styled.div`
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 `;
 
 export const ImageLogo = styled.img`
@@ -89,6 +91,7 @@ export const PTitleContainer = styled.div`
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 `;
 
 
@@ -100,6 +103,7 @@ export const H2WithBorders = styled.h2`
   font-size: 28px;
   text-align: center;
   position: relative;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
 
   @media screen and (min-width: 768px) {
     font-size: 36px;

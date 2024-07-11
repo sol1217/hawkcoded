@@ -102,7 +102,8 @@ export const SlideImage = styled.img`
 `;
 
 
-export const SlideName = styled.h3`
+export const SlideName = styled.p`
+  font-weight: bold;
   font-size: 20px; 
   margin: 0;
 `;

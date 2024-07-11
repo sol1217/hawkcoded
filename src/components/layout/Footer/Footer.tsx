@@ -60,7 +60,7 @@ export default function Footer() {
           </a>
         </LinksContainer>
 
-        <ContactContainer href="/contact">Contacto</ContactContainer>
+        <ContactContainer className="text-with-drop-shadow" href="/contact">Contacto</ContactContainer>
 
       </LinksMainContainer>
     </FooterStyled>

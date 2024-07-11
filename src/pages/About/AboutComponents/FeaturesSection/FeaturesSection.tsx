@@ -5,7 +5,7 @@ import { features } from "./../../Data/constants.ts";
 
 const FeaturesSectionComponent: React.FC = () => (
   <section id="features" className="section">
-    <TitleFeatures>¿Por Qué Elegirnos?</TitleFeatures>
+    <TitleFeatures className="text-with-drop-shadow">¿Por Qué Elegirnos?</TitleFeatures>
     <FeaturesSection className="sectionImg">
       {features.map((feature, index) => (
         <FeaturesWrap 

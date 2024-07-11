@@ -20,11 +20,11 @@ export default function OutstandingProducts() {
     <div>
       <ProductsWrap>
         <ul>
-          <LiTag>Nuestros Productos</LiTag>
+          <LiTag className="text-with-drop-shadow">Nuestros Productos</LiTag>
         </ul>
 
         <TitleProducts>
-          Productos <TextColor>Sobresalientes</TextColor> en Nuestro Catálogo
+          Productos <TextColor className="text-with-drop-shadow">Sobresalientes</TextColor> en Nuestro Catálogo
         </TitleProducts>
 
         <ViewProductContainer>
@@ -34,7 +34,7 @@ export default function OutstandingProducts() {
                 <ImgProduct loading="lazy" src={product.imgSrc} alt={product.name} />
                 <DescriptionProduct>{product.description}</DescriptionProduct>
                 <RouteProduct>
-                  <a style={{color: "#fff"}} href="/products" target="_blank">Visualizar en apartado de productos</a>
+                  <a style={{color: "#fff", fontSize: '18px'}} href="/products" target="_blank">Visualizar en apartado de productos</a>
                   <LinkProduct href={product.link}>
                     <FaArrowRight />
                   </LinkProduct>

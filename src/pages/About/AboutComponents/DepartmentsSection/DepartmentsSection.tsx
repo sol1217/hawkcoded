@@ -5,7 +5,7 @@ import { departments } from "./../../Data/constants.ts";
 const DepartmentsSection: React.FC = () => (
   <>
     <DepartamentsInfoWrap>
-      <TitleDepartament> ¿Que es HawkCoded?</TitleDepartament>
+      <TitleDepartament className="text-with-drop-shadow"> ¿Que es HawkCoded?</TitleDepartament>
       <WelcomText>
         Bienvenido a Hawkcoded, donde la innovación se encuentra con la
         excelencia en el desarrollo de software.
