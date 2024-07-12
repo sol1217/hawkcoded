@@ -23,7 +23,9 @@ export const TextColor = styled.span`
 export const InformationWrap = styled.p`
   color: #555;
   font-size: 1.2em;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  max-width: 65ch;
 
   @media (max-width: 480px) {
     font-size: 1rem;

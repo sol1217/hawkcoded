@@ -98,24 +98,7 @@ export const DescriptionWrap = styled.div`
 `;
 
 export const TitleInformation = styled.h2`
-  &::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    border: 1px solid #EE7814;
-    top: 30%;
-    right: 0;
-    left: auto;
-    border-top: none;
-  }
 
-  @media (max-width: 480px) {
-    &::after {
-      top: 33%;
-      right: 0;
-      left: auto;
-    }
-  }
 `;
 
 export const TitleBenefits = styled.h2`

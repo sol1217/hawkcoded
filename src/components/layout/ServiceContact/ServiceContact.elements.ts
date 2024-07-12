@@ -10,7 +10,7 @@ export const ServiceContactContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    padding: 40px 60px;
+    padding: 40px 50px;
   }
 `;
 
@@ -27,6 +27,7 @@ export const ServiceButtonContact = styled.a`
   color: #000;
   font-size: 18px;
   text-align: center;
+  margin-left: .7rem;
   transition:
     border-color 0.3s,
     background-color 0.3s,
@@ -46,6 +47,7 @@ export const SeeMoreContainer = styled.a`
   gap: 7px;
   color: #000;
   transition: color 0.3s ease;
+  margin-right: 1.6rem;
 
   & > svg {
     width: 15px;
@@ -64,7 +66,6 @@ export const SeeMoreContainer = styled.a`
     & > img {
       transform: scale(1.2);
       background-color: #f57c00;
-      margin-left: 10px;
     }
   }
 `;

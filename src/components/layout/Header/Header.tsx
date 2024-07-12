@@ -5,7 +5,7 @@ import NavMenu from "./../DeskMenu/NavMenu.tsx";
 
 import { IoMdMenu, IoIosClose } from "react-icons/io";
 import MobilMenu from "../MobileMenu/MobilMenu";
-import logotype from "./../../../assets/png/nuevo-logo.png";
+import logotype from "./../../../assets/icons/nuevo-logo.svg";
 
 
 export function Header() {
@@ -45,7 +45,7 @@ export function Header() {
 
       <ContactButtonsContainer>
         <ContactLink className="text-with-background" $background="white" $color="#ef7533" href="/contact">Contacto</ContactLink>
-        <ContactLink className="text-with-background" $background="#ef7533" $color="white" href="/ecommerce">Ecommerce</ContactLink>
+        <ContactLink className="text-with-background" $background="#ef7533" $color="white" href="/ecommerce">Tienda</ContactLink>
       </ContactButtonsContainer>
 
 
@@ -62,7 +62,7 @@ export function Header() {
         <MobilMenu />
         <section>
           <ContactLink $background="white" $color="#ef7533" href="/contact">Contacto</ContactLink>
-          <ContactLink $background="white" $color="#ef7533" href="/ecommerce">Ecommerce</ContactLink>
+          <ContactLink $background="white" $color="#ef7533" href="/ecommerce">Tienda</ContactLink>
         </section>
       </MobilMenuSection>
 

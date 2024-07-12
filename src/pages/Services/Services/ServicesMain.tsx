@@ -8,7 +8,7 @@ import globeIcon from './../../../assets/icons/globe-solid.svg';
 import mobileIcon from './../../../assets/icons/mobile-screen-solid.svg';
 import rulerIcon from './../../../assets/icons/ruler-solid.svg';
 import chartIcon from './../../../assets/icons/chart-simple-solid.svg';
-import logo  from "../../../assets/png/logo-hawkcoded.png"
+import logo  from "../../../assets/icons/logo-white-bg.svg"
 
 import useScrollToHash from './../../../helpers/useScrollToHash';
 

@@ -22,7 +22,7 @@ interface Enlace {
     ],
     '/products': [
       { id: '#nuevos', label: 'Los Más Populares' },
-      { id: '/ecommerce', label: 'Ecommerce' },
+      { id: '/ecommerce', label: 'Tienda' },
     ],
   };
   

@@ -24,7 +24,7 @@ export const ImgContainer = styled.div`
   background-position: center;
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,9 +58,9 @@ export const TitleContact = styled.span`
 `;
 
 export const LogoImg = styled.img`
-  @media (max-width: 770px) {
-    width: 80%;
-  }
+  width: 50%;
+  max-width: 500px;
+  max-height: 200px;
 `;
 
 
@@ -204,8 +204,8 @@ export const IconosContainer = styled.div`
 `;
 
 export const MainLogoImg = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: 20px;
   left: 20px;

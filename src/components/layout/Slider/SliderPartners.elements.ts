@@ -7,12 +7,12 @@ interface Partner {
   name: string;
 }
 
-import djiLogo from './../../../assets/png/dji-logo.png';
-import StarLinkLogo from './../../../assets/png/starlink-logo.png';
-import FourHawsLogo from './../../../assets/png/4hawks-logo.png';
-import MicrosoftLogo from './../../../assets/png/microsoft-logo.svg';
-import WingtraLogo from './../../../assets/png/wingtra-logo.png';
-import OracleLogo from './../../../assets/png/oracle-logo.svg';
+import djiLogo from './../../../assets/icons/dji-logo.svg';
+import StarLinkLogo from './../../../assets/icons/starlink-logo.svg';
+import FourHawsLogo from './../../../assets/icons/4hawks-logo.svg';
+import MicrosoftLogo from './../../../assets/icons/microsoft-logo.svg';
+import WingtraLogo from './../../../assets/icons/wingtra-logo.svg';
+import OracleLogo from './../../../assets/icons/oracle-logo.svg';
 
 export const partners: Partner[] = [
   { id: 1, imageUrl: djiLogo, name: "DJI" },

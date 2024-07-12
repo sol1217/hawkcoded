@@ -10,7 +10,7 @@ export const InformationAboutUsWrap = styled.div`
   padding: 30px;
   margin: 4rem 0;
 
-  @media (max-width: 1450px) {
+  @media (max-width: 1300px) {
     flex-direction: column;
     gap: 60px;
   }
@@ -18,8 +18,9 @@ export const InformationAboutUsWrap = styled.div`
 
 
 export const AboutImg = styled.img`
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -63,7 +64,8 @@ export const TitleAbout = styled.h2`
 export const TextAbout = styled.span`
   font-size: 20px;
   color: #fff;
-  max-width: 650px;
+  max-width: 65ch;
   min-width: 200px;
   text-wrap: pretty;
+  padding: 1rem;
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImgContainer, TextWrap, TitleContact, LogoImg, InfoContainer } from "./../Contact.elements";
-import simpleLogo from "./../../../assets/png/simple-logo.png";
+import simpleLogo from "./../../../assets/icons/logo-white-bg.svg";
 
 const ContactInfo: React.FC = () => (
   <ImgContainer>

@@ -126,8 +126,14 @@ export const ArrowButton = styled.button`
 
 export const LeftArrow = styled(ArrowButton)`
   left: 20px;
+  @media (min-width: 768px) {
+    padding-left: 4rem;
+  }
 `;
 
 export const RightArrow = styled(ArrowButton)`
   right: 20px;
+  @media (min-width: 768px) {
+    padding-right: 4.3rem;
+  }
 `;

@@ -10,7 +10,7 @@ import {
 } from "./Footer.Elements";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebook} from "react-icons/fa";
-import logo from "../../../assets/png/logo-white-bg.png"
+import logo from "../../../assets/icons/logo-white-bg.svg"
 import { LuClock } from "react-icons/lu";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";

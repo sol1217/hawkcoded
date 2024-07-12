@@ -32,9 +32,9 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
   padding: 10px 20px;
   gap: 40px;
   background-color: white;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   z-index: 99;
   position: sticky;
   top: 0;
@@ -45,7 +45,7 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
   }
 
   @media (max-width: 480px) {
-    padding: 8px 4px;
+    padding: 8px 14px;
   }
 
   & > section {
@@ -72,6 +72,8 @@ export const DesktopMenuContainer = styled.div`
 export const MobilMenuButton = styled.button<MobilMenuButtonProps>`
   background-color: transparent;
   border: none;
+  padding: 0;
+  
   & > svg {
     width: 40px;
     height: 40px;

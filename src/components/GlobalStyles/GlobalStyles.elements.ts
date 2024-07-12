@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import stockServiceImage from './../../assets/bg-images/computer.webp';
-import stockProductImage_1 from './../../assets/png/ball-software.jpg'
+import stockProductImage_1 from './../../assets/bg-images/bg-products.webp';
 
 
 export const LoadMoreButton = styled.button`
@@ -47,8 +47,9 @@ export const STitleContainer = styled.div`
 `;
 
 export const ImageLogo = styled.img`
-    width: 280px;
+  width: 280px;
   height: 70px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
 `
 
 

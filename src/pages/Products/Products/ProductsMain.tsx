@@ -8,7 +8,7 @@ import {
   CardDescription,
 } from "./Products.elements";
 import productos from "./products.data.ts";
-import logo  from "./../../../assets/png/logo-hawkcoded.png"
+import logo  from "./../../../assets/icons/logo-white-bg.svg"
 import ServiceContact from "./../../../components/layout/ServiceContact/ServiceContact.tsx";
 import {
   H2Title, ImageLogo,

@@ -88,10 +88,6 @@ export const CardContainer = styled.div`
     transform: scale(1);
   }
 
-  &:hover ${CardTexts} {
-    transform: scale(1.05);
-  }
-
   @media screen and (max-width: 580px) {
     flex-direction: column-reverse;
     gap: 10px;
